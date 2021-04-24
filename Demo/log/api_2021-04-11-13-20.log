@@ -1,0 +1,5 @@
+[log_module.py]: [CRITICAL]  [2021-04-11 13:20:25]：64-->>critical严重错误
+[log_module.py]: [ERROR]  [2021-04-11 13:20:25]：65-->>error错误
+[log_module.py]: [WARNING]  [2021-04-11 13:20:25]：66-->>warning警告
+[log_module.py]: [INFO]  [2021-04-11 13:20:25]：67-->>info信息
+[log_module.py]: [DEBUG]  [2021-04-11 13:20:25]：68-->>debug调试日志
