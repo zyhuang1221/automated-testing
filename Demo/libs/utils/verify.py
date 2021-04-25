@@ -42,8 +42,13 @@ import os
 # email_server=zmail.server(*sender) # * 解包
 # # 2:发送邮件
 # email_server.send_mail(receiver,msg)
-import datetime
-import time
+# import datetime
+# import time
+#
+# now_time = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M')
+# print(now_time)
 
-now_time = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M')
-print(now_time)
+from selenium import webdriver
+
+driver=webdriver.Chrome()
+driver.get('http://www.baidu.com')

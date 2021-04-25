@@ -5,3 +5,9 @@ mail:
   receiver: 
     - '751212216@qq.com'
     - 'e751212216@163.com'
+
+
+browser:
+  type: chrome   #ie/firefox/chrome
+  env: localhost #docker/headless
+  url: 'https://www.baidu.com'

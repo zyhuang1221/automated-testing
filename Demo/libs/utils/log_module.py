@@ -7,7 +7,7 @@
 import logging
 import os
 import datetime
-
+from libs.utils.base_path import base_path
 
 class Logger():
     def __init__(self):
@@ -44,9 +44,9 @@ class Logger():
         :return: log
         """
         now_time = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M')
-        file_dir = os.path.dirname(__file__).replace(r'\/'.replace(os.sep, ''), os.sep)
+        path_file = base_path+'/log/{}_{}.log'.format(file, now_time).replace(r'\/'.replace(os.sep, ''), os.sep)
         # path_file = file_dir.replace(r'libs\utils', r'log\{}_{}.log'.format(file, now_time))
-        path_file = file_dir.replace('libs', 'log').replace('utils', '{}_{}.log'.format(file, now_time))
+        # path_file = file_dir.replace('libs', 'log').replace('utils', '{}_{}.log'.format(file, now_time))
         if handler == "all":
             # 日志器添加控制台处理器
             self.log.addHandler(self.add_StreanHandle())
@@ -66,7 +66,7 @@ class Logger():
 if __name__ == '__main__':
     l = Logger()
     # 调用get_log
-    log = l.get_log(handler='file')
+    log = l.get_log()
     log.critical('critical严重错误')
     log.error('error错误')
     log.warning('warning警告')
