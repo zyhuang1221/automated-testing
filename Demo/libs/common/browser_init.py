@@ -6,7 +6,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 from libs.utils import rd_yaml
-from libs.utils import log_module
+from libs.utils.log_module import log
 import time
 # from datetime import datetime
 from selenium.webdriver.common.by import By
@@ -36,40 +36,116 @@ class Browser():
 
     def __init__(self, driver):
         self.driver = driver
-        l = log_module.Logger()
-        self.log = l.get_log('strean', file='web')
 
     def wait_element_visible(self, loc, t=10):
-        """每次操作之前自动显示等待,找到元素，并返回元素对象"""
+        """每次操作之前自动显示等待,找到元素，并返回元素对象
+        :param loc:元素定位表达式，元组类型。（元素定位类型，元素定位方法）
+        :param t:等待超时时间上限，数字类型
+        :return element
+        """
+
+        log.info('开始等待页面元素<{}>是否可见！'.format(loc))
+        start_time = time.time()
         try:
-            self.log.info('开始等待页面元素<{}>是否可见！'.format(loc))
-            start_time = time.time()
             ele = WebDriverWait(self.driver, t).until(EC.visibility_of_element_located(loc))
-            return ele
         except Exception as e:
-            self.log.error('等待页面元素<{}>失败！'.format(loc))
+            log.error('等待页面元素<{}>{}秒失败！'.format(loc, t))
             # self.driver.save_screenshot(base_path+r'\img_1\test.png')
             # raise e
         else:
             end_time = time.time()
-            self.log.info('页面元素<{}>等待可见，等待时间：{}秒'.format(loc, round(end_time - start_time, 1)))
-            print(round(end_time - start_time, 1))
+            log.info('页面元素<{}>可见，等待时间：{}秒!'.format(loc, round(end_time - start_time, 3)))
+            return ele
 
-
-
-    def send_keys(self, loc, value):
+    def my_send_key(self, loc, value):
+        """
+        输入操作，传入元素定位表达式，元组类型。和输入内容
+        :param loc:
+        :param value: 输入内容
+        :return:
+        """
         self.wait_element_visible(loc).send_keys(value)
-        self.log.info('在{0}输入{0}'.format(loc[1], value))
+        log.info('在<{}>输入<{}>'.format(loc, value))
 
-    def click(self, loc):
+    def my_click(self, loc):
+        """
+        点击操作，传入元素定位表达式，元组类型
+        :param loc:
+        :return: None
+        """
         self.wait_element_visible(loc).click()
-        self.log.info('点击{0}'.format(loc[1]))
+        log.info('点击<{0}>'.format(loc))
 
-driver= webdriver.Chrome()
-driver.get('http://www.baidu.com')
-web=Browser(driver)
-web.send_keys((By.ID, 'kw'),'python')
+    def my_submit(self,loc):
+        """
+        提交操作，传入元素定位表达式，元组类型
+        :param loc:
+        :return:
+        """
+        try:
+            ele = WebDriverWait(self.driver, 10).until(lambda x: x.find_element(*loc))
+            ele.submit()
+        except Exception as e:
+            log.error('未能提交<>'.format(loc))
+        else:
+            log.info("在<{}>点击提交".format(loc))
+
+    def find_elements(self, loc):
+        """
+        获取元素出现的次数
+        :param loc: 元素定位
+        :return: 元素组
+        """
+        try:
+            eles = WebDriverWait(self.driver, 10).until(lambda x: x.find_elements(*loc))
+        except Exception as e:
+            raise e
+        else:
+            return eles
+
+    def get_all_handles(self):
+        """
+        获取当前所有句柄
+        :return:
+        """
+        all_handles = self.driver.window_handles
+        return all_handles
+
+    # 窗口切换==如果是切换到新窗口，new，如果是回到默认窗口，default。切换前，在新窗口打开前获取handles
+    def switch_window(self, name, all_handles=None, timeout=10, model=None):
+        '''
+        :param name: new代表最新打开的一个窗口。default代表第一个窗口。其他的值表示为窗口的handles
+        :param current_handles:传入的句柄为打开新窗口之前的句柄
+        :param timeout:
+        :param poll_frequency:
+        :param model:
+        :return:
+        '''
+
+        try:
+            if name == "new" and all_handles is not None:
+                log.info("切换到最新打开的窗口")
+                WebDriverWait(self.driver, timeout, ).until(EC.new_window_is_opened(all_handles))
+                window_handles = self.driver.window_handles  # 获取所有窗口句柄
+                self.driver.switch_to.window(window_handles[-1])
+            elif name == "default":
+                log.info("切换到第一个窗口")
+                window_handles = self.driver.window_handles
+                self.driver.switch_to.window(window_handles[0])
+                # self.driver.switch_to_default_content()
+            else:
+                log.info("切换到指定handles")
+                self.driver.switch_to.window(name)
+        except:
+            log.error("切换失败")
+            raise
 
 
 
 
+# driver = webdriver.Chrome()
+# driver.get('http://www.baidu.com')
+# web = Browser(driver)
+# web.send_keys((By.ID, 'kw'), 'python')
+
+# browser_init()

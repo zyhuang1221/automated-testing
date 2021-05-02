@@ -10,4 +10,4 @@ mail:
 browser:
   type: chrome   #ie/firefox/chrome
   env: localhost #docker/headless
-  url: 'https://www.baidu.com'
+  url: 'http://127.0.0.1/'

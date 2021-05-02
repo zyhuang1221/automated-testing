@@ -9,16 +9,17 @@ import os
 import datetime
 from libs.utils.base_path import base_path
 
+
 class Logger():
     def __init__(self):
         """创建日志器"""
         self.log = logging.getLogger()
-        self.log.setLevel(level=logging.DEBUG)
+        self.log.setLevel(level=logging.INFO)
 
     def add_Formatter(self):
         """设置格式器"""
         self.f1 = logging.Formatter(fmt='[%(asctime)s]：[%(levelname)s] -->>%(message)s')
-        self.f2 = logging.Formatter(fmt='[%(filename)s]: [%(levelname)s]  [%(asctime)s]：%(lineno)d-->>%(message)s',
+        self.f2 = logging.Formatter(fmt='[%(filename)s]: [%(levelname)s] [%(asctime)s] line:%(lineno)d-->>%(message)s',
                                     datefmt='%Y-%m-%d %H:%M:%S')
         return self.f1, self.f2
 
@@ -29,7 +30,7 @@ class Logger():
         self.s_hand.setFormatter(self.add_Formatter()[0])  # 添加控制台格式器f1
         return self.s_hand
 
-    def add_FileHandle(self, file, level=logging.DEBUG):
+    def add_FileHandle(self, file, level=logging.INFO):
         """添加文件处理器"""
         self.f_hand = logging.FileHandler(filename=file, encoding='utf-8')
         self.f_hand.setLevel(level)
@@ -44,7 +45,7 @@ class Logger():
         :return: log
         """
         now_time = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M')
-        path_file = base_path+'/log/{}_{}.log'.format(file, now_time).replace(r'\/'.replace(os.sep, ''), os.sep)
+        path_file = base_path + '/log/{}_{}.log'.format(file, now_time).replace(r'\/'.replace(os.sep, ''), os.sep)
         # path_file = file_dir.replace(r'libs\utils', r'log\{}_{}.log'.format(file, now_time))
         # path_file = file_dir.replace('libs', 'log').replace('utils', '{}_{}.log'.format(file, now_time))
         if handler == "all":
@@ -72,3 +73,7 @@ if __name__ == '__main__':
     log.warning('warning警告')
     log.info('info信息')
     log.debug('debug调试日志')
+
+l = Logger()
+# 调用get_log
+log = l.get_log(handler='file', file='web')

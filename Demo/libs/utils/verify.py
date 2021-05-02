@@ -64,26 +64,44 @@ import time
 #     raise e
 # else:
 #     print(2323)
+# from selenium import webdriver
+# from selenium.webdriver.support import expected_conditions as EC
+# from selenium.webdriver.common.by import By
+# from selenium.webdriver.support.wait import WebDriverWait
+# from libs.utils import log_module
+# driver = webdriver.Chrome()
+# driver.get('http://www.baidu.com')
+#
+# l = log_module.Logger()
+# log = l.get_log(file='web')
+# try:
+#     log.info('开始等待页面元素<{}>是否可见！'.format("loc"))
+#     start_time = time.time()
+#     ele = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'kw')))
+#
+# except Exception as e:
+#     #
+#     raise e
+#
+# else:
+#     end_time = time.time()
+#     log.info('页面元素<{}>等待可见，等待时间：{}秒'.format('loc', round(end_time - start_time, 1)))
+#     print('执行时间',round(end_time - start_time, 1))
 from selenium import webdriver
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from libs.utils import log_module
+#
 driver = webdriver.Chrome()
-driver.get('http://www.baidu.com')
+driver.get('http://127.0.0.1')
+driver.find_element(By.LINK_TEXT, '注册').click()
 
-l = log_module.Logger()
-log = l.get_log(file='web')
-try:
-    log.info('开始等待页面元素<{}>是否可见！'.format("loc"))
-    start_time = time.time()
-    ele = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.ID, 'kw')))
+ww=driver.window_handles
+print(ww)
 
-except Exception as e:
-    end_time = time.time()
-    raise e
+# driver.find_element(By.NAME, 'username').send_keys("123")
+# driver.find_element(By.NAME, 'password').send_keys("123")
+# driver.find_element(By.NAME, 'userpassword2').send_keys("123")
+# driver.find_element(By.NAME, 'mobile_phone').send_keys("123")
+# driver.find_element(By.NAME, 'email').send_keys("123")
 
-else:
-    end_time = time.time()
 
-    print(round(end_time - start_time, 1))
+
