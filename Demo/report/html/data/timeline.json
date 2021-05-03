@@ -4,35 +4,22 @@
   "children" : [ {
     "name" : "DESKTOP-2TMV0U4",
     "children" : [ {
-      "name" : "6484-MainThread",
+      "name" : "7624-MainThread",
       "children" : [ {
         "name" : "testcase1",
-        "uid" : "4f43bfe498fe0d95",
-        "parentUid" : "481d8c70a6cb4b356d1ee7ebbc1731ab",
+        "uid" : "da2a04187300520c",
+        "parentUid" : "2ca493b1866cdc6f0513f82cc5294226",
         "status" : "passed",
         "time" : {
-          "start" : 1620035885815,
-          "stop" : 1620035887776,
-          "duration" : 1961
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "testcase1",
-        "uid" : "116e1e28024fbd60",
-        "parentUid" : "481d8c70a6cb4b356d1ee7ebbc1731ab",
-        "status" : "passed",
-        "time" : {
-          "start" : 1620035867021,
-          "stop" : 1620035878870,
-          "duration" : 11849
+          "start" : 1620038220540,
+          "stop" : 1620038222296,
+          "duration" : 1756
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "481d8c70a6cb4b356d1ee7ebbc1731ab"
+      "uid" : "2ca493b1866cdc6f0513f82cc5294226"
     } ],
     "uid" : "d526c1b0f5b053c01f9cbe4f60feab4e"
   } ]

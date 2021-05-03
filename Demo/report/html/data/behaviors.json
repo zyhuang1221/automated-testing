@@ -3,26 +3,13 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "testcase1",
-    "uid" : "116e1e28024fbd60",
+    "uid" : "da2a04187300520c",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1620035867021,
-      "stop" : 1620035878870,
-      "duration" : 11849
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "testcase1",
-    "uid" : "4f43bfe498fe0d95",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1620035885815,
-      "stop" : 1620035887776,
-      "duration" : 1961
+      "start" : 1620038220540,
+      "stop" : 1620038222296,
+      "duration" : 1756
     },
     "flaky" : false,
     "newFailed" : false,
