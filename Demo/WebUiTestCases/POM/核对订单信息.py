@@ -23,8 +23,8 @@ class HeDui(Browser):
         self.my_click(HeDui.添加新地址)
         self.my_send_key(HeDui.收货人, value[0])
         self.my_send_key(HeDui.手机号, value[1])
-        ele = self.wait_element_visible(HeDui.选择省)
-        Select(ele).select_by_visible_text(value[2])
+        sheng = self.wait_element_visible(HeDui.选择省)
+        Select(sheng).select_by_visible_text(value[2])
         shi = self.find_elements(HeDui.选择市)[1]
         Select(shi).select_by_visible_text(value[3])
         qu = self.find_elements(HeDui.选择区)[2]

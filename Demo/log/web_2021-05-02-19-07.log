@@ -1,0 +1,53 @@
+[browser_init.py]: [INFO] [2021-05-02 19:07:32] line:46-->>开始等待页面元素<('link text', '登录')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:32] line:56-->>页面元素<('link text', '登录')>可见，等待时间：0.026秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:32] line:76-->>点击<('link text', '登录')>
+[browser_init.py]: [INFO] [2021-05-02 19:07:32] line:126-->>切换到最新打开的窗口
+[browser_init.py]: [INFO] [2021-05-02 19:07:32] line:46-->>开始等待页面元素<('id', 'username')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:33] line:56-->>页面元素<('id', 'username')>可见，等待时间：1.036秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:33] line:67-->>在<('id', 'username')>输入<mik2>
+[browser_init.py]: [INFO] [2021-05-02 19:07:33] line:46-->>开始等待页面元素<('id', 'password')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:34] line:56-->>页面元素<('id', 'password')>可见，等待时间：0.02秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:34] line:67-->>在<('id', 'password')>输入<password>
+[browser_init.py]: [INFO] [2021-05-02 19:07:34] line:90-->>在<('class name', 'login_btn')>点击提交
+[browser_init.py]: [INFO] [2021-05-02 19:07:34] line:46-->>开始等待页面元素<('link text', '进入商城购物')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:36] line:56-->>页面元素<('link text', '进入商城购物')>可见，等待时间：2.018秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:37] line:76-->>点击<('link text', '进入商城购物')>
+[browser_init.py]: [INFO] [2021-05-02 19:07:37] line:46-->>开始等待页面元素<('name', 'keyword')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:37] line:56-->>页面元素<('name', 'keyword')>可见，等待时间：0.039秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:38] line:67-->>在<('name', 'keyword')>输入<iphone>
+[browser_init.py]: [INFO] [2021-05-02 19:07:38] line:46-->>开始等待页面元素<('class name', 'btn1')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:38] line:56-->>页面元素<('class name', 'btn1')>可见，等待时间：0.018秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:39] line:76-->>点击<('class name', 'btn1')>
+[browser_init.py]: [INFO] [2021-05-02 19:07:39] line:46-->>开始等待页面元素<('xpath', '/html/body/div[3]/div[2]/div[3]/div/div[1]/a/img')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:39] line:56-->>页面元素<('xpath', '/html/body/div[3]/div[2]/div[3]/div/div[1]/a/img')>可见，等待时间：0.027秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:39] line:76-->>点击<('xpath', '/html/body/div[3]/div[2]/div[3]/div/div[1]/a/img')>
+[browser_init.py]: [INFO] [2021-05-02 19:07:39] line:126-->>切换到最新打开的窗口
+[browser_init.py]: [INFO] [2021-05-02 19:07:39] line:46-->>开始等待页面元素<('id', 'joinCarButton')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:40] line:56-->>页面元素<('id', 'joinCarButton')>可见，等待时间：1.188秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:40] line:76-->>点击<('id', 'joinCarButton')>
+[browser_init.py]: [INFO] [2021-05-02 19:07:40] line:46-->>开始等待页面元素<('class name', 'shopCar_T_span3')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:41] line:56-->>页面元素<('class name', 'shopCar_T_span3')>可见，等待时间：1.275秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:42] line:76-->>点击<('class name', 'shopCar_T_span3')>
+[browser_init.py]: [INFO] [2021-05-02 19:07:42] line:46-->>开始等待页面元素<('class name', 'shopCar_btn_03')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:42] line:56-->>页面元素<('class name', 'shopCar_btn_03')>可见，等待时间：0.017秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:43] line:76-->>点击<('class name', 'shopCar_btn_03')>
+[browser_init.py]: [INFO] [2021-05-02 19:07:43] line:46-->>开始等待页面元素<('class name', 'add-address')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:43] line:56-->>页面元素<('class name', 'add-address')>可见，等待时间：0.02秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:43] line:76-->>点击<('class name', 'add-address')>
+[browser_init.py]: [INFO] [2021-05-02 19:07:43] line:46-->>开始等待页面元素<('name', 'address[address_name]')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:43] line:56-->>页面元素<('name', 'address[address_name]')>可见，等待时间：0.017秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:43] line:67-->>在<('name', 'address[address_name]')>输入<mik2>
+[browser_init.py]: [INFO] [2021-05-02 19:07:43] line:46-->>开始等待页面元素<('name', 'address[mobile]')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:43] line:56-->>页面元素<('name', 'address[mobile]')>可见，等待时间：0.022秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:44] line:67-->>在<('name', 'address[mobile]')>输入<15823234567>
+[browser_init.py]: [INFO] [2021-05-02 19:07:44] line:46-->>开始等待页面元素<('id', 'add-new-area-select')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:44] line:56-->>页面元素<('id', 'add-new-area-select')>可见，等待时间：0.017秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:44] line:46-->>开始等待页面元素<('name', 'address[address]')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:44] line:56-->>页面元素<('name', 'address[address]')>可见，等待时间：0.015秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:44] line:67-->>在<('name', 'address[address]')>输入<湖北省武汉市>
+[browser_init.py]: [INFO] [2021-05-02 19:07:44] line:46-->>开始等待页面元素<('name', 'address[zipcode]')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:44] line:56-->>页面元素<('name', 'address[zipcode]')>可见，等待时间：0.021秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:44] line:67-->>在<('name', 'address[zipcode]')>输入<123456>
+[browser_init.py]: [INFO] [2021-05-02 19:07:44] line:46-->>开始等待页面元素<('class name', 'aui_state_highlight')>是否可见！
+[browser_init.py]: [INFO] [2021-05-02 19:07:44] line:56-->>页面元素<('class name', 'aui_state_highlight')>可见，等待时间：0.02秒!
+[browser_init.py]: [INFO] [2021-05-02 19:07:44] line:76-->>点击<('class name', 'aui_state_highlight')>

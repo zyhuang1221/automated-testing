@@ -42,4 +42,4 @@ class Testdl():
 
 
 if __name__ == '__main__':
-    pytest.main(['./下单_test.py'])
+    pytest.main(['./_test.py'])

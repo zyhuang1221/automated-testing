@@ -8,15 +8,11 @@ from selenium import webdriver
 from libs.utils import rd_yaml
 from libs.utils.log_module import log
 import time
-# from datetime import datetime
-from selenium.webdriver.common.by import By
 from libs.utils.base_path import base_path
 
 web_cfg_data = rd_yaml.read_yaml()['browser']
 
-
 def browser_init():
-    global driver
     if web_cfg_data['type'] == 'chrome':
         driver = webdriver.Chrome()
     elif web_cfg_data['type'] == 'firefox':
@@ -140,12 +136,3 @@ class Browser():
             log.error("切换失败")
             raise
 
-
-
-
-# driver = webdriver.Chrome()
-# driver.get('http://www.baidu.com')
-# web = Browser(driver)
-# web.send_keys((By.ID, 'kw'), 'python')
-
-# browser_init()

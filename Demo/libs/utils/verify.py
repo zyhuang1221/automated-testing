@@ -87,15 +87,15 @@ import time
 #     end_time = time.time()
 #     log.info('页面元素<{}>等待可见，等待时间：{}秒'.format('loc', round(end_time - start_time, 1)))
 #     print('执行时间',round(end_time - start_time, 1))
-from selenium import webdriver
-from selenium.webdriver.common.by import By
+# from selenium import webdriver
+# from selenium.webdriver.common.by import By
+# #
+# driver = webdriver.Chrome()
+# driver.get('http://127.0.0.1')
+# driver.find_element(By.LINK_TEXT, '注册').click()
 #
-driver = webdriver.Chrome()
-driver.get('http://127.0.0.1')
-driver.find_element(By.LINK_TEXT, '注册').click()
-
-ww=driver.window_handles
-print(ww)
+# ww=driver.window_handles
+# print(ww)
 
 # driver.find_element(By.NAME, 'username').send_keys("123")
 # driver.find_element(By.NAME, 'password').send_keys("123")
@@ -103,5 +103,9 @@ print(ww)
 # driver.find_element(By.NAME, 'mobile_phone').send_keys("123")
 # driver.find_element(By.NAME, 'email').send_keys("123")
 
+
+a= 1
+
+print(f'我是{a}')
 
 

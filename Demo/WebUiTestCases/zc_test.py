@@ -22,4 +22,4 @@ class TestYuce():
 
 
 if __name__ == '__main__':
-    pytest.main(['./用户注册_test.py'])
+    pytest.main(['./_test.py'])

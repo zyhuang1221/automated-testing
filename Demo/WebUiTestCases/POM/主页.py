@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/5/1 
 # @Author  : Mik
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 from libs.common.browser_init import Browser
 

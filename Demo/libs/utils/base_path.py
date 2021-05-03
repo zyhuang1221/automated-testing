@@ -6,4 +6,5 @@ import os
 
 # base_path=os.path.abspath(os.path.dirname(__file__))
 base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+base_path = base_path.replace(r'\/'.replace(os.sep, ''), os.sep)
 # print(base_path)
