@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon May 03 20:31:21 CST 2021","Mon May 03 20:31:32 CST 2021","11714","WebUiTestCases","xd_test","Testdl","","","testcase1",""

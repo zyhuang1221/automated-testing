@@ -1,22 +1,0 @@
-[32mINFO    [0m root:browser_init.py:43 开始等待页面元素<('link text', '注册')>是否可见！
-[32mINFO    [0m root:browser_init.py:53 页面元素<('link text', '注册')>可见，等待时间：0.016秒!
-[32mINFO    [0m root:browser_init.py:73 点击<('link text', '注册')>
-[32mINFO    [0m root:browser_init.py:123 切换到最新打开的窗口
-[32mINFO    [0m root:browser_init.py:43 开始等待页面元素<('name', 'username')>是否可见！
-[32mINFO    [0m root:browser_init.py:53 页面元素<('name', 'username')>可见，等待时间：1.048秒!
-[32mINFO    [0m root:browser_init.py:64 在<('name', 'username')>输入<mik2>
-[32mINFO    [0m root:browser_init.py:43 开始等待页面元素<('name', 'password')>是否可见！
-[32mINFO    [0m root:browser_init.py:53 页面元素<('name', 'password')>可见，等待时间：0.017秒!
-[32mINFO    [0m root:browser_init.py:64 在<('name', 'password')>输入<password>
-[32mINFO    [0m root:browser_init.py:43 开始等待页面元素<('name', 'userpassword2')>是否可见！
-[32mINFO    [0m root:browser_init.py:53 页面元素<('name', 'userpassword2')>可见，等待时间：0.02秒!
-[32mINFO    [0m root:browser_init.py:64 在<('name', 'userpassword2')>输入<password>
-[32mINFO    [0m root:browser_init.py:43 开始等待页面元素<('name', 'mobile_phone')>是否可见！
-[32mINFO    [0m root:browser_init.py:53 页面元素<('name', 'mobile_phone')>可见，等待时间：0.018秒!
-[32mINFO    [0m root:browser_init.py:64 在<('name', 'mobile_phone')>输入<15732573434>
-[32mINFO    [0m root:browser_init.py:43 开始等待页面元素<('name', 'email')>是否可见！
-[32mINFO    [0m root:browser_init.py:53 页面元素<('name', 'email')>可见，等待时间：0.021秒!
-[32mINFO    [0m root:browser_init.py:64 在<('name', 'email')>输入<1237645688@qq.com>
-[32mINFO    [0m root:browser_init.py:43 开始等待页面元素<('class name', 'reg_btn')>是否可见！
-[32mINFO    [0m root:browser_init.py:53 页面元素<('class name', 'reg_btn')>可见，等待时间：0.018秒!
-[32mINFO    [0m root:browser_init.py:73 点击<('class name', 'reg_btn')>
