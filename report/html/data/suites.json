@@ -9,13 +9,13 @@
         "name" : "Testdl",
         "children" : [ {
           "name" : "testcase1",
-          "uid" : "da91be847f50e366",
+          "uid" : "48f48b8abcd553e",
           "parentUid" : "51c79ba9a251d55ea010ac9809e44275",
           "status" : "passed",
           "time" : {
-            "start" : 1620045081100,
-            "stop" : 1620045092814,
-            "duration" : 11714
+            "start" : 1620388361119,
+            "stop" : 1620388382152,
+            "duration" : 21033
           },
           "flaky" : false,
           "newFailed" : false,

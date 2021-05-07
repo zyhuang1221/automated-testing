@@ -1,12 +1,12 @@
 {
-  "uid" : "da91be847f50e366",
+  "uid" : "48f48b8abcd553e",
   "name" : "testcase1",
   "fullName" : "WebUiTestCases.xd_test.Testdl#testcase1",
   "historyId" : "73bb2ae2aedffdc0e166f853e56b5e6a",
   "time" : {
-    "start" : 1620045081100,
-    "stop" : 1620045092814,
-    "duration" : 11714
+    "start" : 1620388361119,
+    "stop" : 1620388382152,
+    "duration" : 21033
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,50 +14,50 @@
   "beforeStages" : [ {
     "name" : "browser",
     "time" : {
-      "start" : 1620045074113,
-      "stop" : 1620045081099,
-      "duration" : 6986
+      "start" : 1620388347829,
+      "stop" : 1620388361104,
+      "duration" : 13275
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
-    "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "1eda686400b9f6",
+      "uid" : "4cfd79f7b2c5e8d8",
       "name" : "log",
-      "source" : "1eda686400b9f6.txt",
+      "source" : "4cfd79f7b2c5e8d8.txt",
       "type" : "text/plain",
-      "size" : 5076
+      "size" : 5075
     } ],
     "parameters" : [ ],
-    "stepsCount" : 0,
-    "hasContent" : true,
     "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
   },
   "afterStages" : [ {
     "name" : "browser::0",
     "time" : {
-      "start" : 1620045092815,
-      "stop" : 1620045092815,
+      "start" : 1620388382153,
+      "stop" : 1620388382153,
       "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 0,
-    "hasContent" : false,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
   } ],
   "labels" : [ {
     "name" : "parentSuite",
@@ -73,7 +73,7 @@
     "value" : "DESKTOP-2TMV0U4"
   }, {
     "name" : "thread",
-    "value" : "8188-MainThread"
+    "value" : "1352-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -97,6 +97,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "da91be847f50e366.json",
+  "source" : "48f48b8abcd553e.json",
   "parameterValues" : [ ]
 }
