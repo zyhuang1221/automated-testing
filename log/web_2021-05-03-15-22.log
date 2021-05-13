@@ -1,4 +1,0 @@
-[browser_init.py]: [INFO] [2021-05-03 15:22:32] line:43-->>开始等待页面元素<('link text', '登录')>是否可见！
-[browser_init.py]: [ERROR] [2021-05-03 15:22:35] line:48-->>等待页面元素<('link text', '登录')>10秒失败！
-[browser_init.py]: [INFO] [2021-05-03 15:22:42] line:43-->>开始等待页面元素<('link text', '注册')>是否可见！
-[browser_init.py]: [ERROR] [2021-05-03 15:22:52] line:48-->>等待页面元素<('link text', '注册')>10秒失败！

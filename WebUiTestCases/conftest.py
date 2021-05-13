@@ -5,7 +5,7 @@
 
 import pytest
 from libs.common.browser_init import browser_init, Browser
-from selenium import webdriver
+
 
 
 @pytest.fixture()  # 返回值

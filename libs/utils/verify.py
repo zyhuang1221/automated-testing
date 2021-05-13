@@ -109,10 +109,7 @@ import time
 # print(f'我是{a}')
 
 
+a = {'a': 123}
+b = {'a': 123}
 
-a=1000
-b=1000
-
-print(id(a),id(b))
-
-
+print(id(a), id(b))
