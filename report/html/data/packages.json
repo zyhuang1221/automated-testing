@@ -2,21 +2,21 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "WebUiTestCases.xd_test",
+    "name" : "WebUiTestCases.shop_test",
     "children" : [ {
       "name" : "testcase1",
-      "uid" : "48f48b8abcd553e",
-      "parentUid" : "66c5941b9815851ed1e4c695bcb3aa5f",
+      "uid" : "456d5f581d7e9ca4",
+      "parentUid" : "208701fb96450bb7dbd1f096637b3288",
       "status" : "passed",
       "time" : {
-        "start" : 1620388361119,
-        "stop" : 1620388382152,
-        "duration" : 21033
+        "start" : 1621010273055,
+        "stop" : 1621010296500,
+        "duration" : 23445
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     } ],
-    "uid" : "WebUiTestCases.xd_test"
+    "uid" : "WebUiTestCases.shop_test"
   } ]
 }

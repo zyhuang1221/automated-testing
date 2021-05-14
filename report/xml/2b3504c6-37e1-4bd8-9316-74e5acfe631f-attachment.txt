@@ -1,53 +1,53 @@
 INFO     root:browser_init.py:43 开始等待页面元素<('link text', '登录')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('link text', '登录')>可见，等待时间：0.021秒!
+INFO     root:browser_init.py:53 页面元素<('link text', '登录')>可见，等待时间：0.11秒!
 INFO     root:browser_init.py:73 点击<('link text', '登录')>
 INFO     root:browser_init.py:123 切换到最新打开的窗口
 INFO     root:browser_init.py:43 开始等待页面元素<('id', 'username')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('id', 'username')>可见，等待时间：2.309秒!
+INFO     root:browser_init.py:53 页面元素<('id', 'username')>可见，等待时间：1.447秒!
 INFO     root:browser_init.py:64 在<('id', 'username')>输入<mik2>
 INFO     root:browser_init.py:43 开始等待页面元素<('id', 'password')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('id', 'password')>可见，等待时间：0.025秒!
+INFO     root:browser_init.py:53 页面元素<('id', 'password')>可见，等待时间：0.02秒!
 INFO     root:browser_init.py:64 在<('id', 'password')>输入<password>
 INFO     root:browser_init.py:87 在<('class name', 'login_btn')>点击提交
 INFO     root:browser_init.py:43 开始等待页面元素<('link text', '进入商城购物')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('link text', '进入商城购物')>可见，等待时间：3.501秒!
+INFO     root:browser_init.py:53 页面元素<('link text', '进入商城购物')>可见，等待时间：4.2秒!
 INFO     root:browser_init.py:73 点击<('link text', '进入商城购物')>
 INFO     root:browser_init.py:43 开始等待页面元素<('name', 'keyword')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('name', 'keyword')>可见，等待时间：0.034秒!
+INFO     root:browser_init.py:53 页面元素<('name', 'keyword')>可见，等待时间：0.019秒!
 INFO     root:browser_init.py:64 在<('name', 'keyword')>输入<iphone>
 INFO     root:browser_init.py:43 开始等待页面元素<('class name', 'btn1')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('class name', 'btn1')>可见，等待时间：0.023秒!
+INFO     root:browser_init.py:53 页面元素<('class name', 'btn1')>可见，等待时间：0.015秒!
 INFO     root:browser_init.py:73 点击<('class name', 'btn1')>
 INFO     root:browser_init.py:43 开始等待页面元素<('xpath', '/html/body/div[3]/div[2]/div[3]/div/div[1]/a/img')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('xpath', '/html/body/div[3]/div[2]/div[3]/div/div[1]/a/img')>可见，等待时间：0.023秒!
+INFO     root:browser_init.py:53 页面元素<('xpath', '/html/body/div[3]/div[2]/div[3]/div/div[1]/a/img')>可见，等待时间：0.086秒!
 INFO     root:browser_init.py:73 点击<('xpath', '/html/body/div[3]/div[2]/div[3]/div/div[1]/a/img')>
 INFO     root:browser_init.py:123 切换到最新打开的窗口
 INFO     root:browser_init.py:43 开始等待页面元素<('id', 'joinCarButton')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('id', 'joinCarButton')>可见，等待时间：2.896秒!
+INFO     root:browser_init.py:53 页面元素<('id', 'joinCarButton')>可见，等待时间：2.983秒!
 INFO     root:browser_init.py:73 点击<('id', 'joinCarButton')>
 INFO     root:browser_init.py:43 开始等待页面元素<('class name', 'shopCar_T_span3')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('class name', 'shopCar_T_span3')>可见，等待时间：2.26秒!
+INFO     root:browser_init.py:53 页面元素<('class name', 'shopCar_T_span3')>可见，等待时间：2.163秒!
 INFO     root:browser_init.py:73 点击<('class name', 'shopCar_T_span3')>
 INFO     root:browser_init.py:43 开始等待页面元素<('class name', 'shopCar_btn_03')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('class name', 'shopCar_btn_03')>可见，等待时间：0.02秒!
+INFO     root:browser_init.py:53 页面元素<('class name', 'shopCar_btn_03')>可见，等待时间：0.043秒!
 INFO     root:browser_init.py:73 点击<('class name', 'shopCar_btn_03')>
 INFO     root:browser_init.py:43 开始等待页面元素<('class name', 'add-address')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('class name', 'add-address')>可见，等待时间：0.029秒!
+INFO     root:browser_init.py:53 页面元素<('class name', 'add-address')>可见，等待时间：0.015秒!
 INFO     root:browser_init.py:73 点击<('class name', 'add-address')>
 INFO     root:browser_init.py:43 开始等待页面元素<('name', 'address[address_name]')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('name', 'address[address_name]')>可见，等待时间：0.023秒!
+INFO     root:browser_init.py:53 页面元素<('name', 'address[address_name]')>可见，等待时间：0.022秒!
 INFO     root:browser_init.py:64 在<('name', 'address[address_name]')>输入<mik2>
 INFO     root:browser_init.py:43 开始等待页面元素<('name', 'address[mobile]')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('name', 'address[mobile]')>可见，等待时间：0.021秒!
+INFO     root:browser_init.py:53 页面元素<('name', 'address[mobile]')>可见，等待时间：0.026秒!
 INFO     root:browser_init.py:64 在<('name', 'address[mobile]')>输入<15823234567>
 INFO     root:browser_init.py:43 开始等待页面元素<('id', 'add-new-area-select')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('id', 'add-new-area-select')>可见，等待时间：0.022秒!
+INFO     root:browser_init.py:53 页面元素<('id', 'add-new-area-select')>可见，等待时间：0.015秒!
 INFO     root:browser_init.py:43 开始等待页面元素<('name', 'address[address]')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('name', 'address[address]')>可见，等待时间：0.02秒!
+INFO     root:browser_init.py:53 页面元素<('name', 'address[address]')>可见，等待时间：0.019秒!
 INFO     root:browser_init.py:64 在<('name', 'address[address]')>输入<湖北省武汉市>
 INFO     root:browser_init.py:43 开始等待页面元素<('name', 'address[zipcode]')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('name', 'address[zipcode]')>可见，等待时间：0.02秒!
+INFO     root:browser_init.py:53 页面元素<('name', 'address[zipcode]')>可见，等待时间：0.018秒!
 INFO     root:browser_init.py:64 在<('name', 'address[zipcode]')>输入<123456>
 INFO     root:browser_init.py:43 开始等待页面元素<('class name', 'aui_state_highlight')>是否可见！
-INFO     root:browser_init.py:53 页面元素<('class name', 'aui_state_highlight')>可见，等待时间：0.018秒!
+INFO     root:browser_init.py:53 页面元素<('class name', 'aui_state_highlight')>可见，等待时间：0.022秒!
 INFO     root:browser_init.py:73 点击<('class name', 'aui_state_highlight')>

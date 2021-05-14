@@ -1,12 +1,12 @@
 {
-  "uid" : "48f48b8abcd553e",
+  "uid" : "456d5f581d7e9ca4",
   "name" : "testcase1",
-  "fullName" : "WebUiTestCases.xd_test.Testdl#testcase1",
-  "historyId" : "73bb2ae2aedffdc0e166f853e56b5e6a",
+  "fullName" : "WebUiTestCases.shop_test.Testdl#testcase1",
+  "historyId" : "2daca2f427cbffa6c60658a96323b2ed",
   "time" : {
-    "start" : 1620388361119,
-    "stop" : 1620388382152,
-    "duration" : 21033
+    "start" : 1621010273055,
+    "stop" : 1621010296500,
+    "duration" : 23445
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,9 +14,9 @@
   "beforeStages" : [ {
     "name" : "browser",
     "time" : {
-      "start" : 1620388347829,
-      "stop" : 1620388361104,
-      "duration" : 13275
+      "start" : 1621010258566,
+      "stop" : 1621010273010,
+      "duration" : 14444
     },
     "status" : "passed",
     "steps" : [ ],
@@ -24,30 +24,30 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "stepsCount" : 0
   } ],
   "testStage" : {
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "4cfd79f7b2c5e8d8",
+      "uid" : "98d6fc900f1a0d76",
       "name" : "log",
-      "source" : "4cfd79f7b2c5e8d8.txt",
+      "source" : "98d6fc900f1a0d76.txt",
       "type" : "text/plain",
       "size" : 5075
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : true
+    "hasContent" : true,
+    "stepsCount" : 0
   },
   "afterStages" : [ {
     "name" : "browser::0",
     "time" : {
-      "start" : 1620388382153,
-      "stop" : 1620388382153,
+      "start" : 1621010296501,
+      "stop" : 1621010296501,
       "duration" : 0
     },
     "status" : "passed",
@@ -56,15 +56,15 @@
     "parameters" : [ ],
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "stepsCount" : 0,
-    "hasContent" : false
+    "hasContent" : false,
+    "stepsCount" : 0
   } ],
   "labels" : [ {
     "name" : "parentSuite",
     "value" : "WebUiTestCases"
   }, {
     "name" : "suite",
-    "value" : "xd_test"
+    "value" : "shop_test"
   }, {
     "name" : "subSuite",
     "value" : "Testdl"
@@ -73,7 +73,7 @@
     "value" : "DESKTOP-2TMV0U4"
   }, {
     "name" : "thread",
-    "value" : "1352-MainThread"
+    "value" : "608-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -82,7 +82,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "WebUiTestCases.xd_test"
+    "value" : "WebUiTestCases.shop_test"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -97,6 +97,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "48f48b8abcd553e.json",
+  "source" : "456d5f581d7e9ca4.json",
   "parameterValues" : [ ]
 }

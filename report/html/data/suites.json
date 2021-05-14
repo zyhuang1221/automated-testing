@@ -4,26 +4,26 @@
   "children" : [ {
     "name" : "WebUiTestCases",
     "children" : [ {
-      "name" : "xd_test",
+      "name" : "shop_test",
       "children" : [ {
         "name" : "Testdl",
         "children" : [ {
           "name" : "testcase1",
-          "uid" : "48f48b8abcd553e",
-          "parentUid" : "51c79ba9a251d55ea010ac9809e44275",
+          "uid" : "456d5f581d7e9ca4",
+          "parentUid" : "ab5c3faadad3cd59581227575b96a4e8",
           "status" : "passed",
           "time" : {
-            "start" : 1620388361119,
-            "stop" : 1620388382152,
-            "duration" : 21033
+            "start" : 1621010273055,
+            "stop" : 1621010296500,
+            "duration" : 23445
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         } ],
-        "uid" : "51c79ba9a251d55ea010ac9809e44275"
+        "uid" : "ab5c3faadad3cd59581227575b96a4e8"
       } ],
-      "uid" : "c52cda29c928ad02c2aad9a9418be2d3"
+      "uid" : "9ce1d50db14350781877ccbf9459e7c6"
     } ],
     "uid" : "24428915d321376371c423c4b4235727"
   } ]
