@@ -7,5 +7,5 @@ import pytest
 
 if __name__ == '__main__':
     pytest.main()
-    os.system('allure generate --clean ./report/xml -o ./report/html')  #--clean
+#    os.system('allure generate --clean ./report/xml -o ./report/html')  #--clean
 
