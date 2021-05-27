@@ -109,7 +109,24 @@ import time
 # print(f'我是{a}')
 
 
-a = {'a': 123}
-b = {'a': 123}
+# a = {'a': 123}
+# b = {'a': 123}
+#
+# print(id(a), id(b))
 
-print(id(a), id(b))
+import pytest
+
+from libs.utils.log_module import log
+class TestZc():
+    # def setup_class(self):
+    #     log.info(f'开始执行{self.__class__.__name__}测试')
+    #
+    # def teardown_class(self):
+    #     log.info(f'{self.__class__.__name__}测试完成')
+
+    def test(self):
+        print(f'开始执行{self.__class__.__name__}测试')
+
+
+a=TestZc()
+a.test()

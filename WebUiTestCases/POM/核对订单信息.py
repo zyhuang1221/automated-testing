@@ -21,14 +21,14 @@ class HeDui(Browser):
 
     def addnewdizhi(self, value):
         self.my_click(HeDui.添加新地址)
-        self.my_send_key(HeDui.收货人, value[0])
-        self.my_send_key(HeDui.手机号, value[1])
+        self.my_import_text(HeDui.收货人, value[0])
+        self.my_import_text(HeDui.手机号, value[1])
         sheng = self.wait_element_visible(HeDui.选择省)
         Select(sheng).select_by_visible_text(value[2])
         shi = self.find_elements(HeDui.选择市)[1]
         Select(shi).select_by_visible_text(value[3])
         qu = self.find_elements(HeDui.选择区)[2]
         Select(qu).select_by_visible_text(value[4])
-        self.my_send_key(HeDui.详细地址, value[5])
-        self.my_send_key(HeDui.邮政编码, value[6])
+        self.my_import_text(HeDui.详细地址, value[5])
+        self.my_import_text(HeDui.邮政编码, value[6])
         self.my_click(HeDui.确定)

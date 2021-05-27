@@ -4,10 +4,10 @@
 # @Author  : Mik
 import pytest
 from selenium import webdriver
-
+from libs.utils.log_module import log
 from WebUiTestCases.POM import 主页, 用户登录, 我的会员中心, 商城, 搜索商品结果, 加入购物车, \
     商品添加成功, 购物车信息, 核对订单信息
-
+from time import sleep
 # driver = webdriver.Chrome()
 # driver.get('http://127.0.0.1')
 
@@ -16,8 +16,16 @@ userinfo = ('mik2', '15823234567', '湖北省', '武汉市', '江夏区', '湖�
 
 
 class Testdl():
-    def testcase1(self, browser):
+    def setup_class(self):
+        log.info('开始执行Testdl测试')
+
+    def teardown_class(self):
+        log.info('Testdl测试完成')
+
+    def testcase1(self, browser,base_url):
+
         主页_page = 主页.HomePage(browser)
+        主页_page.get_url(base_url)
         allhd = 主页_page.get_all_handles()
         主页_page.denglu()
         主页_page.switch_window(name='new', all_handles=allhd)

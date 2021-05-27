@@ -1,9 +1,0 @@
-[browser_init.py]: [INFO] [2021-05-15 12:03:16] line:43-->>开始等待页面元素<('link text', '登录')>是否可见！
-[browser_init.py]: [INFO] [2021-05-15 12:03:16] line:53-->>页面元素<('link text', '登录')>可见，等待时间：0.024秒!
-[browser_init.py]: [INFO] [2021-05-15 12:03:16] line:73-->>点击<('link text', '登录')>
-[browser_init.py]: [INFO] [2021-05-15 12:03:16] line:123-->>切换到最新打开的窗口
-[browser_init.py]: [INFO] [2021-05-15 12:03:16] line:43-->>开始等待页面元素<('id', 'username')>是否可见！
-[browser_init.py]: [INFO] [2021-05-15 12:03:17] line:53-->>页面元素<('id', 'username')>可见，等待时间：1.038秒!
-[browser_init.py]: [INFO] [2021-05-15 12:03:17] line:64-->>在<('id', 'username')>输入<mik2>
-[browser_init.py]: [INFO] [2021-05-15 12:03:17] line:43-->>开始等待页面元素<('id', 'password')>是否可见！
-[browser_init.py]: [ERROR] [2021-05-15 12:03:17] line:48-->>等待页面元素<('id', 'password')>10秒失败！

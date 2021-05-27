@@ -17,9 +17,9 @@ class ZheCe(Browser):
 
     def zhuce(self,info):
 
-        self.my_send_key(ZheCe.用户名,info[0])
-        self.my_send_key(ZheCe.密码, info[1])
-        self.my_send_key(ZheCe.确认密码, info[1])
-        self.my_send_key(ZheCe.手机, info[2])
-        self.my_send_key(ZheCe.email, info[3])
+        self.my_import_text(ZheCe.用户名,info[0])
+        self.my_import_text(ZheCe.密码, info[1])
+        self.my_import_text(ZheCe.确认密码, info[1])
+        self.my_import_text(ZheCe.手机, info[2])
+        self.my_import_text(ZheCe.email, info[3])
         self.my_click(ZheCe.注册)

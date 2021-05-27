@@ -9,5 +9,6 @@ mail:
 
 browser:
   type: chrome   #ie/firefox/chrome
-  env: localhost #docker/headless
-  url: 'http://127.0.0.1/'
+  env: localhost #grid/localhost
+  gridUrl: http://localhost:4444/wd/hub #开启grid模式需要填写执行grid url
+

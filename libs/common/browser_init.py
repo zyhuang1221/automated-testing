@@ -5,6 +5,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
+from selenium.webdriver import Remote
 from libs.utils import rd_yaml
 from libs.utils.log_module import log
 import time
@@ -12,17 +13,44 @@ from libs.utils.base_path import base_path
 
 web_cfg_data = rd_yaml.read_yaml()['browser']
 
+
 def browser_init():
     if web_cfg_data['type'] == 'chrome':
-        driver = webdriver.Chrome()
+        if web_cfg_data['env'] == 'localhost':
+            driver = webdriver.Chrome()
+        elif web_cfg_data['env'] == 'grid':
+            driver = Remote(command_executor=web_cfg_data['gridUrl'],
+                            desired_capabilities={
+                                "browserName": "chrome",
+                            })
+        else:
+            raise NameError('env类型定义错误！')
+
     elif web_cfg_data['type'] == 'firefox':
-        driver = webdriver.Firefox()
+        if web_cfg_data['env'] == 'localhost':
+            driver = webdriver.Firefox()
+        elif web_cfg_data['env'] == 'grid':
+            driver = Remote(command_executor=web_cfg_data['gridUrl'],
+                            desired_capabilities={
+                                "browserName": "firefox",
+                            })
+        else:
+            raise NameError('env类型定义错误！')
     elif web_cfg_data['type'] == 'ie':
-        driver = webdriver.Ie()
+        if web_cfg_data['env'] == 'localhost':
+            driver = webdriver.Ie()
+        elif web_cfg_data['env'] == 'grid':
+            driver = Remote(command_executor=web_cfg_data['gridUrl'],
+                            desired_capabilities={
+                                "browserName": "internet explorer",
+                            })
+        else:
+            raise NameError('env类型定义错误！')
     else:
         raise NameError('driver驱动类型定义错误！')
-    driver.get(web_cfg_data['url'])
-    driver.implicitly_wait(10)
+    # driver.get(web_cfg_data['url'])
+    # driver.implicitly_wait(10)
+    log.info(f'在{web_cfg_data["env"]}使用{web_cfg_data["type"]}执行')
     driver.maximize_window()
     return driver
 
@@ -32,6 +60,17 @@ class Browser():
 
     def __init__(self, driver):
         self.driver = driver
+
+
+    def get_url(self,url):
+        """
+        发送url请求
+        :param url: 传入url
+        :return: None
+        """
+        self.driver.implicitly_wait(10)
+        self.driver.get(url)
+
 
     def wait_element_visible(self, loc, t=10):
         """每次操作之前自动显示等待,找到元素，并返回元素对象
@@ -53,7 +92,7 @@ class Browser():
             log.info('页面元素<{}>可见，等待时间：{}秒!'.format(loc, round(end_time - start_time, 3)))
             return ele
 
-    def my_send_key(self, loc, value):
+    def my_import_text(self, loc, value):
         """
         输入操作，传入元素定位表达式，元组类型。和输入内容
         :param loc:
@@ -72,7 +111,7 @@ class Browser():
         self.wait_element_visible(loc).click()
         log.info('点击<{0}>'.format(loc))
 
-    def my_submit(self,loc):
+    def my_submit(self, loc):
         """
         提交操作，传入元素定位表达式，元组类型
         :param loc:
@@ -135,4 +174,3 @@ class Browser():
         except:
             log.error("切换失败")
             raise
-

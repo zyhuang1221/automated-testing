@@ -1,0 +1,26 @@
+INFO     root:conftest.py:21 开始执行web自动化测试
+INFO     root:browser_init.py:53 在localhost使用chrome执行
+INFO     root:register_test.py:16 开始执行TestZc测试
+INFO     root:browser_init.py:82 开始等待页面元素<('link text', '注册')>是否可见！
+INFO     root:browser_init.py:92 页面元素<('link text', '注册')>可见，等待时间：0.023秒!
+INFO     root:browser_init.py:112 点击<('link text', '注册')>
+INFO     root:browser_init.py:162 切换到最新打开的窗口
+INFO     root:browser_init.py:82 开始等待页面元素<('name', 'username')>是否可见！
+INFO     root:browser_init.py:92 页面元素<('name', 'username')>可见，等待时间：1.036秒!
+INFO     root:browser_init.py:103 在<('name', 'username')>输入<mik5>
+INFO     root:browser_init.py:82 开始等待页面元素<('name', 'password')>是否可见！
+INFO     root:browser_init.py:92 页面元素<('name', 'password')>可见，等待时间：0.017秒!
+INFO     root:browser_init.py:103 在<('name', 'password')>输入<123456>
+INFO     root:browser_init.py:82 开始等待页面元素<('name', 'userpassword2')>是否可见！
+INFO     root:browser_init.py:92 页面元素<('name', 'userpassword2')>可见，等待时间：0.018秒!
+INFO     root:browser_init.py:103 在<('name', 'userpassword2')>输入<123456>
+INFO     root:browser_init.py:82 开始等待页面元素<('name', 'mobile_phone')>是否可见！
+INFO     root:browser_init.py:92 页面元素<('name', 'mobile_phone')>可见，等待时间：0.016秒!
+INFO     root:browser_init.py:103 在<('name', 'mobile_phone')>输入<15735755798>
+INFO     root:browser_init.py:82 开始等待页面元素<('name', 'email')>是否可见！
+INFO     root:browser_init.py:92 页面元素<('name', 'email')>可见，等待时间：0.017秒!
+INFO     root:browser_init.py:103 在<('name', 'email')>输入<123456791@qq.com>
+INFO     root:browser_init.py:82 开始等待页面元素<('class name', 'reg_btn')>是否可见！
+INFO     root:browser_init.py:92 页面元素<('class name', 'reg_btn')>可见，等待时间：0.018秒!
+INFO     root:browser_init.py:112 点击<('class name', 'reg_btn')>
+INFO     root:register_test.py:19 TestZc测试完成
