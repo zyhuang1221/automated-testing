@@ -28,8 +28,7 @@ Web自动化测试项目
 │  ├─xml                # 报告数据
 │  └─html		# allure报告
 ├─AppTestCases          # 待开发
-│
-├─WebUiTestCases
+├─WebUiTestCases        # web测试用例
 |  ├─POM                # 页面对象管理
 │  ├─conftest.py	# pytest依赖对象初始化
 │  └─*_test.py	        # 测试文件
