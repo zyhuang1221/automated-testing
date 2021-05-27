@@ -17,6 +17,7 @@ Web自动化测试项目
 4.  执行run.py
 
 #### 目录结构
+```shell
 ├─config
 │  └─config.yaml	# 配置文件
 ├─data
@@ -39,7 +40,7 @@ Web自动化测试项目
 ├─pytest.ini	   # pytest配置文件
 ├─requirements.txt		 # 项目依赖库文件
 └─run.py	# 主启动文件
-
+```
 
 
 #### 使用说明
