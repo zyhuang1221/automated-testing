@@ -18,28 +18,29 @@ Web自动化测试项目
 
 #### 目录结构
 ```shell
-├─config
-│  └─config.yaml	# 配置文件
-├─data
-│  └─test_data.xlsx	# 测试数据
-├─log
-│  └─run...x.log	# 日志文件
-├─report
-│  ├─xml                # 报告数据
-│  └─html		# allure报告
-├─AppTestCases          # 待开发
-|
-├─WebUiTestCases        # web测试用例
-|  ├─POM                # 页面对象管理
-│  ├─conftest.py	# pytest依赖对象初始化
-│  └─*_test.py	        # 测试文件
-├─libs		        # 工具包
-│  ├─__init__.py		# 常用方法封装
-│  ├─common	        # web公用方法
-│  └─utils	        # 常用工具
-├─pytest.ini	   # pytest配置文件
-├─requirements.txt		 # 项目依赖库文件
-└─run.py	# 主启动文件
+|-- 自动化测试 # 主目录
+    ├─config
+    │  └─config.yaml	# 配置文件
+    ├─data
+    │  └─test_data.xlsx	# 测试数据
+    ├─log
+    │  └─run...x.log	# 日志文件
+    ├─report
+    │  ├─xml                # 报告数据
+    │  └─html		# allure报告
+    ├─AppTestCases          # 待开发
+    |
+    ├─WebUiTestCases        # web测试用例
+    |  ├─POM                # 页面对象管理
+    │  ├─conftest.py	# pytest依赖对象初始化
+    │  └─*_test.py	        # 测试文件
+    ├─libs		        # 工具包
+    │  ├─__init__.py		# 常用方法封装
+    │  ├─common	        # web公用方法
+    │  └─utils	        # 常用工具
+    ├─pytest.ini	   # pytest配置文件
+    ├─requirements.txt		 # 项目依赖库文件
+    └─run.py	# 主启动文件
 ```
 
 
