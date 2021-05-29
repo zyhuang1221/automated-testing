@@ -174,3 +174,13 @@ class Browser():
         except:
             log.error("切换失败")
             raise
+
+    def my_get_text(self,loc):
+        """
+        获取文本内容
+        :param loc: 元素定位
+        :return: 文本内容
+        """
+        text=self.wait_element_visible(loc).text
+        log.info('元素<{}>的内容为<{}>'.format(loc,text))
+        return text

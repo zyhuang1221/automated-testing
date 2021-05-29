@@ -114,19 +114,27 @@ import time
 #
 # print(id(a), id(b))
 
-import pytest
+# import pytest
+#
+# from libs.utils.log_module import log
+# class TestZc():
+#     # def setup_class(self):
+#     #     log.info(f'开始执行{self.__class__.__name__}测试')
+#     #
+#     # def teardown_class(self):
+#     #     log.info(f'{self.__class__.__name__}测试完成')
+#
+#     def test(self):
+#         print(f'开始执行{self.__class__.__name__}测试')
+#
+#
+# a=TestZc()
+# a.test()
 
-from libs.utils.log_module import log
-class TestZc():
-    # def setup_class(self):
-    #     log.info(f'开始执行{self.__class__.__name__}测试')
-    #
-    # def teardown_class(self):
-    #     log.info(f'{self.__class__.__name__}测试完成')
+for line in range(5):
 
-    def test(self):
-        print(f'开始执行{self.__class__.__name__}测试')
+    for row in range(line+1):
 
+        print('*',end=' ')
 
-a=TestZc()
-a.test()
+    print()

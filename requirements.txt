@@ -3,4 +3,5 @@ PyYAML==5.4.1
 selenium==3.141.0
 zmail==0.2.8
 allure-pytest==2.8.17
-xlrd==1.2.0	
+xlrd==1.2.0
+openpyxl==3.0.7

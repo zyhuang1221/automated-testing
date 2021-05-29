@@ -50,4 +50,4 @@ class Testdl():
 
 
 if __name__ == '__main__':
-    pytest.main(['./shop_test.py'])
+    pytest.main(['./.py'])

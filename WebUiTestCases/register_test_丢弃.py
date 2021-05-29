@@ -29,4 +29,4 @@ class TestZc():
 
 
 if __name__ == '__main__':
-    pytest.main(['./register_test.py'])
+    pytest.main(['./.py'])
