@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/5/29 
 # @Author  : Mik
-import pytest
+#import pytest
 from WebUiTestCases.POM import XO商城主页, XO商城注册, XO商城登录成功页面
 from libs.utils.log_module import log
 from libs.utils import rw_xlsx
-from selenium import webdriver
+#from selenium import webdriver
 import pytest
 from time import sleep
 
@@ -28,7 +28,9 @@ class TestZc():
     @pytest.mark.parametrize('user,password', userinfo)
     def testcase1(self, browser, user, password):
         主页_page = XO商城主页.HomePage(browser)
+        print('调试开始')
         主页_page.get_url(base_url)
+        print('调试结束')
         主页_page.my_click(主页_page.注册)
         注册_page = XO商城注册.ZC(browser)
         注册_page.my_import_text(注册_page.用户名, user)
@@ -36,10 +38,12 @@ class TestZc():
         注册_page.my_click(注册_page.注册按钮)
         登录成功_page = XO商城登录成功页面.DLCG(browser)
         text = 登录成功_page.my_get_text(登录成功_page.欢迎)
-        try:
-            assert '欢迎来到' in text
-        except Exception as e:
-            raise e
+        if '欢迎来到' in text:
+            log.info('注册成功')
+            登录成功_page.my_click(登录成功_page.退出登录)
+
+        else:
+            raise AssertionError('注册失败')
         sleep(3)
 
 

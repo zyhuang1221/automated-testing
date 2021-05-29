@@ -8,3 +8,4 @@ from libs.common.browser_init import Browser
 
 class DLCG(Browser):
     欢迎 = (By.XPATH, '/html/body/div[2]/div/ul[1]/div/div/em[2]')
+    退出登录 = (By.XPATH,'/html/body/div[6]/div/div[1]/div[1]/a[2]')

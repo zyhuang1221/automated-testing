@@ -1,0 +1,34 @@
+[run.py]: [INFO] [2021-05-29 16:34:24] line:10-->>开始执行web自动化测试
+[browser_init.py]: [INFO] [2021-05-29 16:34:29] line:53-->>在localhost使用chrome执行
+[test_register.py]: [INFO] [2021-05-29 16:34:30] line:23-->>开始执行TestZc测试
+[browser_init.py]: [INFO] [2021-05-29 16:34:42] line:82-->>开始等待页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>是否可见！
+[browser_init.py]: [INFO] [2021-05-29 16:34:42] line:92-->>页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>可见，等待时间：0.026秒!
+[browser_init.py]: [INFO] [2021-05-29 16:34:43] line:112-->>点击<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>
+[browser_init.py]: [INFO] [2021-05-29 16:34:43] line:82-->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>是否可见！
+[browser_init.py]: [INFO] [2021-05-29 16:34:43] line:92-->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>可见，等待时间：0.024秒!
+[browser_init.py]: [INFO] [2021-05-29 16:34:43] line:103-->>在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>输入<mik_46>
+[browser_init.py]: [INFO] [2021-05-29 16:34:43] line:82-->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+[browser_init.py]: [INFO] [2021-05-29 16:34:43] line:92-->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.02秒!
+[browser_init.py]: [INFO] [2021-05-29 16:34:44] line:103-->>在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>输入<123456>
+[browser_init.py]: [INFO] [2021-05-29 16:34:44] line:82-->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[3]/button')>是否可见！
+[browser_init.py]: [INFO] [2021-05-29 16:34:44] line:92-->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[3]/button')>可见，等待时间：0.019秒!
+[browser_init.py]: [INFO] [2021-05-29 16:34:44] line:112-->>点击<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[3]/button')>
+[browser_init.py]: [INFO] [2021-05-29 16:34:44] line:82-->>开始等待页面元素<('xpath', '/html/body/div[2]/div/ul[1]/div/div/em[2]')>是否可见！
+[browser_init.py]: [ERROR] [2021-05-29 16:34:54] line:87-->>等待页面元素<('xpath', '/html/body/div[2]/div/ul[1]/div/div/em[2]')>10秒失败！
+[browser_init.py]: [INFO] [2021-05-29 16:34:55] line:82-->>开始等待页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>是否可见！
+[browser_init.py]: [INFO] [2021-05-29 16:34:55] line:92-->>页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>可见，等待时间：0.175秒!
+[browser_init.py]: [INFO] [2021-05-29 16:34:56] line:112-->>点击<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>
+[browser_init.py]: [INFO] [2021-05-29 16:34:56] line:82-->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>是否可见！
+[browser_init.py]: [INFO] [2021-05-29 16:34:56] line:92-->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>可见，等待时间：0.021秒!
+[browser_init.py]: [INFO] [2021-05-29 16:34:56] line:103-->>在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>输入<mik_47>
+[browser_init.py]: [INFO] [2021-05-29 16:34:56] line:82-->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+[browser_init.py]: [INFO] [2021-05-29 16:34:56] line:92-->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.02秒!
+[browser_init.py]: [INFO] [2021-05-29 16:34:56] line:103-->>在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>输入<123456>
+[browser_init.py]: [INFO] [2021-05-29 16:34:56] line:82-->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[3]/button')>是否可见！
+[browser_init.py]: [INFO] [2021-05-29 16:34:56] line:92-->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[3]/button')>可见，等待时间：0.017秒!
+[browser_init.py]: [INFO] [2021-05-29 16:34:56] line:112-->>点击<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[3]/button')>
+[browser_init.py]: [INFO] [2021-05-29 16:34:56] line:82-->>开始等待页面元素<('xpath', '/html/body/div[2]/div/ul[1]/div/div/em[2]')>是否可见！
+[browser_init.py]: [INFO] [2021-05-29 16:34:59] line:92-->>页面元素<('xpath', '/html/body/div[2]/div/ul[1]/div/div/em[2]')>可见，等待时间：2.333秒!
+[browser_init.py]: [INFO] [2021-05-29 16:34:59] line:185-->>元素<('xpath', '/html/body/div[2]/div/ul[1]/div/div/em[2]')>的内容为<mik_47，欢迎来到>
+[test_register.py]: [INFO] [2021-05-29 16:35:02] line:26-->>TestZc测试完成
+[run.py]: [INFO] [2021-05-29 16:35:02] line:12-->>web自动化测试结束
