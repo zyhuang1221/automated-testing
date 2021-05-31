@@ -184,3 +184,4 @@ class Browser():
         text=self.wait_element_visible(loc).text
         log.info('元素<{}>的内容为<{}>'.format(loc,text))
         return text
+

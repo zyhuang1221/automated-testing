@@ -5,3 +5,4 @@ zmail==0.2.8
 allure-pytest==2.8.17
 xlrd==1.2.0
 openpyxl==3.0.7
+Faker==8.4.0
