@@ -4,22 +4,35 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "AttributeError: 'NoneType' object has no attribute 'send_keys'",
+      "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
-        "name" : "testcase1",
-        "uid" : "cba31e31cb85c46d",
-        "parentUid" : "a05f48b24b52cc0787012b67ef4b7cc9",
+        "name" : "用户注册",
+        "uid" : "412e9b2c96d9047",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1621051396384,
-          "stop" : 1621051397787,
-          "duration" : 1403
+          "start" : 1622634220105,
+          "stop" : 1622634244192,
+          "duration" : 24087
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ ]
+        "parameters" : [ "'123456'", "'mik_73'" ]
+      }, {
+        "name" : "用户注册",
+        "uid" : "abc990c9159dc3f4",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1622634244263,
+          "stop" : 1622634256803,
+          "duration" : 12540
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'123456'", "'mik_74'" ]
       } ],
-      "uid" : "a05f48b24b52cc0787012b67ef4b7cc9"
+      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]

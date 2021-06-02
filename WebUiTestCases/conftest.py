@@ -5,7 +5,7 @@
 
 import pytest
 from libs.common.browser_init import browser_init
-from libs.utils.log_module import log
+from libs.utils.log_module import logger
 
 # url = 'http://123.56.183.84/'
 

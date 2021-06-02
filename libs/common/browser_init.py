@@ -7,9 +7,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 from selenium.webdriver import Remote
 from libs.utils import rd_yaml
-from libs.utils.log_module import log
+from libs.utils.log_module import logger
 import time
-from libs.utils.base_path import base_path
+from libs.utils.base_path import root_dir
 
 web_cfg_data = rd_yaml.read_yaml()['browser']
 
@@ -50,7 +50,7 @@ def browser_init():
         raise NameError('driver驱动类型定义错误！')
     # driver.get(web_cfg_data['url'])
     # driver.implicitly_wait(10)
-    log.info(f'在{web_cfg_data["env"]}使用{web_cfg_data["type"]}执行')
+    logger.info(f'在{web_cfg_data["env"]}使用{web_cfg_data["type"]}执行')
     driver.maximize_window()
     return driver
 
@@ -79,17 +79,17 @@ class Browser():
         :return element
         """
 
-        log.info('开始等待页面元素<{}>是否可见！'.format(loc))
+        logger.info('开始等待页面元素<{}>是否可见！'.format(loc))
         start_time = time.time()
         try:
             ele = WebDriverWait(self.driver, t).until(EC.visibility_of_element_located(loc))
         except Exception as e:
-            log.error('等待页面元素<{}>{}秒失败！'.format(loc, t))
+            logger.error('等待页面元素<{}>{}秒失败！'.format(loc, t))
             # self.driver.save_screenshot(base_path+r'\img_1\test.png')
-            # raise e
+            raise e
         else:
             end_time = time.time()
-            log.info('页面元素<{}>可见，等待时间：{}秒!'.format(loc, round(end_time - start_time, 3)))
+            logger.info('页面元素<{}>可见，等待时间：{}秒!'.format(loc, round(end_time - start_time, 3)))
             return ele
 
     def my_import_text(self, loc, value):
@@ -100,7 +100,7 @@ class Browser():
         :return:
         """
         self.wait_element_visible(loc).send_keys(value)
-        log.info('在<{}>输入<{}>'.format(loc, value))
+        logger.info('在<{}>输入<{}>'.format(loc, value))
 
     def my_click(self, loc):
         """
@@ -109,7 +109,7 @@ class Browser():
         :return: None
         """
         self.wait_element_visible(loc).click()
-        log.info('点击<{0}>'.format(loc))
+        logger.info('点击<{0}>'.format(loc))
 
     def my_submit(self, loc):
         """
@@ -121,9 +121,9 @@ class Browser():
             ele = WebDriverWait(self.driver, 10).until(lambda x: x.find_element(*loc))
             ele.submit()
         except Exception as e:
-            log.error('未能提交<>'.format(loc))
+            logger.error('未能提交<>'.format(loc))
         else:
-            log.info("在<{}>点击提交".format(loc))
+            logger.info("在<{}>点击提交".format(loc))
 
     def find_elements(self, loc):
         """
@@ -159,20 +159,20 @@ class Browser():
 
         try:
             if name == "new" and all_handles is not None:
-                log.info("切换到最新打开的窗口")
+                logger.info("切换到最新打开的窗口")
                 WebDriverWait(self.driver, timeout, ).until(EC.new_window_is_opened(all_handles))
                 window_handles = self.driver.window_handles  # 获取所有窗口句柄
                 self.driver.switch_to.window(window_handles[-1])
             elif name == "default":
-                log.info("切换到第一个窗口")
+                logger.info("切换到第一个窗口")
                 window_handles = self.driver.window_handles
                 self.driver.switch_to.window(window_handles[0])
                 # self.driver.switch_to_default_content()
             else:
-                log.info("切换到指定handles")
+                logger.info("切换到指定handles")
                 self.driver.switch_to.window(name)
         except:
-            log.error("切换失败")
+            logger.error("切换失败")
             raise
 
     def my_get_text(self,loc):
@@ -182,6 +182,6 @@ class Browser():
         :return: 文本内容
         """
         text=self.wait_element_visible(loc).text
-        log.info('元素<{}>的内容为<{}>'.format(loc,text))
+        logger.info('元素<{}>的内容为<{}>'.format(loc,text))
         return text
 

@@ -1,11 +1,21 @@
 [ {
-  "uid" : "cba31e31cb85c46d",
-  "name" : "testcase1",
+  "uid" : "412e9b2c96d9047",
+  "name" : "用户注册",
   "time" : {
-    "start" : 1621051396384,
-    "stop" : 1621051397787,
-    "duration" : 1403
+    "start" : 1622634220105,
+    "stop" : 1622634244192,
+    "duration" : 24087
   },
   "status" : "broken",
-  "severity" : "normal"
+  "severity" : "blocker"
+}, {
+  "uid" : "abc990c9159dc3f4",
+  "name" : "用户注册",
+  "time" : {
+    "start" : 1622634244263,
+    "stop" : 1622634256803,
+    "duration" : 12540
+  },
+  "status" : "broken",
+  "severity" : "blocker"
 } ]

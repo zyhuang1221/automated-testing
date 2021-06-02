@@ -7,7 +7,7 @@
 import logging
 import os
 import datetime
-from libs.utils.base_path import base_path
+from libs.utils.base_path import root_dir
 
 
 class Logger():
@@ -45,7 +45,7 @@ class Logger():
         :return: log
         """
         now_time = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M')
-        path_file = base_path + '/log/{}_{}.log'.format(file, now_time).replace(r'\/'.replace(os.sep, ''), os.sep)
+        path_file = root_dir + '/log/{}_{}.log'.format(file, now_time).replace(r'\/'.replace(os.sep, ''), os.sep)
         # path_file = file_dir.replace(r'libs\utils', r'log\{}_{}.log'.format(file, now_time))
         # path_file = file_dir.replace('libs', 'log').replace('utils', '{}_{}.log'.format(file, now_time))
         if handler == "all":
@@ -76,4 +76,4 @@ if __name__ == '__main__':
 
 l = Logger()
 # 调用get_log
-log = l.get_log(handler='file', file='web')
+logger = l.get_log(handler='file', file='web')

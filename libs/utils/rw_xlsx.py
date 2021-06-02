@@ -6,7 +6,7 @@
 
 import xlrd
 import openpyxl
-from libs.utils.base_path import base_path
+from libs.utils.base_path import root_dir
 
 
 class ReadExcel():
@@ -15,7 +15,7 @@ class ReadExcel():
         打开工作表
         :param index: 传入表号，默认为0
         """
-        data_address = base_path + r'\data\webdata.xlsx'
+        data_address = root_dir + r'\data\webdata.xlsx'
         workbook = xlrd.open_workbook(data_address)
         self.table = workbook.sheet_by_index(index)
         self.row_max1 = self.table.nrows
@@ -89,7 +89,7 @@ class WriteExcel():
         打开工作表
         :param sheet: 传入工作表名
         """
-        self.data_address = base_path + r'\data\webdata.xlsx'
+        self.data_address = root_dir + r'\data\webdata.xlsx'
         self.book = openpyxl.load_workbook(self.data_address)
         self.bs = self.book.get_sheet_by_name(sheet)
 

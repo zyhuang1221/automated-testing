@@ -131,10 +131,12 @@ import time
 # a=TestZc()
 # a.test()
 
-for line in range(5):
+# for line in range(5):
+#
+#     for row in range(line+1):
+#
+#         print('*',end=' ')
+#
+#     print()
 
-    for row in range(line+1):
-
-        print('*',end=' ')
-
-    print()
+assert '欢迎' in '1234_迎'

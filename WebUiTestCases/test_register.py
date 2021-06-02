@@ -3,7 +3,7 @@
 # @Time    : 2021/5/29 
 # @Author  : Mik
 from WebUiTestCases.POM import XO商城主页, XO商城注册, XO商城登录成功页面
-from libs.utils.log_module import log
+from libs.utils.log_module import logger
 from libs.utils import rw_xlsx
 import pytest
 from time import sleep
@@ -15,17 +15,18 @@ readInfo = rw_xlsx.ReadExcel()
 userinfo = readInfo.get_rows(1, readInfo.row_max1)
 base_url = 'http://123.56.183.84/'
 
-
+@allure.epic('web用户端UI测试')
+@allure.severity(allure.severity_level.BLOCKER)
+@allure.feature('用户注册模块')
 class TestZc():
 
     def setup_class(self):
-        log.info(f'开始执行{TestZc.__name__}测试')
+        logger.info(f'开始执行{TestZc.__name__}测试')
 
     def teardown_class(self):
-        log.info(f'{TestZc.__name__}测试完成')
+        logger.info(f'{TestZc.__name__}测试完成')
 
-    @allure.testcase(base_url)
-    @allure.feature('用户注册')
+    @allure.title('用户注册')
     @pytest.mark.parametrize('user,password', userinfo)
     def testcase1(self, browser, user, password):
         with allure.step('打开主页，点击注册'):
@@ -39,13 +40,18 @@ class TestZc():
             注册_page.my_click(注册_page.注册按钮)
         with allure.step('注册断言'):
             登录成功_page = XO商城登录成功页面.DLCG(browser)
-            text = 登录成功_page.my_get_text(登录成功_page.欢迎)
-            if '欢迎来到' in text:
-                log.info('注册成功')
-                登录成功_page.my_click(登录成功_page.退出登录)
+            try:
+                text = 登录成功_page.my_get_text(登录成功_page.欢迎)
+            # text='12121'
+            # assert '欢迎来到' in text
+                if '欢迎来到' in text:
+                    logger.info('注册成功')
+                    登录成功_page.my_click(登录成功_page.退出登录)
 
-            else:
-                raise AssertionError('注册失败')
+                else:
+                    raise AssertionError('注册失败')
+            except Exception as e:
+                raise e
         sleep(3)
 
 # zc=TestZc()

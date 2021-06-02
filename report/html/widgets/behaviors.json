@@ -1,4 +1,15 @@
 {
   "total" : 1,
-  "items" : [ ]
+  "items" : [ {
+    "uid" : "9c03b0b7e1c573eede1982a1566620fc",
+    "name" : "web用户端UI测试",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
 }

@@ -2,21 +2,34 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "WebUiTestCases.shop_test",
+    "name" : "WebUiTestCases.test_register",
     "children" : [ {
-      "name" : "testcase1",
-      "uid" : "cba31e31cb85c46d",
-      "parentUid" : "208701fb96450bb7dbd1f096637b3288",
+      "name" : "用户注册",
+      "uid" : "412e9b2c96d9047",
+      "parentUid" : "7f6259fd0a51db3c395c3ba87c93d9de",
       "status" : "broken",
       "time" : {
-        "start" : 1621051396384,
-        "stop" : 1621051397787,
-        "duration" : 1403
+        "start" : 1622634220105,
+        "stop" : 1622634244192,
+        "duration" : 24087
       },
       "flaky" : false,
       "newFailed" : false,
-      "parameters" : [ ]
+      "parameters" : [ "'123456'", "'mik_73'" ]
+    }, {
+      "name" : "用户注册",
+      "uid" : "abc990c9159dc3f4",
+      "parentUid" : "7f6259fd0a51db3c395c3ba87c93d9de",
+      "status" : "broken",
+      "time" : {
+        "start" : 1622634244263,
+        "stop" : 1622634256803,
+        "duration" : 12540
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'123456'", "'mik_74'" ]
     } ],
-    "uid" : "WebUiTestCases.shop_test"
+    "uid" : "WebUiTestCases.test_register"
   } ]
 }

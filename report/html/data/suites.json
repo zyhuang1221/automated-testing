@@ -4,26 +4,39 @@
   "children" : [ {
     "name" : "WebUiTestCases",
     "children" : [ {
-      "name" : "shop_test",
+      "name" : "test_register",
       "children" : [ {
-        "name" : "Testdl",
+        "name" : "TestZc",
         "children" : [ {
-          "name" : "testcase1",
-          "uid" : "cba31e31cb85c46d",
-          "parentUid" : "ab5c3faadad3cd59581227575b96a4e8",
+          "name" : "用户注册",
+          "uid" : "412e9b2c96d9047",
+          "parentUid" : "baacd0c0341b582ee366f1180ad3c48b",
           "status" : "broken",
           "time" : {
-            "start" : 1621051396384,
-            "stop" : 1621051397787,
-            "duration" : 1403
+            "start" : 1622634220105,
+            "stop" : 1622634244192,
+            "duration" : 24087
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ ]
+          "parameters" : [ "'123456'", "'mik_73'" ]
+        }, {
+          "name" : "用户注册",
+          "uid" : "abc990c9159dc3f4",
+          "parentUid" : "baacd0c0341b582ee366f1180ad3c48b",
+          "status" : "broken",
+          "time" : {
+            "start" : 1622634244263,
+            "stop" : 1622634256803,
+            "duration" : 12540
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'123456'", "'mik_74'" ]
         } ],
-        "uid" : "ab5c3faadad3cd59581227575b96a4e8"
+        "uid" : "baacd0c0341b582ee366f1180ad3c48b"
       } ],
-      "uid" : "9ce1d50db14350781877ccbf9459e7c6"
+      "uid" : "31c35f8d9653156d64b0ed503ef35e48"
     } ],
     "uid" : "24428915d321376371c423c4b4235727"
   } ]

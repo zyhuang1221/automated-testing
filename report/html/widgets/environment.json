@@ -1,1 +1,7 @@
-[ ]
+[ {
+  "values" : [ "Win10" ],
+  "name" : "system"
+}, {
+  "values" : [ "chrome" ],
+  "name" : "browser"
+} ]

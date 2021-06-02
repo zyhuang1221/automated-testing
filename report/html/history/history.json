@@ -1,5 +1,5 @@
 {
-  "2daca2f427cbffa6c60658a96323b2ed" : {
+  "61f3a3abc27e4c7daaacf87883151a9b" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 1,
@@ -9,13 +9,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "cba31e31cb85c46d",
+      "uid" : "412e9b2c96d9047",
       "status" : "broken",
-      "statusDetails" : "AttributeError: 'NoneType' object has no attribute 'send_keys'",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
       "time" : {
-        "start" : 1621051396384,
-        "stop" : 1621051397787,
-        "duration" : 1403
+        "start" : 1622634220105,
+        "stop" : 1622634244192,
+        "duration" : 24087
+      }
+    } ]
+  },
+  "db25b39f7786ace479f75148f989cc03" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "abc990c9159dc3f4",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "time" : {
+        "start" : 1622634244263,
+        "stop" : 1622634256803,
+        "duration" : 12540
       }
     } ]
   }
