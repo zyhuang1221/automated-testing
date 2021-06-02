@@ -1,39 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "selenium.common.exceptions.TimeoutException: Message:",
-      "children" : [ {
-        "name" : "用户注册",
-        "uid" : "412e9b2c96d9047",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1622634220105,
-          "stop" : 1622634244192,
-          "duration" : 24087
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'123456'", "'mik_73'" ]
-      }, {
-        "name" : "用户注册",
-        "uid" : "abc990c9159dc3f4",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1622634244263,
-          "stop" : 1622634256803,
-          "duration" : 12540
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'123456'", "'mik_74'" ]
-      } ],
-      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ]
+  "children" : [ ]
 }

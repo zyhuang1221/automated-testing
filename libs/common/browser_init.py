@@ -61,16 +61,14 @@ class Browser():
     def __init__(self, driver):
         self.driver = driver
 
-
-    def get_url(self,url):
+    def get_url(self, url):
         """
         发送url请求
         :param url: 传入url
         :return: None
         """
-        self.driver.implicitly_wait(10)
+        #self.driver.implicitly_wait(10)
         self.driver.get(url)
-
 
     def wait_element_visible(self, loc, t=10):
         """每次操作之前自动显示等待,找到元素，并返回元素对象
@@ -78,17 +76,16 @@ class Browser():
         :param t:等待超时时间上限，数字类型
         :return element
         """
-
         logger.info('开始等待页面元素<{}>是否可见！'.format(loc))
-        start_time = time.time()
         try:
+            start_time = time.time()
             ele = WebDriverWait(self.driver, t).until(EC.visibility_of_element_located(loc))
+            end_time = time.time()
         except Exception as e:
             logger.error('等待页面元素<{}>{}秒失败！'.format(loc, t))
             # self.driver.save_screenshot(base_path+r'\img_1\test.png')
             raise e
         else:
-            end_time = time.time()
             logger.info('页面元素<{}>可见，等待时间：{}秒!'.format(loc, round(end_time - start_time, 3)))
             return ele
 
@@ -99,8 +96,14 @@ class Browser():
         :param value: 输入内容
         :return:
         """
-        self.wait_element_visible(loc).send_keys(value)
+        ele = self.wait_element_visible(loc)
         logger.info('在<{}>输入<{}>'.format(loc, value))
+        try:
+            ele.clear()
+            ele.send_keys(value)
+        except Exception as e:
+            logger.error('输入操作失败')
+            raise e
 
     def my_click(self, loc):
         """
@@ -108,8 +111,13 @@ class Browser():
         :param loc:
         :return: None
         """
-        self.wait_element_visible(loc).click()
+        ele = self.wait_element_visible(loc)
         logger.info('点击<{0}>'.format(loc))
+        try:
+            ele.click()
+        except Exception as e:
+            logger.error(f'元素：<{loc}>点击失败')
+            raise e
 
     def my_submit(self, loc):
         """
@@ -117,40 +125,48 @@ class Browser():
         :param loc:
         :return:
         """
+        ele = self.wait_element_visible(loc)
+        logger.info('点击<{0}>提交'.format(loc))
         try:
-            ele = WebDriverWait(self.driver, 10).until(lambda x: x.find_element(*loc))
             ele.submit()
         except Exception as e:
-            logger.error('未能提交<>'.format(loc))
-        else:
-            logger.info("在<{}>点击提交".format(loc))
+            logger.error('点击提交<loc>失败'.format(loc))
+            raise e
 
     def find_elements(self, loc):
         """
-        获取元素出现的次数
+        获取元素组
         :param loc: 元素定位
         :return: 元素组
         """
+        logger.info('开始寻找页面元素<{}>'.format(loc))
         try:
             eles = WebDriverWait(self.driver, 10).until(lambda x: x.find_elements(*loc))
         except Exception as e:
+            logger.error('寻找页面元素失败<{}>'.format(loc))
             raise e
         else:
             return eles
 
-    def get_all_handles(self):
+    def get_current_handles(self):
         """
         获取当前所有句柄
         :return:
         """
-        all_handles = self.driver.window_handles
-        return all_handles
+        logger.info('获取当前句柄')
+        try:
+            all_handles = self.driver.window_handles
+        except Exception as e:
+            logger.error('获取当前失败')
+            raise e
+        else:
+            return all_handles
 
     # 窗口切换==如果是切换到新窗口，new，如果是回到默认窗口，default。切换前，在新窗口打开前获取handles
-    def switch_window(self, name, all_handles=None, timeout=10, model=None):
+    def switch_window(self, name, all_handles, timeout=10, model=None):
         '''
-        :param name: new代表最新打开的一个窗口。default代表第一个窗口。其他的值表示为窗口的handles
-        :param current_handles:传入的句柄为打开新窗口之前的句柄
+        :param name: new代表最新打开的一个窗口。default代表第一个窗口。其他的值表示为窗口的handles name
+        :param current_handles:传入的句柄为打开新窗口之前的所有句柄
         :param timeout:
         :param poll_frequency:
         :param model:
@@ -171,17 +187,44 @@ class Browser():
             else:
                 logger.info("切换到指定handles")
                 self.driver.switch_to.window(name)
-        except:
+        except Exception as e:
             logger.error("切换失败")
-            raise
+            raise e
 
-    def my_get_text(self,loc):
+    def my_get_text(self, loc):
         """
         获取文本内容
         :param loc: 元素定位
         :return: 文本内容
         """
-        text=self.wait_element_visible(loc).text
-        logger.info('元素<{}>的内容为<{}>'.format(loc,text))
-        return text
+        ele = self.wait_element_visible(loc)
+        logger.info('获取元素<{}>的内容'.format(loc))
+        try:
+            text = ele.text
+            logger.info('元素<{}>的内容为<{}>'.format(loc, text))
+        except Exception as e:
+            logger.error("获取内容失败")
+            raise e
+        else:
+            return text
 
+    def switch_alert(self):
+        """
+        正常获取到弹出窗的text内容就返回alert这个对象（注意这里不是返回Ture），没有获取到就返回False
+        :return:
+        """
+        try:
+            result = EC.alert_is_present()(self.driver)
+            if result:
+                msg = result.text
+                logger.info("alert出现，内容为：{0}".format(msg))
+                result.accept()
+                logger.info("alert已经关闭")
+                return msg
+            else:
+                logger.info("未弹出alert")
+
+        except:
+            logger.error("alert切换失败！")
+            #self.save_webImgs(model)
+            raise

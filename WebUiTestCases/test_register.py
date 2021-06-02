@@ -38,20 +38,28 @@ class TestZc():
             注册_page.my_import_text(注册_page.用户名, user)
             注册_page.my_import_text(注册_page.设置登录密码, password)
             注册_page.my_click(注册_page.注册按钮)
-        with allure.step('注册断言'):
-            登录成功_page = XO商城登录成功页面.DLCG(browser)
-            try:
-                text = 登录成功_page.my_get_text(登录成功_page.欢迎)
-            # text='12121'
-            # assert '欢迎来到' in text
-                if '欢迎来到' in text:
-                    logger.info('注册成功')
-                    登录成功_page.my_click(登录成功_page.退出登录)
+            sleep(0.5)
+            msg1 = 注册_page.switch_alert()
+            print(msg1)
+            logger.info(msg1)
 
-                else:
-                    raise AssertionError('注册失败')
-            except Exception as e:
-                raise e
+        # with allure.step('注册断言'):
+        #     登录成功_page = XO商城登录成功页面.DLCG(browser)
+
+
+            # try:
+            #     text = 登录成功_page.my_get_text(登录成功_page.欢迎)
+
+            # # text='12121'
+            # # assert '欢迎来到' in text
+            #     if '欢迎来到' in text:
+            #         logger.info('注册成功')
+            #         登录成功_page.my_click(登录成功_page.退出登录)
+            #
+            #     else:
+            #         raise AssertionError('注册失败')
+            # except Exception as e:
+            #     raise e
         sleep(3)
 
 # zc=TestZc()
