@@ -5,18 +5,20 @@
 
 import pytest
 from libs.common.browser_init import browser_init
-from libs.utils.log_module import logger
+
+
 
 # url = 'http://123.56.183.84/'
 
 
 # scope='session', autouse=True
-@pytest.fixture(scope='session')
+@pytest.fixture(scope='session',autouse=True)
 def browser():
     """
     初始化浏览器，打开配置文件里面的url，运行环境
     :return: 浏览器对象
     """
+
     global driver
     dirver = browser_init()  # 调用一个方法,浏览器初始化
     yield dirver

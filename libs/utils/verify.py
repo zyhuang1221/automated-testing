@@ -139,4 +139,8 @@ import time
 #
 #     print()
 
-assert '欢迎' in '1234_迎'
+# assert '欢迎' in '1234_迎'
+import os
+from libs.utils.base_path import root_dir
+dir = root_dir + r'\imgs\.'
+os.remove(dir)

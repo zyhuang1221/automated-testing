@@ -10,6 +10,8 @@ from libs.utils import rd_yaml
 from libs.utils.log_module import logger
 import time
 from libs.utils.base_path import root_dir
+import allure
+from time import sleep
 
 web_cfg_data = rd_yaml.read_yaml()['browser']
 
@@ -58,16 +60,20 @@ def browser_init():
 class Browser():
     """封装浏览器操作，传入实例化driver"""
 
-    def __init__(self, driver):
+    def __init__(self, driver, page):
+        """
+        :param driver: 浏览器对象
+        :param page: 页面功能名，用于失败截图命名
+        """
         self.driver = driver
-
+        self.page = page
     def get_url(self, url):
         """
         发送url请求
         :param url: 传入url
         :return: None
         """
-        #self.driver.implicitly_wait(10)
+        # self.driver.implicitly_wait(10)
         self.driver.get(url)
 
     def wait_element_visible(self, loc, t=10):
@@ -84,6 +90,7 @@ class Browser():
         except Exception as e:
             logger.error('等待页面元素<{}>{}秒失败！'.format(loc, t))
             # self.driver.save_screenshot(base_path+r'\img_1\test.png')
+            self.save_webImgs()
             raise e
         else:
             logger.info('页面元素<{}>可见，等待时间：{}秒!'.format(loc, round(end_time - start_time, 3)))
@@ -103,6 +110,7 @@ class Browser():
             ele.send_keys(value)
         except Exception as e:
             logger.error('输入操作失败')
+            self.save_webImgs()
             raise e
 
     def my_click(self, loc):
@@ -117,6 +125,7 @@ class Browser():
             ele.click()
         except Exception as e:
             logger.error(f'元素：<{loc}>点击失败')
+            self.save_webImgs()
             raise e
 
     def my_submit(self, loc):
@@ -131,6 +140,7 @@ class Browser():
             ele.submit()
         except Exception as e:
             logger.error('点击提交<loc>失败'.format(loc))
+            self.save_webImgs()
             raise e
 
     def find_elements(self, loc):
@@ -144,6 +154,7 @@ class Browser():
             eles = WebDriverWait(self.driver, 10).until(lambda x: x.find_elements(*loc))
         except Exception as e:
             logger.error('寻找页面元素失败<{}>'.format(loc))
+            self.save_webImgs()
             raise e
         else:
             return eles
@@ -158,6 +169,7 @@ class Browser():
             all_handles = self.driver.window_handles
         except Exception as e:
             logger.error('获取当前失败')
+            self.save_webImgs()
             raise e
         else:
             return all_handles
@@ -189,6 +201,7 @@ class Browser():
                 self.driver.switch_to.window(name)
         except Exception as e:
             logger.error("切换失败")
+            self.save_webImgs()
             raise e
 
     def my_get_text(self, loc):
@@ -204,6 +217,7 @@ class Browser():
             logger.info('元素<{}>的内容为<{}>'.format(loc, text))
         except Exception as e:
             logger.error("获取内容失败")
+            self.save_webImgs()
             raise e
         else:
             return text
@@ -226,5 +240,21 @@ class Browser():
 
         except:
             logger.error("alert切换失败！")
-            #self.save_webImgs(model)
+            self.save_webImgs()
+            # self.save_webImgs(model)
             raise
+
+    def save_webImgs(self):
+        """
+        失败截图
+        :return: None
+        """
+        # filepath=制定的图片保存目录/model(页面功能名称)_当前时间到秒.png
+        filepath = root_dir + r'\imgs\{0}_{1}.png'.format(self.page, time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime()))
+        try:
+            self.driver.save_screenshot(filepath)
+            logger.info("截屏成功,图片路径为{}".format(filepath))
+            sleep(0.5)
+            allure.attach.file(filepath, self.page, allure.attachment_type.PNG)
+        except:
+            logger.error("截屏失败")
