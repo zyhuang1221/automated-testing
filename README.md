@@ -25,7 +25,9 @@
     ├─data
     │  └─test_data.xlsx	# 测试数据
     ├─log
-    │  └─run...x.log	# 日志文件
+    │  └─...x.log	# 日志文件
+    ├─imgs
+    │  └─...x.png	# 测试失败截图文件
     ├─report
     │  ├─xml                # 报告数据
     │  └─html		# allure报告
