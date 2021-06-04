@@ -1,8 +1,8 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "9c03b0b7e1c573eede1982a1566620fc",
-    "name" : "web用户端UI测试",
+    "uid" : "dac304bf6374f5b39075817a80d86c0c",
+    "name" : "WebUI测试",
     "statistic" : {
       "failed" : 0,
       "broken" : 1,

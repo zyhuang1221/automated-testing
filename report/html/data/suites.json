@@ -9,26 +9,26 @@
         "name" : "TestZc",
         "children" : [ {
           "name" : "用户注册",
-          "uid" : "38567cdf7f3131ca",
+          "uid" : "9a4864ac77b47a7b",
           "parentUid" : "baacd0c0341b582ee366f1180ad3c48b",
           "status" : "broken",
           "time" : {
-            "start" : 1622686148802,
-            "stop" : 1622686173869,
-            "duration" : 25067
+            "start" : 1622791335187,
+            "stop" : 1622791364983,
+            "duration" : 29796
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "'123456'", "'mik_73'" ]
         }, {
           "name" : "用户注册",
-          "uid" : "1b67e4978fee78e9",
+          "uid" : "a79cb25169a2c9a4",
           "parentUid" : "baacd0c0341b582ee366f1180ad3c48b",
           "status" : "broken",
           "time" : {
-            "start" : 1622686173947,
-            "stop" : 1622686186982,
-            "duration" : 13035
+            "start" : 1622791365045,
+            "stop" : 1622791378299,
+            "duration" : 13254
           },
           "flaky" : false,
           "newFailed" : false,

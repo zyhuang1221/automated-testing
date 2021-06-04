@@ -4,6 +4,7 @@
 # @Author  : Mik
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver import ActionChains as AC
 from selenium import webdriver
 from selenium.webdriver import Remote
 from libs.utils import rd_yaml
@@ -67,13 +68,14 @@ class Browser():
         """
         self.driver = driver
         self.page = page
-    def get_url(self, url):
+
+    def my_get_url(self, url):
         """
         发送url请求
         :param url: 传入url
         :return: None
         """
-        # self.driver.implicitly_wait(10)
+        self.driver.implicitly_wait(5)
         self.driver.get(url)
 
     def wait_element_visible(self, loc, t=10):
@@ -90,7 +92,7 @@ class Browser():
         except Exception as e:
             logger.error('等待页面元素<{}>{}秒失败！'.format(loc, t))
             # self.driver.save_screenshot(base_path+r'\img_1\test.png')
-            self.save_webImgs()
+            self.my_save_webImgs()
             raise e
         else:
             logger.info('页面元素<{}>可见，等待时间：{}秒!'.format(loc, round(end_time - start_time, 3)))
@@ -110,7 +112,7 @@ class Browser():
             ele.send_keys(value)
         except Exception as e:
             logger.error('输入操作失败')
-            self.save_webImgs()
+            self.my_save_webImgs()
             raise e
 
     def my_click(self, loc):
@@ -125,12 +127,13 @@ class Browser():
             ele.click()
         except Exception as e:
             logger.error(f'元素：<{loc}>点击失败')
-            self.save_webImgs()
+            self.my_save_webImgs()
             raise e
 
     def my_submit(self, loc):
         """
-        提交操作，传入元素定位表达式，元组类型
+        提交form表单操作，传入元素定位表达式，元组类型。元素定位在form表单中任意元素即可
+        记住只能在form表单中使用，一般在submit难定位时使用
         :param loc:
         :return:
         """
@@ -140,10 +143,10 @@ class Browser():
             ele.submit()
         except Exception as e:
             logger.error('点击提交<loc>失败'.format(loc))
-            self.save_webImgs()
+            self.my_save_webImgs()
             raise e
 
-    def find_elements(self, loc):
+    def my_find_elements(self, loc):
         """
         获取元素组
         :param loc: 元素定位
@@ -154,12 +157,12 @@ class Browser():
             eles = WebDriverWait(self.driver, 10).until(lambda x: x.find_elements(*loc))
         except Exception as e:
             logger.error('寻找页面元素失败<{}>'.format(loc))
-            self.save_webImgs()
+            self.my_save_webImgs()
             raise e
         else:
             return eles
 
-    def get_current_handles(self):
+    def my_get_current_handles(self):
         """
         获取当前所有句柄
         :return:
@@ -169,26 +172,24 @@ class Browser():
             all_handles = self.driver.window_handles
         except Exception as e:
             logger.error('获取当前失败')
-            self.save_webImgs()
+            self.my_save_webImgs()
             raise e
         else:
             return all_handles
 
     # 窗口切换==如果是切换到新窗口，new，如果是回到默认窗口，default。切换前，在新窗口打开前获取handles
-    def switch_window(self, name, all_handles, timeout=10, model=None):
+    def my_switch_window(self, name, old_handles, timeout=10):
         '''
         :param name: new代表最新打开的一个窗口。default代表第一个窗口。其他的值表示为窗口的handles name
-        :param current_handles:传入的句柄为打开新窗口之前的所有句柄
+        :param old_handles:传入的句柄为打开新窗口之前的所有句柄
         :param timeout:
-        :param poll_frequency:
-        :param model:
         :return:
         '''
 
         try:
-            if name == "new" and all_handles is not None:
+            if name == "new" and old_handles is not None:
                 logger.info("切换到最新打开的窗口")
-                WebDriverWait(self.driver, timeout, ).until(EC.new_window_is_opened(all_handles))
+                WebDriverWait(self.driver, timeout, ).until(EC.new_window_is_opened(old_handles))
                 window_handles = self.driver.window_handles  # 获取所有窗口句柄
                 self.driver.switch_to.window(window_handles[-1])
             elif name == "default":
@@ -201,7 +202,7 @@ class Browser():
                 self.driver.switch_to.window(name)
         except Exception as e:
             logger.error("切换失败")
-            self.save_webImgs()
+            self.my_save_webImgs()
             raise e
 
     def my_get_text(self, loc):
@@ -217,18 +218,20 @@ class Browser():
             logger.info('元素<{}>的内容为<{}>'.format(loc, text))
         except Exception as e:
             logger.error("获取内容失败")
-            self.save_webImgs()
+            self.my_save_webImgs()
             raise e
         else:
             return text
 
-    def switch_alert(self):
+    def my_switch_alert(self):
         """
         正常获取到弹出窗的text内容就返回alert这个对象（注意这里不是返回Ture），没有获取到就返回False
-        :return:
+        :return: None
         """
         try:
-            result = EC.alert_is_present()(self.driver)
+            # result = EC.alert_is_present()(self.driver)
+            WebDriverWait(self.driver, timeout=10).until(EC.alert_is_present())
+            result = self.driver.switch_to.alert
             if result:
                 msg = result.text
                 logger.info("alert出现，内容为：{0}".format(msg))
@@ -240,21 +243,60 @@ class Browser():
 
         except:
             logger.error("alert切换失败！")
-            self.save_webImgs()
-            # self.save_webImgs(model)
+            self.my_save_webImgs()
             raise
 
-    def save_webImgs(self):
+    def my_save_webImgs(self):
         """
         失败截图
         :return: None
         """
-        # filepath=制定的图片保存目录/model(页面功能名称)_当前时间到秒.png
-        filepath = root_dir + r'\imgs\{0}_{1}.png'.format(self.page, time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime()))
+        # filepath=制定的图片保存目录/(页面功能名称)_当前时间到秒.png
+        filepath = root_dir + r'\imgs\{0}_{1}.png'.format(self.page,
+                                                          time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime()))
         try:
             self.driver.save_screenshot(filepath)
             logger.info("截屏成功,图片路径为{}".format(filepath))
-            sleep(0.5)
+            sleep(1)
             allure.attach.file(filepath, self.page, allure.attachment_type.PNG)
         except:
             logger.error("截屏失败")
+
+    def my_switch_iframe(self, loc):
+        """
+        等待iframe存在
+        :param loc: 元素定位
+        :return:
+        """
+        logger.info("iframe切换操作：")
+        try:
+            WebDriverWait(self.driver, timeout=10).until(
+                EC.frame_to_be_available_and_switch_to_it(loc))
+            time.sleep(0.5)
+            logger.info("切换成功")
+        except:
+            logger.error("iframe切换失败！")
+            self.my_save_webImgs()
+            raise
+
+    def my_window_cloce(self):
+        """
+        关闭当前窗口
+        :return:
+        """
+        self.driver.close()
+
+    def my_double_click(self, loc):
+        """
+        鼠标双击
+        :param loc: 元素定位，元组类型
+        :return:
+        """
+        ele = self.wait_element_visible(loc)
+        try:
+            AC(self.driver).double_click(ele).perform()
+            logger.info("{0}:元素：鼠标双击成功".format(loc))
+        except:
+            logger.error("鼠标双击操作失败。")
+            self.my_save_webImgs()
+            raise

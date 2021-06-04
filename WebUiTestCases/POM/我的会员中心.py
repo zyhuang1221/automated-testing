@@ -9,3 +9,4 @@ from libs.common.browser_init import Browser
 
 class GerenZhongxin(Browser):
     进入商城购物 = (By.LINK_TEXT, '进入商城购物')
+    账号设置 = (By.LINK_TEXT,'账号设置')

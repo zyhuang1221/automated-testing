@@ -140,7 +140,16 @@ import time
 #     print()
 
 # assert '欢迎' in '1234_迎'
-import os
-from libs.utils.base_path import root_dir
-dir = root_dir + r'\imgs\.'
-os.remove(dir)
+# import os
+# from libs.utils.base_path import root_dir
+# dir = root_dir + r'\imgs\.'
+# os.remove(dir)
+
+try:
+    assert 1==2
+
+except Exception as e:
+    raise e
+
+#
+# assert 1==2

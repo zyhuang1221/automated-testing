@@ -1,0 +1,15 @@
+INFO     root:browser_init.py:87 开始等待页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>是否可见！
+INFO     root:browser_init.py:98 页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>可见，等待时间：0.141秒!
+INFO     root:browser_init.py:125 点击<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>
+INFO     root:browser_init.py:87 开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>是否可见！
+INFO     root:browser_init.py:98 页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>可见，等待时间：0.03秒!
+INFO     root:browser_init.py:109 在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>输入<mik_74>
+INFO     root:browser_init.py:87 开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+INFO     root:browser_init.py:98 页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.019秒!
+INFO     root:browser_init.py:109 在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>输入<123456>
+INFO     root:browser_init.py:87 开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+INFO     root:browser_init.py:98 页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.011秒!
+INFO     root:browser_init.py:141 点击<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>提交
+ERROR    root:browser_init.py:245 alert切换失败！
+INFO     root:browser_init.py:259 截屏成功,图片路径为E:\My_code\AutoTest\imgs\XO商城注册_2021-06-04-15-22-56.png
+INFO     root:test_register.py:27 TestZc测试完成
