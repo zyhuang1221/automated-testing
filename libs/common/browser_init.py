@@ -61,13 +61,12 @@ def browser_init():
 class Browser():
     """封装浏览器操作，传入实例化driver"""
 
-    def __init__(self, driver, page):
+    def __init__(self, driver):
         """
         :param driver: 浏览器对象
         :param page: 页面功能名，用于失败截图命名
         """
         self.driver = driver
-        self.page = page
 
     def my_get_url(self, url):
         """
@@ -252,13 +251,13 @@ class Browser():
         :return: None
         """
         # filepath=制定的图片保存目录/(页面功能名称)_当前时间到秒.png
-        filepath = root_dir + r'\imgs\{0}_{1}.png'.format(self.page,
-                                                          time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime()))
+        name1 = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
+        filepath = root_dir + r'\imgs\{}.png'.format(name1)
         try:
             self.driver.save_screenshot(filepath)
             logger.info("截屏成功,图片路径为{}".format(filepath))
             sleep(1)
-            allure.attach.file(filepath, self.page, allure.attachment_type.PNG)
+            allure.attach.file(filepath, name1, allure.attachment_type.PNG)
         except:
             logger.error("截屏失败")
 

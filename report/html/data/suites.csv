@@ -1,3 +1,3 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Fri Jun 04 15:22:45 CST 2021","Fri Jun 04 15:22:58 CST 2021","13254","WebUiTestCases","test_register","TestZc","","","用户注册",""
-"broken","Fri Jun 04 15:22:15 CST 2021","Fri Jun 04 15:22:44 CST 2021","29796","WebUiTestCases","test_register","TestZc","","","用户注册",""
+"broken","Sat Jun 05 16:36:05 CST 2021","Sat Jun 05 16:36:18 CST 2021","13134","WebUiTestCases","test_register","TestZc","","","用户注册",""
+"broken","Sat Jun 05 16:35:39 CST 2021","Sat Jun 05 16:36:04 CST 2021","25117","WebUiTestCases","test_register","TestZc","","","用户注册",""

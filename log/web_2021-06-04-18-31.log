@@ -1,0 +1,5 @@
+[run.py]: [INFO] [2021-06-04 18:31:23] line:17-->>开始执行web自动化测试
+[browser_init.py]: [INFO] [2021-06-04 18:31:29] line:56-->>在localhost使用chrome执行
+[test_register.py]: [INFO] [2021-06-04 18:31:30] line:24-->>开始执行TestZc测试
+[test_register.py]: [INFO] [2021-06-04 18:31:30] line:27-->>TestZc测试完成
+[run.py]: [INFO] [2021-06-04 18:31:30] line:19-->>web自动化测试结束
