@@ -4,35 +4,87 @@
   "children" : [ {
     "name" : "DESKTOP-2TMV0U4",
     "children" : [ {
-      "name" : "6248-MainThread",
+      "name" : "6224-MainThread",
       "children" : [ {
         "name" : "用户注册",
-        "uid" : "1cce06ba9ecedfc5",
-        "parentUid" : "4517adbee80ce1b490699ebff35dd7dd",
+        "uid" : "7cb964da6d2ba53a",
+        "parentUid" : "8afdaa34885853594a981815c723923f",
         "status" : "broken",
         "time" : {
-          "start" : 1622882139833,
-          "stop" : 1622882164950,
-          "duration" : 25117
+          "start" : 1622886460179,
+          "stop" : 1622886474725,
+          "duration" : 14546
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'123456'", "'mik_73'" ]
       }, {
         "name" : "用户注册",
-        "uid" : "9f124db304f3e278",
-        "parentUid" : "4517adbee80ce1b490699ebff35dd7dd",
+        "uid" : "d9595729ad596bb2",
+        "parentUid" : "8afdaa34885853594a981815c723923f",
         "status" : "broken",
         "time" : {
-          "start" : 1622882165013,
-          "stop" : 1622882178147,
-          "duration" : 13134
+          "start" : 1622886474756,
+          "stop" : 1622886489935,
+          "duration" : 15179
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'123456'", "'mik_74'" ]
+      }, {
+        "name" : "用户注册",
+        "uid" : "7c1c5f529fcacfe5",
+        "parentUid" : "8afdaa34885853594a981815c723923f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1622886417978,
+          "stop" : 1622886443752,
+          "duration" : 25774
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'123456'", "'mik_73'" ]
+      }, {
+        "name" : "用户注册",
+        "uid" : "e901bd1b2a511585",
+        "parentUid" : "8afdaa34885853594a981815c723923f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1622886444833,
+          "stop" : 1622886459155,
+          "duration" : 14322
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'123456'", "'mik_73'" ]
+      }, {
+        "name" : "用户注册",
+        "uid" : "9a788a983c4f3574",
+        "parentUid" : "8afdaa34885853594a981815c723923f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1622886535896,
+          "stop" : 1622886561600,
+          "duration" : 25704
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'123456'", "'mik_74'" ]
+      }, {
+        "name" : "用户注册",
+        "uid" : "d78a17cb2481a506",
+        "parentUid" : "8afdaa34885853594a981815c723923f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1622886500065,
+          "stop" : 1622886525951,
+          "duration" : 25886
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'123456'", "'mik_74'" ]
       } ],
-      "uid" : "4517adbee80ce1b490699ebff35dd7dd"
+      "uid" : "8afdaa34885853594a981815c723923f"
     } ],
     "uid" : "d526c1b0f5b053c01f9cbe4f60feab4e"
   } ]

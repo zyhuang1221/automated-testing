@@ -7,26 +7,26 @@
       "name" : "用户注册模块",
       "children" : [ {
         "name" : "用户注册",
-        "uid" : "1cce06ba9ecedfc5",
+        "uid" : "7cb964da6d2ba53a",
         "parentUid" : "b7399230d3d40385d79d2d4b5c7bed05",
         "status" : "broken",
         "time" : {
-          "start" : 1622882139833,
-          "stop" : 1622882164950,
-          "duration" : 25117
+          "start" : 1622886460179,
+          "stop" : 1622886474725,
+          "duration" : 14546
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'123456'", "'mik_73'" ]
       }, {
         "name" : "用户注册",
-        "uid" : "9f124db304f3e278",
+        "uid" : "9a788a983c4f3574",
         "parentUid" : "b7399230d3d40385d79d2d4b5c7bed05",
         "status" : "broken",
         "time" : {
-          "start" : 1622882165013,
-          "stop" : 1622882178147,
-          "duration" : 13134
+          "start" : 1622886535896,
+          "stop" : 1622886561600,
+          "duration" : 25704
         },
         "flaky" : false,
         "newFailed" : false,
