@@ -96,7 +96,7 @@ class WriteExcel():
     def write_call(self, cellx, val):
         """
         按单元格写入数据
-        :param cellx: 传入单元格地址，列入A1
+        :param cellx: 传入单元格地址，例如：A1
         :param val: 传入写入值
         :return: None
         """

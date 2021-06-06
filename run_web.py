@@ -10,16 +10,26 @@ from shutil import copyfile
 from libs.utils.clear_file import clearFile
 import globalvar as gl
 
+def start():
+    pass
+
+def end():
+    pass
+
+
+
+
 if __name__ == '__main__':
     gl._init()
-    gl.set_val('file', 'web')
+    gl.set_val('name', 'web')
     imgdir = root_dir + r'\imgs'
     logdir = root_dir + r'\log'
     clearFile(imgdir)
     # clearFile(logdir)
-    # logger.info('开始执行web自动化测试')
+    from libs.utils.log_module import logger
+    logger.info('开始执行web自动化测试')
     pytest.main()
-    # logger.info('web自动化测试结束')
+    logger.info('web自动化测试结束')
     source = root_dir + r'\report\environment.properties'
     target = root_dir + r'\report\xml\environment.properties'
     copyfile(source, target)

@@ -1,20 +1,20 @@
 [ {
-  "uid" : "469599550eb396d8",
+  "uid" : "57054e19658452da",
   "name" : "用户注册",
   "time" : {
-    "start" : 1622974706904,
-    "stop" : 1622974732669,
-    "duration" : 25765
+    "start" : 1622992979815,
+    "stop" : 1622992993447,
+    "duration" : 13632
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "e14ec92b54d8c544",
+  "uid" : "c7bc2ee1c7f758ed",
   "name" : "用户注册",
   "time" : {
-    "start" : 1622974732747,
-    "stop" : 1622974747080,
-    "duration" : 14333
+    "start" : 1622992949087,
+    "stop" : 1622992979730,
+    "duration" : 30643
   },
   "status" : "broken",
   "severity" : "normal"

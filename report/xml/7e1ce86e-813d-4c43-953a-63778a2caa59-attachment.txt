@@ -1,0 +1,17 @@
+INFO     root:browser_init.py:85 开始等待页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>是否可见！
+INFO     root:browser_init.py:96 页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>可见，等待时间：0.024秒!
+INFO     root:browser_init.py:123 点击<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>
+INFO     root:browser_init.py:85 开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>是否可见！
+INFO     root:browser_init.py:96 页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>可见，等待时间：0.022秒!
+INFO     root:browser_init.py:107 在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>输入<mik_74>
+INFO     root:browser_init.py:85 开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+INFO     root:browser_init.py:96 页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.018秒!
+INFO     root:browser_init.py:107 在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>输入<123456>
+INFO     root:browser_init.py:85 开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+INFO     root:browser_init.py:96 页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.013秒!
+INFO     root:browser_init.py:139 点击<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>提交
+INFO     root:browser_init.py:85 开始等待页面元素<('xpath', '/html/body/div[2]/div/ul[1]/div/div/em[2]')>是否可见！
+ERROR    root:browser_init.py:91 等待页面元素<('xpath', '/html/body/div[2]/div/ul[1]/div/div/em[2]')>10秒失败！
+INFO     root:browser_init.py:257 截屏成功,图片路径为E:\My_code\AutoTest\imgs\2021-06-06-23-23-12.png
+INFO     root:test_register.py:27 TestZc测试完成
+INFO     root:conftest.py:24 关闭浏览器

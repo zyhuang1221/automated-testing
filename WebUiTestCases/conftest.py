@@ -5,9 +5,11 @@
 
 import pytest
 from libs.common.browser_init import browser_init
-
+from libs.utils.log_module import logger
 
 url = 'http://123.56.183.84/'
+
+
 # scope='session', autouse=True
 @pytest.fixture(scope='session', autouse=True)
 def browser():
@@ -16,14 +18,16 @@ def browser():
     :return: 浏览器对象
     """
     global driver
+    logger.info('打开浏览器')
     dirver = browser_init()  # 调用一个方法,浏览器初始化
     yield dirver
+    logger.info('关闭浏览器')
     dirver.quit()
+
 
 @pytest.fixture(scope='session', autouse=True)
 def base_url():
     return url
-
 
 #
 # @pytest.fixture(scope='session', autouse=True)

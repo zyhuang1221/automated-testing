@@ -2,22 +2,21 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/4/25 
 # @Author  : Mik
-from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver import ActionChains as AC
-from selenium import webdriver
-from selenium.webdriver import Remote
-from libs.utils import rd_yaml
-from libs.utils.log_module import logger
-import time
 from libs.utils.base_path import root_dir
-import allure
+from libs.utils.log_module import logger
+from selenium.webdriver import Remote
+from selenium import webdriver
+from libs.utils import rd_yaml
 from time import sleep
-
-web_cfg_data = rd_yaml.read_yaml()['browser']
+import allure
+import time
 
 
 def browser_init():
+    web_cfg_data = rd_yaml.read_yaml()['browser']
     if web_cfg_data['type'] == 'chrome':
         if web_cfg_data['env'] == 'localhost':
             driver = webdriver.Chrome()
