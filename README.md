@@ -45,7 +45,7 @@
     ├─pytest.ini	   # pytest配置文件
     ├─requirements.txt		 # 项目依赖库文件
     ├─README.md          #自述文件
-    └─run.py	# 主启动文件
+    └─run_web.py	# web测试主启动文件
 ```
 
 
