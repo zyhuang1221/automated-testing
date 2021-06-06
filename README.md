@@ -41,10 +41,10 @@
     │  ├─__init__.py		# 常用方法封装
     │  ├─common	        # web公用方法
     │  └─utils	        # 常用工具
-	├─globalvar.py      # 项目全局变量管理
+    ├─globalvar.py      # 项目全局变量管理
     ├─pytest.ini	   # pytest配置文件
     ├─requirements.txt		 # 项目依赖库文件
-	├─README.md          #自述文件
+    ├─README.md          #自述文件
     └─run.py	# 主启动文件
 ```
 
