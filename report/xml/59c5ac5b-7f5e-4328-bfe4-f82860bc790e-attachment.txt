@@ -1,0 +1,17 @@
+INFO     root:browser_init.py:56 在localhost使用chrome执行
+INFO     root:test_register.py:24 开始执行TestZc测试
+INFO     root:browser_init.py:86 开始等待页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>是否可见！
+INFO     root:browser_init.py:97 页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>可见，等待时间：0.025秒!
+INFO     root:browser_init.py:124 点击<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>
+INFO     root:browser_init.py:86 开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>是否可见！
+INFO     root:browser_init.py:97 页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>可见，等待时间：0.025秒!
+INFO     root:browser_init.py:108 在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>输入<mik_73>
+INFO     root:browser_init.py:86 开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+INFO     root:browser_init.py:97 页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.016秒!
+INFO     root:browser_init.py:108 在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>输入<123456>
+INFO     root:browser_init.py:86 开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+INFO     root:browser_init.py:97 页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.014秒!
+INFO     root:browser_init.py:140 点击<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>提交
+INFO     root:browser_init.py:86 开始等待页面元素<('xpath', '/html/body/div[2]/div/ul[1]/div/div/em[2]')>是否可见！
+ERROR    root:browser_init.py:92 等待页面元素<('xpath', '/html/body/div[2]/div/ul[1]/div/div/em[2]')>10秒失败！
+INFO     root:browser_init.py:258 截屏成功,图片路径为E:\My_code\AutoTest\imgs\2021-06-06-18-18-51.png

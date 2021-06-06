@@ -8,6 +8,7 @@ import logging
 import os
 import datetime
 from libs.utils.base_path import root_dir
+import globalvar as gl
 
 
 class Logger():
@@ -37,7 +38,7 @@ class Logger():
         self.f_hand.setFormatter(self.add_Formatter()[1])  # 添加文件格式器f2
         return self.f_hand
 
-    def get_log(self, handler='all', file='api'):
+    def get_log(self, handler='all', file='web'):
         """
         返回日志
         :param handler: 默认输出控制台和文件，strean参数输出控制台,file参数输出到文件
@@ -64,16 +65,16 @@ class Logger():
             raise ValueError("参数错误")
 
 
-if __name__ == '__main__':
-    l = Logger()
-    # 调用get_log
-    log = l.get_log()
-    log.critical('critical严重错误')
-    log.error('error错误')
-    log.warning('warning警告')
-    log.info('info信息')
-    log.debug('debug调试日志')
+# if __name__ == '__main__':
+#     l = Logger()
+#     # 调用get_log
+#     log = l.get_log()
+#     log.critical('critical严重错误')
+#     log.error('error错误')
+#     log.warning('warning警告')
+#     log.info('info信息')
+#     log.debug('debug调试日志')
 
 l = Logger()
 # 调用get_log
-logger = l.get_log(handler='file', file='web')
+logger = l.get_log(handler='file', file=gl.get_val('file'))

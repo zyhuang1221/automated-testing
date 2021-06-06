@@ -145,11 +145,14 @@ import time
 # dir = root_dir + r'\imgs\.'
 # os.remove(dir)
 
-try:
-    assert 1==2
-
-except Exception as e:
-    raise e
+# try:
+#     assert 1==2
+#
+# except Exception as e:
+#     raise e
 
 #
 # assert 1==2
+
+
+print(os.path.basename(__file__))
