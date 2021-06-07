@@ -39,7 +39,7 @@ def mainTearDown():
     target = root_dir + r'\report\xml\environment.properties'
     copyfile(source, target)
     # 生成allure报告
-    os.system('allure generate --clean ./report/xml -o ./report/html')  # --clean 清空上次报告
+    # os.system('allure generate --clean ./report/xml -o ./report/html')  # --clean 清空上次报告
 
 
 if __name__ == '__main__':
