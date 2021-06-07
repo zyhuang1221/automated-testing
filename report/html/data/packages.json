@@ -5,26 +5,26 @@
     "name" : "WebUiTestCases.test_register",
     "children" : [ {
       "name" : "用户注册",
-      "uid" : "f69d02ae11fd0c6b",
+      "uid" : "704088eae757ae5a",
       "parentUid" : "7f6259fd0a51db3c395c3ba87c93d9de",
       "status" : "broken",
       "time" : {
-        "start" : 1623040594740,
-        "stop" : 1623040621676,
-        "duration" : 26936
+        "start" : 1623066242326,
+        "stop" : 1623066272140,
+        "duration" : 29814
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "'123456'", "'mik_73'" ]
     }, {
       "name" : "用户注册",
-      "uid" : "8f481b0fa95a21e",
+      "uid" : "a6c0b8caaec43a5e",
       "parentUid" : "7f6259fd0a51db3c395c3ba87c93d9de",
       "status" : "broken",
       "time" : {
-        "start" : 1623040621763,
-        "stop" : 1623040636821,
-        "duration" : 15058
+        "start" : 1623066272219,
+        "stop" : 1623066287101,
+        "duration" : 14882
       },
       "flaky" : false,
       "newFailed" : false,

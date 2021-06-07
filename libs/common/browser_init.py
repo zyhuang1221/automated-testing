@@ -50,15 +50,13 @@ def browser_init():
             raise NameError('env类型定义错误！')
     else:
         raise NameError('driver驱动类型定义错误！')
-    # driver.get(web_cfg_data['url'])
-    # driver.implicitly_wait(10)
     logger.info(f'在{web_cfg_data["env"]}使用{web_cfg_data["type"]}执行')
     driver.maximize_window()
     return driver
 
 
 class Browser():
-    """封装浏览器操作，传入实例化driver"""
+    """封装浏览器操作"""
 
     def __init__(self, driver):
         """
@@ -89,7 +87,6 @@ class Browser():
             end_time = time.time()
         except Exception as e:
             logger.error('等待页面元素<{}>{}秒失败！'.format(loc, t))
-            # self.driver.save_screenshot(base_path+r'\img_1\test.png')
             self.my_save_webImgs()
             raise e
         else:
@@ -175,14 +172,14 @@ class Browser():
         else:
             return all_handles
 
-    # 窗口切换==如果是切换到新窗口，new，如果是回到默认窗口，default。切换前，在新窗口打开前获取handles
     def my_switch_window(self, name, old_handles, timeout=10):
-        '''
+        """
+        窗口切换==如果是切换到新窗口，new，如果是回到默认窗口，default。切换前，在新窗口打开前获取handles
         :param name: new代表最新打开的一个窗口。default代表第一个窗口。其他的值表示为窗口的handles name
         :param old_handles:传入的句柄为打开新窗口之前的所有句柄
         :param timeout:
         :return:
-        '''
+        """
 
         try:
             if name == "new" and old_handles is not None:

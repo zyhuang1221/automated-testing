@@ -4,10 +4,10 @@
 # @Author  : Mik
 
 from libs.utils.base_path import root_dir
+import globalvar as gl
 import logging
 import os
 import datetime
-import globalvar as gl
 
 
 #
