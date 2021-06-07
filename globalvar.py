@@ -4,7 +4,8 @@
 # @Author  : Mik
 
 def _init():
-    """全局变量初始化"""
+    """全局变量初始化,此方法在项目中只可运行一次
+    """
     global _global_dict
     _global_dict = {}
 

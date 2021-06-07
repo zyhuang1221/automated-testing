@@ -1,0 +1,238 @@
+{
+  "uid" : "f69d02ae11fd0c6b",
+  "name" : "用户注册",
+  "fullName" : "WebUiTestCases.test_register.TestZc#testcase1",
+  "historyId" : "61f3a3abc27e4c7daaacf87883151a9b",
+  "time" : {
+    "start" : 1623040594740,
+    "stop" : 1623040621676,
+    "duration" : 26936
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+  "statusTrace" : "self = <WebUiTestCases.test_register.TestZc object at 0x0807B230>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"134e460233a603a2d70e7263bd4a2532\")>\nbase_url = 'http://123.56.183.84/', user = 'mik_73', password = '123456'\n\n    @allure.title('用户注册')\n    @pytest.mark.parametrize('user,password', userinfo)\n    def testcase1(self, browser, base_url, user, password):\n        with allure.step('打开主页，点击注册'):\n            主页_page = XO商城主页.HomePage(browser)\n            主页_page.my_get_url(base_url)\n            主页_page.my_click(主页_page.注册)\n        with allure.step('输入用户名，点击注册'):\n            注册_page = XO商城注册.ZC(browser)\n            注册_page.my_import_text(注册_page.用户名, user)\n            注册_page.my_import_text(注册_page.设置登录密码, password)\n            # 注册_page.my_click(注册_page.注册按钮)\n            注册_page.my_submit(注册_page.设置登录密码)\n        # with allure.step('断言'):\n        #     msg1 = 注册_page.my_switch_alert()\n            # print(msg1)\n            # logger.info(msg1)\n    \n        with allure.step('注册断言'):\n            登录成功_page = XO商城登录成功页面.DLCG(browser)\n    \n    \n            try:\n                text = 登录成功_page.my_get_text(登录成功_page.欢迎)\n    \n            # text='12121'\n            # assert '欢迎来到' in text\n                if '欢迎来到' in text:\n                    logger.info('注册成功')\n                    登录成功_page.my_click(登录成功_page.退出登录)\n    \n                else:\n                    raise AssertionError('注册失败')\n            except Exception as e:\n>               raise e\n\nWebUiTestCases\\test_register.py:64: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nWebUiTestCases\\test_register.py:53: in testcase1\n    text = 登录成功_page.my_get_text(登录成功_page.欢迎)\nlibs\\common\\browser_init.py:212: in my_get_text\n    ele = self.wait_element_visible(loc)\nlibs\\common\\browser_init.py:94: in wait_element_visible\n    raise e\nlibs\\common\\browser_init.py:88: in wait_element_visible\n    ele = WebDriverWait(self.driver, t).until(EC.visibility_of_element_located(loc))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"134e460233a603a2d70e7263bd4a2532\")>\nmethod = <selenium.webdriver.support.expected_conditions.visibility_of_element_located object at 0x08911B30>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nC:\\python\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestZc",
+    "time" : {
+      "start" : 1623040594740,
+      "stop" : 1623040594740,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1623040588873,
+      "stop" : 1623040588873,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1623040588873,
+      "stop" : 1623040594740,
+      "duration" : 5867
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1623040588794,
+      "stop" : 1623040588873,
+      "duration" : 79
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+    "statusTrace" : "self = <WebUiTestCases.test_register.TestZc object at 0x0807B230>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"134e460233a603a2d70e7263bd4a2532\")>\nbase_url = 'http://123.56.183.84/', user = 'mik_73', password = '123456'\n\n    @allure.title('用户注册')\n    @pytest.mark.parametrize('user,password', userinfo)\n    def testcase1(self, browser, base_url, user, password):\n        with allure.step('打开主页，点击注册'):\n            主页_page = XO商城主页.HomePage(browser)\n            主页_page.my_get_url(base_url)\n            主页_page.my_click(主页_page.注册)\n        with allure.step('输入用户名，点击注册'):\n            注册_page = XO商城注册.ZC(browser)\n            注册_page.my_import_text(注册_page.用户名, user)\n            注册_page.my_import_text(注册_page.设置登录密码, password)\n            # 注册_page.my_click(注册_page.注册按钮)\n            注册_page.my_submit(注册_page.设置登录密码)\n        # with allure.step('断言'):\n        #     msg1 = 注册_page.my_switch_alert()\n            # print(msg1)\n            # logger.info(msg1)\n    \n        with allure.step('注册断言'):\n            登录成功_page = XO商城登录成功页面.DLCG(browser)\n    \n    \n            try:\n                text = 登录成功_page.my_get_text(登录成功_page.欢迎)\n    \n            # text='12121'\n            # assert '欢迎来到' in text\n                if '欢迎来到' in text:\n                    logger.info('注册成功')\n                    登录成功_page.my_click(登录成功_page.退出登录)\n    \n                else:\n                    raise AssertionError('注册失败')\n            except Exception as e:\n>               raise e\n\nWebUiTestCases\\test_register.py:64: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nWebUiTestCases\\test_register.py:53: in testcase1\n    text = 登录成功_page.my_get_text(登录成功_page.欢迎)\nlibs\\common\\browser_init.py:212: in my_get_text\n    ele = self.wait_element_visible(loc)\nlibs\\common\\browser_init.py:94: in wait_element_visible\n    raise e\nlibs\\common\\browser_init.py:88: in wait_element_visible\n    ele = WebDriverWait(self.driver, t).until(EC.visibility_of_element_located(loc))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"134e460233a603a2d70e7263bd4a2532\")>\nmethod = <selenium.webdriver.support.expected_conditions.visibility_of_element_located object at 0x08911B30>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nC:\\python\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+    "steps" : [ {
+      "name" : "打开主页，点击注册",
+      "time" : {
+        "start" : 1623040594740,
+        "stop" : 1623040609176,
+        "duration" : 14436
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "输入用户名，点击注册",
+      "time" : {
+        "start" : 1623040609176,
+        "stop" : 1623040609421,
+        "duration" : 245
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "注册断言",
+      "time" : {
+        "start" : 1623040609421,
+        "stop" : 1623040621675,
+        "duration" : 12254
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
+      "statusTrace" : "  File \"E:\\My_code\\AutoTest\\WebUiTestCases\\test_register.py\", line 64, in testcase1\n    raise e\n  File \"E:\\My_code\\AutoTest\\WebUiTestCases\\test_register.py\", line 53, in testcase1\n    text = 登录成功_page.my_get_text(登录成功_page.欢迎)\n  File \"E:\\My_code\\AutoTest\\libs\\common\\browser_init.py\", line 212, in my_get_text\n    ele = self.wait_element_visible(loc)\n  File \"E:\\My_code\\AutoTest\\libs\\common\\browser_init.py\", line 94, in wait_element_visible\n    raise e\n  File \"E:\\My_code\\AutoTest\\libs\\common\\browser_init.py\", line 88, in wait_element_visible\n    ele = WebDriverWait(self.driver, t).until(EC.visibility_of_element_located(loc))\n  File \"C:\\python\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 80, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c2e701a44e89a18a",
+        "name" : "2021-06-07-12-37-00",
+        "source" : "c2e701a44e89a18a.png",
+        "type" : "image/png",
+        "size" : 194320
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "d04fa5dbdc09ee6",
+      "name" : "log",
+      "source" : "d04fa5dbdc09ee6.txt",
+      "type" : "text/plain",
+      "size" : 2272
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestZc::0",
+    "time" : {
+      "start" : 1623040636838,
+      "stop" : 1623040636838,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1623040636838,
+      "stop" : 1623040640119,
+      "duration" : 3281
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "用户注册模块"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "epic",
+    "value" : "WebUI测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "WebUiTestCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_register"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestZc"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2TMV0U4"
+  }, {
+    "name" : "thread",
+    "value" : "1472-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "WebUiTestCases.test_register"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "password",
+    "value" : "'123456'"
+  }, {
+    "name" : "user",
+    "value" : "'mik_73'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f69d02ae11fd0c6b.json",
+  "parameterValues" : [ "'123456'", "'mik_73'" ]
+}

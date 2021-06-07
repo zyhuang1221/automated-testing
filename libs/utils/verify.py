@@ -155,4 +155,10 @@ import time
 # assert 1==2
 
 
-print(os.path.basename(__file__))
+# print(os.path.basename(__file__))
+
+
+import platform
+cur_sysinfo=platform.uname()
+print(cur_sysinfo)
+print(cur_sysinfo.system,cur_sysinfo.machine)

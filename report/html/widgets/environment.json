@@ -1,7 +1,13 @@
 [ {
-  "values" : [ "Win10" ],
-  "name" : "system"
+  "values" : [ "Mik" ],
+  "name" : "Tester"
+}, {
+  "values" : [ "Windows" ],
+  "name" : "OS"
+}, {
+  "values" : [ "91.0.4472.77" ],
+  "name" : "BrowserVer"
 }, {
   "values" : [ "chrome" ],
-  "name" : "browser"
+  "name" : "Browser"
 } ]

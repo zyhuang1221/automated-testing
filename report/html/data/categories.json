@@ -7,26 +7,26 @@
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
         "name" : "用户注册",
-        "uid" : "c7bc2ee1c7f758ed",
+        "uid" : "f69d02ae11fd0c6b",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1622992949087,
-          "stop" : 1622992979730,
-          "duration" : 30643
+          "start" : 1623040594740,
+          "stop" : 1623040621676,
+          "duration" : 26936
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'123456'", "'mik_73'" ]
       }, {
         "name" : "用户注册",
-        "uid" : "57054e19658452da",
+        "uid" : "8f481b0fa95a21e",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1622992979815,
-          "stop" : 1622992993447,
-          "duration" : 13632
+          "start" : 1623040621763,
+          "stop" : 1623040636821,
+          "duration" : 15058
         },
         "flaky" : false,
         "newFailed" : false,

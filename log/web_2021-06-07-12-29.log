@@ -1,0 +1,4 @@
+[run_web.py]: [INFO] [2021-06-07 12:29:38] line:45->>开始执行web自动化测试
+[conftest.py]: [INFO] [2021-06-07 12:29:39] line:24->>打开浏览器
+[browser_init.py]: [INFO] [2021-06-07 12:29:43] line:55->>在localhost使用chrome执行
+[run_web.py]: [INFO] [2021-06-07 12:29:45] line:47->>web自动化测试结束

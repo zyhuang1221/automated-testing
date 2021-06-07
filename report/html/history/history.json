@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c7bc2ee1c7f758ed",
+      "uid" : "f69d02ae11fd0c6b",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
       "time" : {
-        "start" : 1622992949087,
-        "stop" : 1622992979730,
-        "duration" : 30643
+        "start" : 1623040594740,
+        "stop" : 1623040621676,
+        "duration" : 26936
       }
     } ]
   },
@@ -29,13 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "57054e19658452da",
+      "uid" : "8f481b0fa95a21e",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
       "time" : {
-        "start" : 1622992979815,
-        "stop" : 1622992993447,
-        "duration" : 13632
+        "start" : 1623040621763,
+        "stop" : 1623040636821,
+        "duration" : 15058
       }
     } ]
   }
