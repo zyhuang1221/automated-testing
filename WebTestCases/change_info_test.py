@@ -4,7 +4,7 @@
 # @Author  : Mik
 
 
-from WebUiTestCases.POM import 用户登录, 我的会员中心, 个人资料信息
+from WebTestCases.POM import 用户登录, 我的会员中心, 个人资料信息
 from selenium import webdriver
 import pytest
 

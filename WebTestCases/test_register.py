@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/5/29 
 # @Author  : Mik
-from WebUiTestCases.POM import XO商城主页, XO商城注册, XO商城登录成功页面
+from WebTestCases.POM import XO商城主页, XO商城注册, XO商城登录成功页面
 from libs.utils.log_module import logger
 from libs.utils import rw_xlsx
 import pytest
