@@ -1,41 +1,41 @@
 {
   "72d0a8549e5bfa8489e3860b6bd2e5ff" : {
     "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
+      "failed" : 1,
+      "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "26e08e025a00048d",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "uid" : "b315124ce62ab499",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
       "time" : {
-        "start" : 1623332629104,
-        "stop" : 1623332643225,
-        "duration" : 14121
+        "start" : 1623503988135,
+        "stop" : 1623503990757,
+        "duration" : 2622
       }
     } ]
   },
   "521e2637686631c9972d7c0dcdc0c812" : {
     "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
+      "failed" : 1,
+      "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b314d600a2b84717",
-      "status" : "broken",
-      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+      "uid" : "e5e3c55055cbb735",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
       "time" : {
-        "start" : 1623332599282,
-        "stop" : 1623332629025,
-        "duration" : 29743
+        "start" : 1623503973357,
+        "stop" : 1623503988066,
+        "duration" : 14709
       }
     } ]
   }

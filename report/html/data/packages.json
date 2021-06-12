@@ -5,26 +5,26 @@
     "name" : "WebTestCases.test_01_register",
     "children" : [ {
       "name" : "测试数据：mik_73,123456",
-      "uid" : "b314d600a2b84717",
+      "uid" : "e5e3c55055cbb735",
       "parentUid" : "c027eaf1d97b56916f9b946273793153",
-      "status" : "broken",
+      "status" : "failed",
       "time" : {
-        "start" : 1623332599282,
-        "stop" : 1623332629025,
-        "duration" : 29743
+        "start" : 1623503973357,
+        "stop" : 1623503988066,
+        "duration" : 14709
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "'123456'", "'mik_73'" ]
     }, {
       "name" : "测试数据：mik_74,123456",
-      "uid" : "26e08e025a00048d",
+      "uid" : "b315124ce62ab499",
       "parentUid" : "c027eaf1d97b56916f9b946273793153",
-      "status" : "broken",
+      "status" : "failed",
       "time" : {
-        "start" : 1623332629104,
-        "stop" : 1623332643225,
-        "duration" : 14121
+        "start" : 1623503988135,
+        "stop" : 1623503990757,
+        "duration" : 2622
       },
       "flaky" : false,
       "newFailed" : false,

@@ -1,19 +1,0 @@
-[32mINFO    [0m root:conftest.py:47 testcase_01开始测试
-[32mINFO    [0m root:browser_init.py:86 开始等待页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>是否可见！
-[32mINFO    [0m root:browser_init.py:96 页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>可见，等待时间：0.061秒!
-[32mINFO    [0m root:browser_init.py:123 点击<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>
-[32mINFO    [0m root:browser_init.py:86 开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>是否可见！
-[32mINFO    [0m root:browser_init.py:96 页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>可见，等待时间：0.02秒!
-[32mINFO    [0m root:browser_init.py:107 在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>输入<mik_74>
-[32mINFO    [0m root:browser_init.py:86 开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
-[32mINFO    [0m root:browser_init.py:96 页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.017秒!
-[32mINFO    [0m root:browser_init.py:107 在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>输入<123456>
-[32mINFO    [0m root:browser_init.py:86 开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
-[32mINFO    [0m root:browser_init.py:96 页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.018秒!
-[32mINFO    [0m root:browser_init.py:139 点击<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>提交
-[32mINFO    [0m root:browser_init.py:86 开始等待页面元素<('xpath', '/html/body/div[2]/div/ul[1]/div/div/em[2]')>是否可见！
-[1m[31mERROR   [0m root:browser_init.py:92 等待页面元素<('xpath', '/html/body/div[2]/div/ul[1]/div/div/em[2]')>10秒失败！
-[32mINFO    [0m root:browser_init.py:257 截屏成功,图片路径为E:\My_code\UIAutoTest\imgs\2021-06-10-21-44-02.png
-[32mINFO    [0m root:conftest.py:49 testcase_01测试结束
-[32mINFO    [0m root:test_01_register.py:27 TestZc模块测试完成
-[32mINFO    [0m root:conftest.py:35 关闭浏览器

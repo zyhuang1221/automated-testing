@@ -4,8 +4,8 @@
     "uid" : "dac304bf6374f5b39075817a80d86c0c",
     "name" : "WebUI测试",
     "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
+      "failed" : 1,
+      "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,

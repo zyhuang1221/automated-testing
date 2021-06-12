@@ -9,8 +9,6 @@ import pytest
 from time import sleep
 import allure
 
-# driver = webdriver.Chrome()
-# driver.maximize_window()
 readInfo = rw_xlsx.ReadExcel()
 userinfo = readInfo.get_rows(1, readInfo.row_max1)
 
@@ -41,29 +39,9 @@ class TestZc():
             注册_page.my_import_text(注册_page.设置登录密码, password)
             # 注册_page.my_click(注册_page.注册按钮)
             注册_page.my_submit(注册_page.设置登录密码)
-        # with allure.step('断言'):
-        #     msg1 = 注册_page.my_switch_alert()
-            # print(msg1)
-            # logger.info(msg1)
-
-        with allure.step('注册断言'):
-            登录成功_page = XO商城登录成功页面.DLCG(browser)
-
-
+        with allure.step('断言'):
+            msg = 注册_page.my_get_text(注册_page.注册弹出信息)
             try:
-                text = 登录成功_page.my_get_text(登录成功_page.欢迎)
-
-            # text='12121'
-            # assert '欢迎来到' in text
-                if '欢迎来到' in text:
-                    logger.info('注册成功')
-                    登录成功_page.my_click(登录成功_page.退出登录)
-
-                else:
-                    raise AssertionError('注册失败')
-            except Exception as e:
-                raise e
-        sleep(3)
-
-# zc=TestZc()
-# zc.testcase1(driver,'http://123.56.183.84/')
+                assert msg == '注册成功'
+            except:
+                raise
