@@ -1,4 +1,4 @@
-# 自动化测试框架
+# UI自动化测试框架
 
 #### 介绍
 基于selenium,pytest,python的Web自动化测试框架
