@@ -1,0 +1,41 @@
+[run_web.py]: [INFO] [2021-06-10 19:33:32] line:48->>开始执行web自动化测试
+[conftest.py]: [INFO] [2021-06-10 19:33:33] line:24->>打开浏览器
+[browser_init.py]: [INFO] [2021-06-10 19:33:38] line:53->>在localhost使用chrome执行
+[test_register.py]: [INFO] [2021-06-10 19:33:39] line:24->>开始执行TestZc测试
+[conftest.py]: [INFO] [2021-06-10 19:33:39] line:47->>testcase1开始测试
+[browser_init.py]: [INFO] [2021-06-10 19:33:56] line:86->>开始等待页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>是否可见！
+[browser_init.py]: [INFO] [2021-06-10 19:33:56] line:96->>页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>可见，等待时间：0.032秒!
+[browser_init.py]: [INFO] [2021-06-10 19:33:56] line:123->>点击<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>
+[browser_init.py]: [INFO] [2021-06-10 19:33:57] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-10 19:33:57] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>可见，等待时间：0.022秒!
+[browser_init.py]: [INFO] [2021-06-10 19:33:57] line:107->>在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>输入<mik_73>
+[browser_init.py]: [INFO] [2021-06-10 19:33:57] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-10 19:33:57] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.021秒!
+[browser_init.py]: [INFO] [2021-06-10 19:33:57] line:107->>在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>输入<123456>
+[browser_init.py]: [INFO] [2021-06-10 19:33:57] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-10 19:33:57] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.013秒!
+[browser_init.py]: [INFO] [2021-06-10 19:33:57] line:139->>点击<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>提交
+[browser_init.py]: [INFO] [2021-06-10 19:33:57] line:86->>开始等待页面元素<('xpath', '/html/body/div[2]/div/ul[1]/div/div/em[2]')>是否可见！
+[browser_init.py]: [ERROR] [2021-06-10 19:34:09] line:92->>等待页面元素<('xpath', '/html/body/div[2]/div/ul[1]/div/div/em[2]')>10秒失败！
+[browser_init.py]: [INFO] [2021-06-10 19:34:09] line:257->>截屏成功,图片路径为E:\My_code\AutoTest\imgs\2021-06-10-19-34-09.png
+[conftest.py]: [INFO] [2021-06-10 19:34:10] line:49->>testcase1测试结束
+[conftest.py]: [INFO] [2021-06-10 19:34:10] line:47->>testcase1开始测试
+[browser_init.py]: [INFO] [2021-06-10 19:34:10] line:86->>开始等待页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>是否可见！
+[browser_init.py]: [INFO] [2021-06-10 19:34:11] line:96->>页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>可见，等待时间：0.182秒!
+[browser_init.py]: [INFO] [2021-06-10 19:34:11] line:123->>点击<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>
+[browser_init.py]: [INFO] [2021-06-10 19:34:11] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-10 19:34:11] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>可见，等待时间：0.13秒!
+[browser_init.py]: [INFO] [2021-06-10 19:34:11] line:107->>在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>输入<mik_74>
+[browser_init.py]: [INFO] [2021-06-10 19:34:11] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-10 19:34:11] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.02秒!
+[browser_init.py]: [INFO] [2021-06-10 19:34:11] line:107->>在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>输入<123456>
+[browser_init.py]: [INFO] [2021-06-10 19:34:12] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-10 19:34:12] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.012秒!
+[browser_init.py]: [INFO] [2021-06-10 19:34:12] line:139->>点击<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>提交
+[browser_init.py]: [INFO] [2021-06-10 19:34:12] line:86->>开始等待页面元素<('xpath', '/html/body/div[2]/div/ul[1]/div/div/em[2]')>是否可见！
+[browser_init.py]: [ERROR] [2021-06-10 19:34:23] line:92->>等待页面元素<('xpath', '/html/body/div[2]/div/ul[1]/div/div/em[2]')>10秒失败！
+[browser_init.py]: [INFO] [2021-06-10 19:34:23] line:257->>截屏成功,图片路径为E:\My_code\AutoTest\imgs\2021-06-10-19-34-23.png
+[conftest.py]: [INFO] [2021-06-10 19:34:24] line:49->>testcase1测试结束
+[test_register.py]: [INFO] [2021-06-10 19:34:24] line:27->>TestZc测试完成
+[conftest.py]: [INFO] [2021-06-10 19:34:24] line:35->>关闭浏览器
+[run_web.py]: [INFO] [2021-06-10 19:34:28] line:50->>web自动化测试结束

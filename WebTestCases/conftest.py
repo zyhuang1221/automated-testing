@@ -40,9 +40,13 @@ def browser():
 def base_url():
     return url
 
-#
-# @pytest.fixture(scope='session', autouse=True)
-# def brower_close():
-#     print('完成')
-#     # yield driver
-#     driver.quit()
+
+@pytest.fixture(autouse=True)
+def function_log(request):
+    testcase_name = request.function.__name__
+    logger.info(f'{testcase_name}开始测试')
+    yield
+    logger.info(f'{testcase_name}测试结束')
+
+
+

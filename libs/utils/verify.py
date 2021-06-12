@@ -158,7 +158,14 @@ import time
 # print(os.path.basename(__file__))
 
 
-import platform
-cur_sysinfo=platform.uname()
-print(cur_sysinfo)
-print(cur_sysinfo.system,cur_sysinfo.machine)
+# import platform
+# cur_sysinfo=platform.uname()
+# print(cur_sysinfo)
+# print(cur_sysinfo.system,cur_sysinfo.machine)
+
+
+try:
+    print(123+'asd')
+
+except:
+    raise

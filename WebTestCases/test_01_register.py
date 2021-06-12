@@ -21,15 +21,16 @@ userinfo = readInfo.get_rows(1, readInfo.row_max1)
 class TestZc():
 
     def setup_class(self):
-        logger.info(f'开始执行{TestZc.__name__}测试')
+        logger.info(f'开始执行{TestZc.__name__}模块测试')
 
     def teardown_class(self):
-        logger.info(f'{TestZc.__name__}测试完成')
+        logger.info(f'{TestZc.__name__}模块测试完成')
 
     # @pytest.mark.xfail
-    @allure.title('用户注册')
+    @allure.story('用户注册')
+    @allure.title('测试数据：{user},{password}')
     @pytest.mark.parametrize('user,password', userinfo)
-    def testcase1(self, browser, base_url, user, password):
+    def testcase_01(self, browser, base_url, user, password):
         with allure.step('打开主页，点击注册'):
             主页_page = XO商城主页.HomePage(browser)
             主页_page.my_get_url(base_url)

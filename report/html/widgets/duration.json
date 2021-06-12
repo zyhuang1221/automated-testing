@@ -1,20 +1,20 @@
 [ {
-  "uid" : "704088eae757ae5a",
-  "name" : "用户注册",
+  "uid" : "b314d600a2b84717",
+  "name" : "测试数据：mik_73,123456",
   "time" : {
-    "start" : 1623066242326,
-    "stop" : 1623066272140,
-    "duration" : 29814
+    "start" : 1623332599282,
+    "stop" : 1623332629025,
+    "duration" : 29743
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "a6c0b8caaec43a5e",
-  "name" : "用户注册",
+  "uid" : "26e08e025a00048d",
+  "name" : "测试数据：mik_74,123456",
   "time" : {
-    "start" : 1623066272219,
-    "stop" : 1623066287101,
-    "duration" : 14882
+    "start" : 1623332629104,
+    "stop" : 1623332643225,
+    "duration" : 14121
   },
   "status" : "broken",
   "severity" : "normal"

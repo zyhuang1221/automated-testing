@@ -1,8 +1,8 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "24428915d321376371c423c4b4235727",
-    "name" : "WebUiTestCases",
+    "uid" : "d96f32c8ab67f3dbe86f6c3eec3c3271",
+    "name" : "WebTestCases",
     "statistic" : {
       "failed" : 0,
       "broken" : 2,

@@ -2,42 +2,42 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
-    "name" : "WebUiTestCases",
+    "name" : "WebTestCases",
     "children" : [ {
-      "name" : "test_register",
+      "name" : "test_01_register",
       "children" : [ {
         "name" : "TestZc",
         "children" : [ {
-          "name" : "用户注册",
-          "uid" : "704088eae757ae5a",
-          "parentUid" : "baacd0c0341b582ee366f1180ad3c48b",
+          "name" : "测试数据：mik_73,123456",
+          "uid" : "b314d600a2b84717",
+          "parentUid" : "09cf97eb624ed5f6998f3e897c4bb2d0",
           "status" : "broken",
           "time" : {
-            "start" : 1623066242326,
-            "stop" : 1623066272140,
-            "duration" : 29814
+            "start" : 1623332599282,
+            "stop" : 1623332629025,
+            "duration" : 29743
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "'123456'", "'mik_73'" ]
         }, {
-          "name" : "用户注册",
-          "uid" : "a6c0b8caaec43a5e",
-          "parentUid" : "baacd0c0341b582ee366f1180ad3c48b",
+          "name" : "测试数据：mik_74,123456",
+          "uid" : "26e08e025a00048d",
+          "parentUid" : "09cf97eb624ed5f6998f3e897c4bb2d0",
           "status" : "broken",
           "time" : {
-            "start" : 1623066272219,
-            "stop" : 1623066287101,
-            "duration" : 14882
+            "start" : 1623332629104,
+            "stop" : 1623332643225,
+            "duration" : 14121
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "'123456'", "'mik_74'" ]
         } ],
-        "uid" : "baacd0c0341b582ee366f1180ad3c48b"
+        "uid" : "09cf97eb624ed5f6998f3e897c4bb2d0"
       } ],
-      "uid" : "31c35f8d9653156d64b0ed503ef35e48"
+      "uid" : "bf4bc24b4deea40d9c42b428154cd3dd"
     } ],
-    "uid" : "24428915d321376371c423c4b4235727"
+    "uid" : "d96f32c8ab67f3dbe86f6c3eec3c3271"
   } ]
 }

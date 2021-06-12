@@ -7,30 +7,34 @@
       "name" : "用户注册模块",
       "children" : [ {
         "name" : "用户注册",
-        "uid" : "704088eae757ae5a",
-        "parentUid" : "b7399230d3d40385d79d2d4b5c7bed05",
-        "status" : "broken",
-        "time" : {
-          "start" : 1623066242326,
-          "stop" : 1623066272140,
-          "duration" : 29814
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'123456'", "'mik_73'" ]
-      }, {
-        "name" : "用户注册",
-        "uid" : "a6c0b8caaec43a5e",
-        "parentUid" : "b7399230d3d40385d79d2d4b5c7bed05",
-        "status" : "broken",
-        "time" : {
-          "start" : 1623066272219,
-          "stop" : 1623066287101,
-          "duration" : 14882
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'123456'", "'mik_74'" ]
+        "children" : [ {
+          "name" : "测试数据：mik_73,123456",
+          "uid" : "b314d600a2b84717",
+          "parentUid" : "05a09b03582b76be5ac54c4045d8dfae",
+          "status" : "broken",
+          "time" : {
+            "start" : 1623332599282,
+            "stop" : 1623332629025,
+            "duration" : 29743
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'123456'", "'mik_73'" ]
+        }, {
+          "name" : "测试数据：mik_74,123456",
+          "uid" : "26e08e025a00048d",
+          "parentUid" : "05a09b03582b76be5ac54c4045d8dfae",
+          "status" : "broken",
+          "time" : {
+            "start" : 1623332629104,
+            "stop" : 1623332643225,
+            "duration" : 14121
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'123456'", "'mik_74'" ]
+        } ],
+        "uid" : "05a09b03582b76be5ac54c4045d8dfae"
       } ],
       "uid" : "b7399230d3d40385d79d2d4b5c7bed05"
     } ],

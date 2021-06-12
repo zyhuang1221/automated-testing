@@ -26,7 +26,7 @@ def browser_init():
                                 "browserName": "chrome",
                             })
         else:
-            raise NameError('env类型定义错误！')
+            raise ValueError('env类型定义错误！')
 
     elif web_cfg_data['type'] == 'firefox':
         if web_cfg_data['env'] == 'localhost':
@@ -37,7 +37,7 @@ def browser_init():
                                 "browserName": "firefox",
                             })
         else:
-            raise NameError('env类型定义错误！')
+            raise ValueError('env类型定义错误！')
     elif web_cfg_data['type'] == 'ie':
         if web_cfg_data['env'] == 'localhost':
             driver = webdriver.Ie()
@@ -47,9 +47,9 @@ def browser_init():
                                 "browserName": "internet explorer",
                             })
         else:
-            raise NameError('env类型定义错误！')
+            raise ValueError('env类型定义错误！')
     else:
-        raise NameError('driver驱动类型定义错误！')
+        raise ValueError('driver驱动类型定义错误！')
     logger.info(f'在{web_cfg_data["env"]}使用{web_cfg_data["type"]}执行')
     driver.maximize_window()
     return driver
@@ -71,8 +71,11 @@ class Browser():
         :param url: 传入url
         :return: None
         """
-        self.driver.implicitly_wait(5)
-        self.driver.get(url)
+        try:
+            self.driver.implicitly_wait(5)
+            self.driver.get(url)
+        except:
+            raise
 
     def wait_element_visible(self, loc, t=10):
         """每次操作之前自动显示等待,找到元素，并返回元素对象

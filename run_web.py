@@ -39,13 +39,13 @@ def mainTearDown():
     target = root_dir + r'\report\xml\environment.properties'
     copyfile(source, target)
     # 生成allure报告
-    # os.system('allure generate --clean ./report/xml -o ./report/html')  # --clean 清空上次报告
+    os.system('allure generate --clean ./report/xml -o ./report/html')  # --clean 清空上次报告
 
 
 if __name__ == '__main__':
     mainSetup()
     from libs.utils.log_module import logger
-    logger.info('开始执行web自动化测试')
+    logger.info('==>>>开始执行web自动化测试')
     pytest.main()
-    logger.info('web自动化测试结束')
+    logger.info('==>>>web自动化测试结束')
     mainTearDown()
