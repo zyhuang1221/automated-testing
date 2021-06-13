@@ -10,12 +10,20 @@
 - 自动化用例组织框架：pytest
 - 自动化报告：allure
 
+#### 设计原则
+1.  公共方法为页面提供操作服务
+2.  封装细节，对外只提供方法名（或者接口）
+3.  断言放在用例
+4.  通过return跳转到新页面
+5.  页面中重要元素进行PO管理
+6.  对相同行为产生不同结果进行封装
+
 #### 安装教程
 
 1.  https://gitee.com/mikb/automated-testing.git 拉取代码
 2.  pip install -r requirements.txt 安装依赖库
 3.  修改config.ymal配置文件
-4.  执行run.py
+4.  执行run_web.py
 
 #### 目录结构
 ```shell
