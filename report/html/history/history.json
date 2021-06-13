@@ -9,13 +9,51 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b315124ce62ab499",
+      "uid" : "20d842ae0609c1d3",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
       "time" : {
-        "start" : 1623503988135,
-        "stop" : 1623503990757,
-        "duration" : 2622
+        "start" : 1623547715957,
+        "stop" : 1623547718446,
+        "duration" : 2489
+      }
+    } ]
+  },
+  "fc49dde57a7396be3c03e4d6aab21d2d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "258bf74747b83ddf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623547718454,
+        "stop" : 1623547723191,
+        "duration" : 4737
+      }
+    } ]
+  },
+  "a151f1250ec263c844fd4d20cf9d0649" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2e50ba43d8d00496",
+      "status" : "passed",
+      "time" : {
+        "start" : 1623547723195,
+        "stop" : 1623547728056,
+        "duration" : 4861
       }
     } ]
   },
@@ -29,13 +67,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e5e3c55055cbb735",
+      "uid" : "a878162b57d29131",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
       "time" : {
-        "start" : 1623503973357,
-        "stop" : 1623503988066,
-        "duration" : 14709
+        "start" : 1623547697287,
+        "stop" : 1623547715897,
+        "duration" : 18610
       }
     } ]
   }

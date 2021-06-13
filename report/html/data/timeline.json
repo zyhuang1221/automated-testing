@@ -4,35 +4,61 @@
   "children" : [ {
     "name" : "DESKTOP-2TMV0U4",
     "children" : [ {
-      "name" : "6988-MainThread",
+      "name" : "3868-MainThread",
       "children" : [ {
-        "name" : "测试数据：mik_73,123456",
-        "uid" : "e5e3c55055cbb735",
-        "parentUid" : "f5a334d93e9e52c44a0e20352c3f7f58",
+        "name" : "测试数据：mik_74,123456",
+        "uid" : "20d842ae0609c1d3",
+        "parentUid" : "f7e620d6913454f221db87d977cd9bf5",
         "status" : "failed",
         "time" : {
-          "start" : 1623503973357,
-          "stop" : 1623503988066,
-          "duration" : 14709
+          "start" : 1623547715957,
+          "stop" : 1623547718446,
+          "duration" : 2489
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'123456'", "'mik_74'" ]
+      }, {
+        "name" : "测试数据：mik_73,123456",
+        "uid" : "258bf74747b83ddf",
+        "parentUid" : "f7e620d6913454f221db87d977cd9bf5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623547718454,
+          "stop" : 1623547723191,
+          "duration" : 4737
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'123456'", "'mik_73'" ]
       }, {
         "name" : "测试数据：mik_74,123456",
-        "uid" : "b315124ce62ab499",
-        "parentUid" : "f5a334d93e9e52c44a0e20352c3f7f58",
-        "status" : "failed",
+        "uid" : "2e50ba43d8d00496",
+        "parentUid" : "f7e620d6913454f221db87d977cd9bf5",
+        "status" : "passed",
         "time" : {
-          "start" : 1623503988135,
-          "stop" : 1623503990757,
-          "duration" : 2622
+          "start" : 1623547723195,
+          "stop" : 1623547728056,
+          "duration" : 4861
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'123456'", "'mik_74'" ]
+      }, {
+        "name" : "测试数据：mik_73,123456",
+        "uid" : "a878162b57d29131",
+        "parentUid" : "f7e620d6913454f221db87d977cd9bf5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1623547697287,
+          "stop" : 1623547715897,
+          "duration" : 18610
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'123456'", "'mik_73'" ]
       } ],
-      "uid" : "f5a334d93e9e52c44a0e20352c3f7f58"
+      "uid" : "f7e620d6913454f221db87d977cd9bf5"
     } ],
     "uid" : "d526c1b0f5b053c01f9cbe4f60feab4e"
   } ]

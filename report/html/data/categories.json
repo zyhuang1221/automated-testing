@@ -7,26 +7,26 @@
       "name" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
       "children" : [ {
         "name" : "测试数据：mik_73,123456",
-        "uid" : "e5e3c55055cbb735",
+        "uid" : "a878162b57d29131",
         "parentUid" : "337925cdcbea7f67fa62d4116b39db7d",
         "status" : "failed",
         "time" : {
-          "start" : 1623503973357,
-          "stop" : 1623503988066,
-          "duration" : 14709
+          "start" : 1623547697287,
+          "stop" : 1623547715897,
+          "duration" : 18610
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'123456'", "'mik_73'" ]
       }, {
         "name" : "测试数据：mik_74,123456",
-        "uid" : "b315124ce62ab499",
+        "uid" : "20d842ae0609c1d3",
         "parentUid" : "337925cdcbea7f67fa62d4116b39db7d",
         "status" : "failed",
         "time" : {
-          "start" : 1623503988135,
-          "stop" : 1623503990757,
-          "duration" : 2622
+          "start" : 1623547715957,
+          "stop" : 1623547718446,
+          "duration" : 2489
         },
         "flaky" : false,
         "newFailed" : false,

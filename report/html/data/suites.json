@@ -9,26 +9,26 @@
         "name" : "TestZc",
         "children" : [ {
           "name" : "测试数据：mik_73,123456",
-          "uid" : "e5e3c55055cbb735",
+          "uid" : "a878162b57d29131",
           "parentUid" : "09cf97eb624ed5f6998f3e897c4bb2d0",
           "status" : "failed",
           "time" : {
-            "start" : 1623503973357,
-            "stop" : 1623503988066,
-            "duration" : 14709
+            "start" : 1623547697287,
+            "stop" : 1623547715897,
+            "duration" : 18610
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "'123456'", "'mik_73'" ]
         }, {
           "name" : "测试数据：mik_74,123456",
-          "uid" : "b315124ce62ab499",
+          "uid" : "20d842ae0609c1d3",
           "parentUid" : "09cf97eb624ed5f6998f3e897c4bb2d0",
           "status" : "failed",
           "time" : {
-            "start" : 1623503988135,
-            "stop" : 1623503990757,
-            "duration" : 2622
+            "start" : 1623547715957,
+            "stop" : 1623547718446,
+            "duration" : 2489
           },
           "flaky" : false,
           "newFailed" : false,
@@ -37,6 +37,40 @@
         "uid" : "09cf97eb624ed5f6998f3e897c4bb2d0"
       } ],
       "uid" : "bf4bc24b4deea40d9c42b428154cd3dd"
+    }, {
+      "name" : "test_02_login",
+      "children" : [ {
+        "name" : "TestLogin",
+        "children" : [ {
+          "name" : "测试数据：mik_73,123456",
+          "uid" : "258bf74747b83ddf",
+          "parentUid" : "55d8d6c5343da77a2ee0ab48e4ef8d81",
+          "status" : "passed",
+          "time" : {
+            "start" : 1623547718454,
+            "stop" : 1623547723191,
+            "duration" : 4737
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'123456'", "'mik_73'" ]
+        }, {
+          "name" : "测试数据：mik_74,123456",
+          "uid" : "2e50ba43d8d00496",
+          "parentUid" : "55d8d6c5343da77a2ee0ab48e4ef8d81",
+          "status" : "passed",
+          "time" : {
+            "start" : 1623547723195,
+            "stop" : 1623547728056,
+            "duration" : 4861
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'123456'", "'mik_74'" ]
+        } ],
+        "uid" : "55d8d6c5343da77a2ee0ab48e4ef8d81"
+      } ],
+      "uid" : "48082dae35d73f20320fca17b65a15ba"
     } ],
     "uid" : "d96f32c8ab67f3dbe86f6c3eec3c3271"
   } ]
