@@ -8,31 +8,31 @@
       "children" : [ {
         "name" : "用户注册",
         "children" : [ {
-          "name" : "测试数据：mik_73,123456",
-          "uid" : "a878162b57d29131",
+          "name" : "测试数据：['mik_73', '123456']",
+          "uid" : "49ee8d1cccf38a21",
           "parentUid" : "05a09b03582b76be5ac54c4045d8dfae",
           "status" : "failed",
           "time" : {
-            "start" : 1623547697287,
-            "stop" : 1623547715897,
-            "duration" : 18610
+            "start" : 1623647935053,
+            "stop" : 1623647949735,
+            "duration" : 14682
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "'123456'", "'mik_73'" ]
+          "parameters" : [ "['mik_73', '123456']" ]
         }, {
-          "name" : "测试数据：mik_74,123456",
-          "uid" : "20d842ae0609c1d3",
+          "name" : "测试数据：['mik_74', '123456']",
+          "uid" : "659ccb4b341fda19",
           "parentUid" : "05a09b03582b76be5ac54c4045d8dfae",
           "status" : "failed",
           "time" : {
-            "start" : 1623547715957,
-            "stop" : 1623547718446,
-            "duration" : 2489
+            "start" : 1623647949791,
+            "stop" : 1623647952388,
+            "duration" : 2597
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "'123456'", "'mik_74'" ]
+          "parameters" : [ "['mik_74', '123456']" ]
         } ],
         "uid" : "05a09b03582b76be5ac54c4045d8dfae"
       } ],
@@ -42,31 +42,31 @@
       "children" : [ {
         "name" : "用户登录",
         "children" : [ {
-          "name" : "测试数据：mik_73,123456",
-          "uid" : "258bf74747b83ddf",
+          "name" : "测试数据：['mik_73', '123456']",
+          "uid" : "36813ab9a9133403",
           "parentUid" : "0138606c3707ad226608a95225585e5b",
           "status" : "passed",
           "time" : {
-            "start" : 1623547718454,
-            "stop" : 1623547723191,
-            "duration" : 4737
+            "start" : 1623647952397,
+            "stop" : 1623647957459,
+            "duration" : 5062
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "'123456'", "'mik_73'" ]
+          "parameters" : [ "['mik_73', '123456']" ]
         }, {
-          "name" : "测试数据：mik_74,123456",
-          "uid" : "2e50ba43d8d00496",
+          "name" : "测试数据：['mik_74', '123456']",
+          "uid" : "306f294fdf4e8ad2",
           "parentUid" : "0138606c3707ad226608a95225585e5b",
           "status" : "passed",
           "time" : {
-            "start" : 1623547723195,
-            "stop" : 1623547728056,
-            "duration" : 4861
+            "start" : 1623647957464,
+            "stop" : 1623647963089,
+            "duration" : 5625
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "'123456'", "'mik_74'" ]
+          "parameters" : [ "['mik_74', '123456']" ]
         } ],
         "uid" : "0138606c3707ad226608a95225585e5b"
       } ],

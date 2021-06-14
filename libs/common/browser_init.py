@@ -55,7 +55,7 @@ def browser_init():
     return driver
 
 
-class Browser():
+class BasePage:
     """封装浏览器操作"""
 
     def __init__(self, driver):

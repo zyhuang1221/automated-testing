@@ -1,0 +1,17 @@
+[run_web.py]: [INFO] [2021-06-14 13:16:09] line:48->>==>>>开始执行web自动化测试
+[conftest.py]: [INFO] [2021-06-14 13:16:10] line:24->>打开浏览器
+[browser_init.py]: [INFO] [2021-06-14 13:16:15] line:53->>在localhost使用chrome执行
+[test_01_register.py]: [INFO] [2021-06-14 13:16:16] line:21->>开始执行TestRegister模块测试
+[conftest.py]: [INFO] [2021-06-14 13:16:16] line:47->>testcase_01开始测试
+[conftest.py]: [INFO] [2021-06-14 13:16:16] line:49->>testcase_01测试结束
+[conftest.py]: [INFO] [2021-06-14 13:16:16] line:47->>testcase_01开始测试
+[conftest.py]: [INFO] [2021-06-14 13:16:16] line:49->>testcase_01测试结束
+[test_01_register.py]: [INFO] [2021-06-14 13:16:16] line:24->>TestRegister模块测试完成
+[test_02_login.py]: [INFO] [2021-06-14 13:16:16] line:20->>开始执行TestLogin模块测试
+[conftest.py]: [INFO] [2021-06-14 13:16:16] line:47->>testcase_01开始测试
+[conftest.py]: [INFO] [2021-06-14 13:16:16] line:49->>testcase_01测试结束
+[conftest.py]: [INFO] [2021-06-14 13:16:16] line:47->>testcase_01开始测试
+[conftest.py]: [INFO] [2021-06-14 13:16:16] line:49->>testcase_01测试结束
+[test_02_login.py]: [INFO] [2021-06-14 13:16:16] line:23->>TestLogin模块测试完成
+[conftest.py]: [INFO] [2021-06-14 13:16:16] line:35->>关闭浏览器
+[run_web.py]: [INFO] [2021-06-14 13:16:20] line:50->>==>>>web自动化测试结束

@@ -4,8 +4,7 @@
 # @Author  : Mik
 
 
-from WebTestCases.POM import 用户登录, 我的会员中心, 个人资料信息
-from selenium import webdriver
+from POM import 我的会员中心, 个人资料信息, 用户登录
 import pytest
 
 info = ('mik2', 'password')

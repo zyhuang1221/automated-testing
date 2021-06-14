@@ -3,11 +3,9 @@
 # @Time    : 2021/5/2 
 # @Author  : Mik
 import pytest
-from selenium import webdriver
 from libs.utils.log_module import log
-from WebTestCases.POM import 主页, 用户登录, 我的会员中心, 商城, 搜索商品结果, 加入购物车, \
-    商品添加成功, 购物车信息, 核对订单信息
-from time import sleep
+from POM import 加入购物车, 主页, 商品添加成功, 购物车信息, 我的会员中心, 商城, 搜索商品结果, 用户登录, 核对订单信息
+
 # driver = webdriver.Chrome()
 # driver.get('http://127.0.0.1')
 

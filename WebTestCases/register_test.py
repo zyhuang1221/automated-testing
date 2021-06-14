@@ -4,7 +4,7 @@
 # @Author  : Mik
 
 import pytest
-from WebTestCases.POM import 主页, 用户注册
+from POM import 主页, 用户注册
 from libs.utils.log_module import log
 from libs.utils import rw_xlsx
 

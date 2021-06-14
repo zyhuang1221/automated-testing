@@ -1,0 +1,262 @@
+{
+  "uid" : "659ccb4b341fda19",
+  "name" : "测试数据：['mik_74', '123456']",
+  "fullName" : "WebTestCases.test_01_register.TestRegister#testcase_01",
+  "historyId" : "a08d1c9372013f9e42786636ba5402eb",
+  "time" : {
+    "start" : 1623647949791,
+    "stop" : 1623647952388,
+    "duration" : 2597
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
+  "statusTrace" : "self = <WebTestCases.test_01_register.TestRegister object at 0x082E11B0>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"68dea29cc6b24dac055ee9b65bc55fd0\")>\ntestinfo = ['mik_74', '123456']\n\n    @allure.story('用户注册')\n    @allure.title('测试数据：{testinfo}')\n    @pytest.mark.parametrize('testinfo', uinfo)\n    def testcase_01(self, browser, testinfo):\n    \n        with allure.step('打开主页，点击注册'):\n            page_主页 = XO商城主页.HomePage(browser)\n            page_主页.open_home()\n            page_注册 = page_主页.goto_register()\n        with allure.step('输入用户名，点击注册'):\n            page_注册.register(testinfo)\n            msg = page_注册.get_msg()\n        with allure.step('断言'):\n            try:\n>               assert msg == '注册成功'\nE               AssertionError: assert '账号已存在' == '注册成功'\nE                 - 注册成功\nE                 + 账号已存在\n\nWebTestCases\\test_01_register.py:41: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1623647929227,
+      "stop" : 1623647929227,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "xunit_setup_class_fixture_TestRegister",
+    "time" : {
+      "start" : 1623647935044,
+      "stop" : 1623647935044,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1623647929164,
+      "stop" : 1623647929227,
+      "duration" : 63
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "function_log",
+    "time" : {
+      "start" : 1623647949791,
+      "stop" : 1623647949791,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1623647929227,
+      "stop" : 1623647935044,
+      "duration" : 5817
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
+    "statusTrace" : "self = <WebTestCases.test_01_register.TestRegister object at 0x082E11B0>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"68dea29cc6b24dac055ee9b65bc55fd0\")>\ntestinfo = ['mik_74', '123456']\n\n    @allure.story('用户注册')\n    @allure.title('测试数据：{testinfo}')\n    @pytest.mark.parametrize('testinfo', uinfo)\n    def testcase_01(self, browser, testinfo):\n    \n        with allure.step('打开主页，点击注册'):\n            page_主页 = XO商城主页.HomePage(browser)\n            page_主页.open_home()\n            page_注册 = page_主页.goto_register()\n        with allure.step('输入用户名，点击注册'):\n            page_注册.register(testinfo)\n            msg = page_注册.get_msg()\n        with allure.step('断言'):\n            try:\n>               assert msg == '注册成功'\nE               AssertionError: assert '账号已存在' == '注册成功'\nE                 - 注册成功\nE                 + 账号已存在\n\nWebTestCases\\test_01_register.py:41: AssertionError",
+    "steps" : [ {
+      "name" : "打开主页，点击注册",
+      "time" : {
+        "start" : 1623647949791,
+        "stop" : 1623647951393,
+        "duration" : 1602
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "输入用户名，点击注册",
+      "time" : {
+        "start" : 1623647951393,
+        "stop" : 1623647952388,
+        "duration" : 995
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1623647952388,
+        "stop" : 1623647952388,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在\n",
+      "statusTrace" : "  File \"E:\\My_code\\UIAutoTest\\WebTestCases\\test_01_register.py\", line 41, in testcase_01\n    assert msg == '注册成功'\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "d1870826f0bdbae6",
+      "name" : "log",
+      "source" : "d1870826f0bdbae6.txt",
+      "type" : "text/plain",
+      "size" : 2307
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestRegister::0",
+    "time" : {
+      "start" : 1623647952394,
+      "stop" : 1623647952394,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "function_log::0",
+    "time" : {
+      "start" : 1623647952392,
+      "stop" : 1623647952392,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1623647963092,
+      "stop" : 1623647966392,
+      "duration" : 3300
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用户注册"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "epic",
+    "value" : "WebUI测试"
+  }, {
+    "name" : "feature",
+    "value" : "用户注册模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "WebTestCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_01_register"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegister"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2TMV0U4"
+  }, {
+    "name" : "thread",
+    "value" : "2536-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "WebTestCases.test_01_register"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "testinfo",
+    "value" : "['mik_74', '123456']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "659ccb4b341fda19.json",
+  "parameterValues" : [ "['mik_74', '123456']" ]
+}
