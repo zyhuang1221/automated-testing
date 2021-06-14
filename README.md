@@ -41,8 +41,10 @@
     │  └─html		# allure报告
     ├─AppTestCases          # 待开发
     │
+    ├─POM                # 页面对象管理
+    │  ├─web_pom
+    │  └─app_pom	
     ├─WebTestCases        # web测试用例
-    │  ├─POM                # 页面对象管理
     │  ├─conftest.py	# pytest依赖对象初始化
     │  └─*_test.py	        # 测试文件
     ├─libs		        # 工具包
