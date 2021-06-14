@@ -40,7 +40,6 @@
     │  ├─xml                # 报告数据
     │  └─html		# allure报告
     ├─AppTestCases          # 待开发
-    │
     ├─POM                # 页面对象管理
     │  ├─web_pom
     │  └─app_pom	
