@@ -1,0 +1,89 @@
+[run_web.py]: [INFO] [2021-06-17 16:51:43] line:48->>==>>>开始执行web自动化测试
+[rd_yaml.py]: [INFO] [2021-06-17 16:51:44] line:23->>加载 E:\My_code\UIAutoTest\data\web_data.yaml 文件......
+[rd_yaml.py]: [INFO] [2021-06-17 16:51:46] line:23->>加载 E:\My_code\UIAutoTest\data\web_data.yaml 文件......
+[conftest.py]: [INFO] [2021-06-17 16:51:46] line:24->>打开浏览器
+[browser_init.py]: [INFO] [2021-06-17 16:51:54] line:53->>在localhost使用chrome执行
+[test_01_register.py]: [INFO] [2021-06-17 16:51:56] line:20->>开始执行TestRegister模块测试
+[conftest.py]: [INFO] [2021-06-17 16:51:56] line:47->>*************** 开始执行用例：testcase_01 ***************
+[browser_init.py]: [INFO] [2021-06-17 16:52:13] line:86->>开始等待页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:13] line:96->>页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>可见，等待时间：0.178秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:13] line:123->>点击<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>
+[browser_init.py]: [INFO] [2021-06-17 16:52:14] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:14] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>可见，等待时间：0.067秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:14] line:107->>在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>输入<mik_73>
+[browser_init.py]: [INFO] [2021-06-17 16:52:15] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:15] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.021秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:15] line:107->>在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>输入<123456>
+[browser_init.py]: [INFO] [2021-06-17 16:52:15] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[3]/button')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:15] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[3]/button')>可见，等待时间：0.022秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:15] line:139->>点击<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[3]/button')>提交
+[browser_init.py]: [INFO] [2021-06-17 16:52:15] line:86->>开始等待页面元素<('class name', 'prompt-msg')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:16] line:96->>页面元素<('class name', 'prompt-msg')>可见，等待时间：0.64秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:16] line:213->>获取元素<('class name', 'prompt-msg')>的内容
+[browser_init.py]: [INFO] [2021-06-17 16:52:16] line:216->>元素<('class name', 'prompt-msg')>的内容为<账号已存在>
+[conftest.py]: [INFO] [2021-06-17 16:52:16] line:49->>*************** 结束执行用例：testcase_01 ***************
+[conftest.py]: [INFO] [2021-06-17 16:52:16] line:47->>*************** 开始执行用例：testcase_01 ***************
+[browser_init.py]: [INFO] [2021-06-17 16:52:16] line:86->>开始等待页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:17] line:96->>页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>可见，等待时间：0.157秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:17] line:123->>点击<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]')>
+[browser_init.py]: [INFO] [2021-06-17 16:52:17] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:17] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>可见，等待时间：0.024秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:17] line:107->>在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input')>输入<mik_74>
+[browser_init.py]: [INFO] [2021-06-17 16:52:17] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:17] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.018秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:17] line:107->>在<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input')>输入<123456>
+[browser_init.py]: [INFO] [2021-06-17 16:52:17] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[3]/button')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:17] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[3]/button')>可见，等待时间：0.015秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:17] line:139->>点击<('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[3]/button')>提交
+[browser_init.py]: [INFO] [2021-06-17 16:52:17] line:86->>开始等待页面元素<('class name', 'prompt-msg')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:18] line:96->>页面元素<('class name', 'prompt-msg')>可见，等待时间：0.66秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:18] line:213->>获取元素<('class name', 'prompt-msg')>的内容
+[browser_init.py]: [INFO] [2021-06-17 16:52:18] line:216->>元素<('class name', 'prompt-msg')>的内容为<账号已存在>
+[conftest.py]: [INFO] [2021-06-17 16:52:18] line:49->>*************** 结束执行用例：testcase_01 ***************
+[test_01_register.py]: [INFO] [2021-06-17 16:52:18] line:23->>TestRegister模块测试完成
+[test_02_login.py]: [INFO] [2021-06-17 16:52:18] line:20->>开始执行TestLogin模块测试
+[conftest.py]: [INFO] [2021-06-17 16:52:18] line:47->>*************** 开始执行用例：testcase_01 ***************
+[browser_init.py]: [INFO] [2021-06-17 16:52:19] line:86->>开始等待页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[1]')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:19] line:96->>页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[1]')>可见，等待时间：0.029秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:19] line:123->>点击<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[1]')>
+[browser_init.py]: [INFO] [2021-06-17 16:52:20] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[1]/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:20] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[1]/input')>可见，等待时间：0.024秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:20] line:107->>在<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[1]/input')>输入<mik_73>
+[browser_init.py]: [INFO] [2021-06-17 16:52:20] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:20] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.021秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:20] line:107->>在<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input')>输入<123456>
+[browser_init.py]: [INFO] [2021-06-17 16:52:20] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:20] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.011秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:20] line:139->>点击<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input')>提交
+[browser_init.py]: [INFO] [2021-06-17 16:52:20] line:86->>开始等待页面元素<('class name', 'prompt-msg')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:21] line:96->>页面元素<('class name', 'prompt-msg')>可见，等待时间：0.645秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:21] line:213->>获取元素<('class name', 'prompt-msg')>的内容
+[browser_init.py]: [INFO] [2021-06-17 16:52:21] line:216->>元素<('class name', 'prompt-msg')>的内容为<登录成功>
+[browser_init.py]: [INFO] [2021-06-17 16:52:21] line:86->>开始等待页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[1]/a[2]')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:22] line:96->>页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[1]/a[2]')>可见，等待时间：1.665秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:22] line:123->>点击<('xpath', '/html/body/div[6]/div/div[1]/div[1]/a[2]')>
+[conftest.py]: [INFO] [2021-06-17 16:52:23] line:49->>*************** 结束执行用例：testcase_01 ***************
+[conftest.py]: [INFO] [2021-06-17 16:52:23] line:47->>*************** 开始执行用例：testcase_01 ***************
+[browser_init.py]: [INFO] [2021-06-17 16:52:24] line:86->>开始等待页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[1]')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:24] line:96->>页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[1]')>可见，等待时间：0.253秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:24] line:123->>点击<('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[1]')>
+[browser_init.py]: [INFO] [2021-06-17 16:52:24] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[1]/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:25] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[1]/input')>可见，等待时间：0.024秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:25] line:107->>在<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[1]/input')>输入<mik_74>
+[browser_init.py]: [INFO] [2021-06-17 16:52:25] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:25] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.019秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:25] line:107->>在<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input')>输入<123456>
+[browser_init.py]: [INFO] [2021-06-17 16:52:25] line:86->>开始等待页面元素<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:25] line:96->>页面元素<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input')>可见，等待时间：0.013秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:25] line:139->>点击<('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input')>提交
+[browser_init.py]: [INFO] [2021-06-17 16:52:25] line:86->>开始等待页面元素<('class name', 'prompt-msg')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:25] line:96->>页面元素<('class name', 'prompt-msg')>可见，等待时间：0.66秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:25] line:213->>获取元素<('class name', 'prompt-msg')>的内容
+[browser_init.py]: [INFO] [2021-06-17 16:52:26] line:216->>元素<('class name', 'prompt-msg')>的内容为<登录成功>
+[browser_init.py]: [INFO] [2021-06-17 16:52:26] line:86->>开始等待页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[1]/a[2]')>是否可见！
+[browser_init.py]: [INFO] [2021-06-17 16:52:27] line:96->>页面元素<('xpath', '/html/body/div[6]/div/div[1]/div[1]/a[2]')>可见，等待时间：1.6秒!
+[browser_init.py]: [INFO] [2021-06-17 16:52:27] line:123->>点击<('xpath', '/html/body/div[6]/div/div[1]/div[1]/a[2]')>
+[conftest.py]: [INFO] [2021-06-17 16:52:28] line:49->>*************** 结束执行用例：testcase_01 ***************
+[test_02_login.py]: [INFO] [2021-06-17 16:52:28] line:23->>TestLogin模块测试完成
+[conftest.py]: [INFO] [2021-06-17 16:52:28] line:35->>关闭浏览器
+[run_web.py]: [INFO] [2021-06-17 16:52:31] line:50->>==>>>web自动化测试结束

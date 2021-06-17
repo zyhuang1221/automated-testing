@@ -16,7 +16,7 @@ import os
 
 def mainSetup():
     """测试前置"""
-    # 设置全局变量
+    # 设置全局变量，用于命名log文件
     gl._init()
     gl.set_val('name', 'web')
     # 清空一天前的log
@@ -27,7 +27,7 @@ def mainSetup():
     sys_info = platform.uname().system
     rw = rw_properties.parse(file)
     rw.put('OS', sys_info)
-    # 清空imgs和log目录
+    # 清空imgs
     imgdir = root_dir + r'\imgs'
     clearFile(imgdir)
 

@@ -13,9 +13,9 @@ class Register(BasePage):
     loc_注册按钮 = (By.XPATH, '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[3]/button')
     loc_弹出信息 = (By.CLASS_NAME, 'prompt-msg')
 
-    def register(self, info):
-        self.my_import_text(self.loc_用户名, info[0])
-        self.my_import_text(self.loc_设置登录密码, info[1])
+    def register(self, user, pw):
+        self.my_import_text(self.loc_用户名, user)
+        self.my_import_text(self.loc_设置登录密码, pw)
         self.my_submit(self.loc_注册按钮)
         return self
 

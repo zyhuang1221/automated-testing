@@ -3,10 +3,10 @@
 # @Time    : 2021/5/1 
 # @Author  : Mik
 from selenium.webdriver.common.by import By
-from libs.common.browser_init import Browser
+from libs.common.browser_init import BasePage
 
 
-class HomePage(Browser):
+class HomePage(BasePage):
     注册 = (By.LINK_TEXT, '注册')
     登录 = (By.LINK_TEXT, '登录')
 

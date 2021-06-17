@@ -44,9 +44,9 @@ def base_url():
 @pytest.fixture(autouse=True)
 def function_log(request):
     testcase_name = request.function.__name__
-    logger.info(f'{testcase_name}开始测试')
+    logger.info(f'*************** 开始执行用例：{testcase_name} ***************')
     yield
-    logger.info(f'{testcase_name}测试结束')
+    logger.info(f'*************** 结束执行用例：{testcase_name} ***************')
 
 
 
