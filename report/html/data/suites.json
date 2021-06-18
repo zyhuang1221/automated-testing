@@ -9,26 +9,26 @@
         "name" : "TestRegister",
         "children" : [ {
           "name" : "测试数据：用户名：mik_73,密码：123456",
-          "uid" : "f94868af272bdd4d",
+          "uid" : "5aa7474d99d98719",
           "parentUid" : "051c6cc5ae015fb08b940b9121a3d7d3",
           "status" : "failed",
           "time" : {
-            "start" : 1623919916297,
-            "stop" : 1623919936081,
-            "duration" : 19784
+            "start" : 1623987325791,
+            "stop" : 1623987340091,
+            "duration" : 14300
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "123456", "'mik_73'" ]
         }, {
           "name" : "测试数据：用户名：mik_74,密码：123456",
-          "uid" : "370ec3478d741d07",
+          "uid" : "934b1b8b212f47da",
           "parentUid" : "051c6cc5ae015fb08b940b9121a3d7d3",
           "status" : "failed",
           "time" : {
-            "start" : 1623919936175,
-            "stop" : 1623919938588,
-            "duration" : 2413
+            "start" : 1623987340139,
+            "stop" : 1623987342538,
+            "duration" : 2399
           },
           "flaky" : false,
           "newFailed" : false,
@@ -43,26 +43,26 @@
         "name" : "TestLogin",
         "children" : [ {
           "name" : "测试数据：用户名：mik_73,密码：123456",
-          "uid" : "d4bec747679f5129",
+          "uid" : "7b5a811e08955fc9",
           "parentUid" : "55d8d6c5343da77a2ee0ab48e4ef8d81",
           "status" : "passed",
           "time" : {
-            "start" : 1623919938600,
-            "stop" : 1623919943386,
-            "duration" : 4786
+            "start" : 1623987342546,
+            "stop" : 1623987347139,
+            "duration" : 4593
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "123456", "'mik_73'" ]
         }, {
           "name" : "测试数据：用户名：mik_74,密码：123456",
-          "uid" : "2b45aeb5179e6cbc",
+          "uid" : "644f483d5c510b9d",
           "parentUid" : "55d8d6c5343da77a2ee0ab48e4ef8d81",
           "status" : "passed",
           "time" : {
-            "start" : 1623919943401,
-            "stop" : 1623919948575,
-            "duration" : 5174
+            "start" : 1623987347145,
+            "stop" : 1623987351991,
+            "duration" : 4846
           },
           "flaky" : false,
           "newFailed" : false,

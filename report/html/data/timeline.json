@@ -4,61 +4,61 @@
   "children" : [ {
     "name" : "DESKTOP-2TMV0U4",
     "children" : [ {
-      "name" : "1632-MainThread",
+      "name" : "4236-MainThread",
       "children" : [ {
         "name" : "测试数据：用户名：mik_74,密码：123456",
-        "uid" : "370ec3478d741d07",
-        "parentUid" : "105e73f865c9965e4623c02b0eecc35c",
+        "uid" : "934b1b8b212f47da",
+        "parentUid" : "18f80a7790874ae1803dba852a2843f5",
         "status" : "failed",
         "time" : {
-          "start" : 1623919936175,
-          "stop" : 1623919938588,
-          "duration" : 2413
+          "start" : 1623987340139,
+          "stop" : 1623987342538,
+          "duration" : 2399
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "123456", "'mik_74'" ]
       }, {
         "name" : "测试数据：用户名：mik_73,密码：123456",
-        "uid" : "f94868af272bdd4d",
-        "parentUid" : "105e73f865c9965e4623c02b0eecc35c",
+        "uid" : "5aa7474d99d98719",
+        "parentUid" : "18f80a7790874ae1803dba852a2843f5",
         "status" : "failed",
         "time" : {
-          "start" : 1623919916297,
-          "stop" : 1623919936081,
-          "duration" : 19784
+          "start" : 1623987325791,
+          "stop" : 1623987340091,
+          "duration" : 14300
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "123456", "'mik_73'" ]
+      }, {
+        "name" : "测试数据：用户名：mik_73,密码：123456",
+        "uid" : "7b5a811e08955fc9",
+        "parentUid" : "18f80a7790874ae1803dba852a2843f5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1623987342546,
+          "stop" : 1623987347139,
+          "duration" : 4593
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "123456", "'mik_73'" ]
       }, {
         "name" : "测试数据：用户名：mik_74,密码：123456",
-        "uid" : "2b45aeb5179e6cbc",
-        "parentUid" : "105e73f865c9965e4623c02b0eecc35c",
+        "uid" : "644f483d5c510b9d",
+        "parentUid" : "18f80a7790874ae1803dba852a2843f5",
         "status" : "passed",
         "time" : {
-          "start" : 1623919943401,
-          "stop" : 1623919948575,
-          "duration" : 5174
+          "start" : 1623987347145,
+          "stop" : 1623987351991,
+          "duration" : 4846
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "123456", "'mik_74'" ]
-      }, {
-        "name" : "测试数据：用户名：mik_73,密码：123456",
-        "uid" : "d4bec747679f5129",
-        "parentUid" : "105e73f865c9965e4623c02b0eecc35c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1623919938600,
-          "stop" : 1623919943386,
-          "duration" : 4786
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "123456", "'mik_73'" ]
       } ],
-      "uid" : "105e73f865c9965e4623c02b0eecc35c"
+      "uid" : "18f80a7790874ae1803dba852a2843f5"
     } ],
     "uid" : "d526c1b0f5b053c01f9cbe4f60feab4e"
   } ]

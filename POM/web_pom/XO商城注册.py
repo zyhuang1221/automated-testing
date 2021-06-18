@@ -3,7 +3,7 @@
 # @Time    : 2021/5/29 
 # @Author  : Mik
 from selenium.webdriver.common.by import By
-from libs.common.browser_init import BasePage
+from libs.common.base import BasePage
 
 
 class Register(BasePage):
@@ -14,10 +14,10 @@ class Register(BasePage):
     loc_弹出信息 = (By.CLASS_NAME, 'prompt-msg')
 
     def register(self, user, pw):
-        self.my_import_text(self.loc_用户名, user)
-        self.my_import_text(self.loc_设置登录密码, pw)
+        self.my_sendkeys(self.loc_用户名, user, msg='用户名输入框')
+        self.my_sendkeys(self.loc_设置登录密码, pw, msg='密码输入框')
         self.my_submit(self.loc_注册按钮)
         return self
 
     def get_msg(self):
-        return self.my_get_text(self.loc_弹出信息)
+        return self.my_get_text(self.loc_弹出信息, '弹出框')

@@ -3,7 +3,7 @@
 # @Time    : 2021/5/29 
 # @Author  : Mik
 from selenium.webdriver.common.by import By
-from libs.common.browser_init import BasePage
+from libs.common.base import BasePage
 from pom.web_pom.XO商城登录 import Login
 from pom.web_pom.XO商城注册 import Register
 
@@ -18,9 +18,9 @@ class HomePage(BasePage):
         self.my_get_url(self.url)
 
     def goto_login(self):
-        self.my_click(self.__loc_登录)
-        return Login(self.driver)
+        self.my_click(self.__loc_登录, '登录')
+        return Login(self.driver, '登录')
 
     def goto_register(self):
-        self.my_click(self.__loc_注册)
-        return Register(self.driver)
+        self.my_click(self.__loc_注册, '注册')
+        return Register(self.driver, '注册')

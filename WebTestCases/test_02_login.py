@@ -28,11 +28,11 @@ class TestLogin:
     @pytest.mark.parametrize('user,password', udata)
     def testcase_01(self, browser, user, password):
         with allure.step('打开主页，点击登录'):
-            page_主页 = XO商城主页.HomePage(browser)
+            page_主页 = XO商城主页.HomePage(browser, '商城主页')
             page_主页.open_home()
             page_登录 = page_主页.goto_login()
         with allure.step('输入用户名密码，点击确认'):
-            page_登录.login(user,password)
+            page_登录.login(user, password)
             msg = page_登录.get_msg()
         with allure.step('断言'):
             try:
@@ -40,5 +40,5 @@ class TestLogin:
             except:
                 raise
             else:
-                登录成功_page = XO商城登录成功.LoginSucceed(browser)
+                登录成功_page = XO商城登录成功.LoginSucceed(browser, '登录主页')
                 登录成功_page.exit()
