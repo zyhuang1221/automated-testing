@@ -1,0 +1,6 @@
+INFO     root:conftest.py:56 *************** 开始执行用例：testcase_01 ***************
+INFO     root:base.py:49 定位商城主页页面元素：('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[2]'), 元素描述：注册
+ERROR    root:base.py:54 元素定位失败!
+INFO     root:base.py:225 截屏成功,图片路径为E:\My_code\UIAutoTest\imgs\2021-06-18-16-56-52.png
+INFO     root:conftest.py:58 *************** 结束执行用例：testcase_01 ***************
+INFO     root:test_01_register.py:23 TestRegister模块测试完成

@@ -1,0 +1,255 @@
+{
+  "uid" : "b3a0e27d021a17b1",
+  "name" : "测试数据：用户名：mik_74,密码：123456",
+  "fullName" : "WebTestCases.test_02_login.TestLogin#testcase_01",
+  "historyId" : "a151f1250ec263c844fd4d20cf9d0649",
+  "time" : {
+    "start" : 1623995291121,
+    "stop" : 1623995296092,
+    "duration" : 4971
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1623995259186,
+      "stop" : 1623995259186,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1623995259108,
+      "stop" : 1623995259186,
+      "duration" : 78
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "xunit_setup_class_fixture_TestLogin",
+    "time" : {
+      "start" : 1623995286292,
+      "stop" : 1623995286293,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "function_log",
+    "time" : {
+      "start" : 1623995291121,
+      "stop" : 1623995291121,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1623995259186,
+      "stop" : 1623995265469,
+      "duration" : 6283
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "打开主页，点击登录",
+      "time" : {
+        "start" : 1623995291121,
+        "stop" : 1623995292791,
+        "duration" : 1670
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "输入用户名密码，点击确认",
+      "time" : {
+        "start" : 1623995292791,
+        "stop" : 1623995293659,
+        "duration" : 868
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1623995293659,
+        "stop" : 1623995296092,
+        "duration" : 2433
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "419b87a29e2c95b",
+      "name" : "log",
+      "source" : "419b87a29e2c95b.txt",
+      "type" : "text/plain",
+      "size" : 1844
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_TestLogin::0",
+    "time" : {
+      "start" : 1623995296094,
+      "stop" : 1623995296094,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "function_log::0",
+    "time" : {
+      "start" : 1623995296093,
+      "stop" : 1623995296093,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1623995296095,
+      "stop" : 1623995299484,
+      "duration" : 3389
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "用户登录"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "用户登录模块"
+  }, {
+    "name" : "epic",
+    "value" : "WebUI测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "WebTestCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_02_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2TMV0U4"
+  }, {
+    "name" : "thread",
+    "value" : "7756-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "WebTestCases.test_02_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "password",
+    "value" : "123456"
+  }, {
+    "name" : "user",
+    "value" : "'mik_74'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b3a0e27d021a17b1.json",
+  "parameterValues" : [ "123456", "'mik_74'" ]
+}
