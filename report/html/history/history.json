@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "934b1b8b212f47da",
+      "uid" : "3204dd83937fd69d",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
       "time" : {
-        "start" : 1623987340139,
-        "stop" : 1623987342538,
-        "duration" : 2399
+        "start" : 1624101799128,
+        "stop" : 1624101802000,
+        "duration" : 2872
       }
     } ]
   },
@@ -29,32 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5aa7474d99d98719",
+      "uid" : "c3d2a4e5cc7cfd59",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
       "time" : {
-        "start" : 1623987325791,
-        "stop" : 1623987340091,
-        "duration" : 14300
-      }
-    } ]
-  },
-  "fc49dde57a7396be3c03e4d6aab21d2d" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "7b5a811e08955fc9",
-      "status" : "passed",
-      "time" : {
-        "start" : 1623987342546,
-        "stop" : 1623987347139,
-        "duration" : 4593
+        "start" : 1624101778490,
+        "stop" : 1624101799068,
+        "duration" : 20578
       }
     } ]
   },
@@ -68,12 +49,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "644f483d5c510b9d",
+      "uid" : "ca206bde4fe3839c",
       "status" : "passed",
       "time" : {
-        "start" : 1623987347145,
-        "stop" : 1623987351991,
-        "duration" : 4846
+        "start" : 1624101808281,
+        "stop" : 1624101814068,
+        "duration" : 5787
+      }
+    } ]
+  },
+  "fc49dde57a7396be3c03e4d6aab21d2d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5aaa971269cbc8f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624101802009,
+        "stop" : 1624101808275,
+        "duration" : 6266
       }
     } ]
   }
