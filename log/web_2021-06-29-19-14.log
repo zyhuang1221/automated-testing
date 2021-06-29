@@ -1,0 +1,30 @@
+[run_web.py]: [INFO] [2021-06-29 19:14:41] line:48->>==>>>开始执行web自动化测试
+[conftest.py]: [INFO] [2021-06-29 19:14:41] line:24->>打开浏览器
+[browser.py]: [INFO] [2021-06-29 19:14:43] line:46->>在localhost使用chrome执行
+[conftest.py]: [INFO] [2021-06-29 19:14:43] line:47->>*************** 开始执行用例：test_case01 ***************
+[base.py]: [INFO] [2021-06-29 19:14:59] line:49->>定位商城主页页面元素：('xpath', '/html/body/div[6]/div/div[1]/div[2]/a[1]'), 元素描述：登录
+[base.py]: [INFO] [2021-06-29 19:14:59] line:58->>元素定位成功：耗时0.023秒!
+[base.py]: [INFO] [2021-06-29 19:14:59] line:111->>点击元素：登录
+[base.py]: [INFO] [2021-06-29 19:15:00] line:49->>定位登录页面元素：('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[1]/input'), 元素描述：用户名输入框
+[base.py]: [INFO] [2021-06-29 19:15:00] line:58->>元素定位成功：耗时0.031秒!
+[base.py]: [INFO] [2021-06-29 19:15:00] line:94->>输入内容：mik_2
+[base.py]: [INFO] [2021-06-29 19:15:00] line:49->>定位登录页面元素：('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input'), 元素描述：密码输入框
+[base.py]: [INFO] [2021-06-29 19:15:00] line:58->>元素定位成功：耗时0.02秒!
+[base.py]: [INFO] [2021-06-29 19:15:00] line:94->>输入内容：123456
+[base.py]: [INFO] [2021-06-29 19:15:00] line:49->>定位登录页面元素：('xpath', '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input'), 元素描述：提交
+[base.py]: [INFO] [2021-06-29 19:15:00] line:58->>元素定位成功：耗时0.014秒!
+[base.py]: [INFO] [2021-06-29 19:15:00] line:127->>点击提交
+[base.py]: [INFO] [2021-06-29 19:15:00] line:49->>定位登录成功主页页面元素：('id', 'search-input'), 元素描述：搜索框
+[base.py]: [INFO] [2021-06-29 19:15:00] line:58->>元素定位成功：耗时0.023秒!
+[base.py]: [INFO] [2021-06-29 19:15:00] line:94->>输入内容：手机
+[base.py]: [INFO] [2021-06-29 19:15:00] line:49->>定位登录成功主页页面元素：('id', 'ai-topsearch'), 元素描述：搜索按钮
+[base.py]: [INFO] [2021-06-29 19:15:01] line:58->>元素定位成功：耗时0.021秒!
+[base.py]: [INFO] [2021-06-29 19:15:01] line:111->>点击元素：搜索按钮
+[base.py]: [INFO] [2021-06-29 19:15:02] line:139->>获取所有句柄
+[base.py]: [INFO] [2021-06-29 19:15:02] line:49->>定位显示商品页面页面元素：('xpath', '/html/body/div[4]/div/ul/li[1]/div'), 元素描述：第一个商品
+[base.py]: [INFO] [2021-06-29 19:15:02] line:58->>元素定位成功：耗时0.545秒!
+[base.py]: [INFO] [2021-06-29 19:15:02] line:111->>点击元素：第一个商品
+[base.py]: [INFO] [2021-06-29 19:15:02] line:158->>切换到最新打开的窗口
+[conftest.py]: [INFO] [2021-06-29 19:15:02] line:49->>*************** 结束执行用例：test_case01 ***************
+[conftest.py]: [INFO] [2021-06-29 19:15:02] line:35->>关闭浏览器
+[run_web.py]: [INFO] [2021-06-29 19:15:05] line:50->>==>>>web自动化测试结束

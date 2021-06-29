@@ -9,13 +9,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3204dd83937fd69d",
+      "uid" : "4a8a2a74baf1b66f",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
       "time" : {
-        "start" : 1624101799128,
-        "stop" : 1624101802000,
-        "duration" : 2872
+        "start" : 1624972759898,
+        "stop" : 1624972763397,
+        "duration" : 3499
+      }
+    } ]
+  },
+  "7eb26a7dbb086120eb16f156c298affc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6192f57ff9cb8ac1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624972775081,
+        "stop" : 1624972789693,
+        "duration" : 14612
       }
     } ]
   },
@@ -29,32 +48,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c3d2a4e5cc7cfd59",
+      "uid" : "9163e9e7e998f9f2",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
       "time" : {
-        "start" : 1624101778490,
-        "stop" : 1624101799068,
-        "duration" : 20578
-      }
-    } ]
-  },
-  "a151f1250ec263c844fd4d20cf9d0649" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "ca206bde4fe3839c",
-      "status" : "passed",
-      "time" : {
-        "start" : 1624101808281,
-        "stop" : 1624101814068,
-        "duration" : 5787
+        "start" : 1624972743771,
+        "stop" : 1624972759834,
+        "duration" : 16063
       }
     } ]
   },
@@ -68,12 +68,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5aaa971269cbc8f6",
+      "uid" : "84a6588cd845be81",
       "status" : "passed",
       "time" : {
-        "start" : 1624101802009,
-        "stop" : 1624101808275,
-        "duration" : 6266
+        "start" : 1624972763406,
+        "stop" : 1624972768854,
+        "duration" : 5448
+      }
+    } ]
+  },
+  "a151f1250ec263c844fd4d20cf9d0649" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "84d02d3b2bf9756",
+      "status" : "passed",
+      "time" : {
+        "start" : 1624972768859,
+        "stop" : 1624972775076,
+        "duration" : 6217
       }
     } ]
   }
