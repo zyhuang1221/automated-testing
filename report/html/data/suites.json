@@ -9,26 +9,26 @@
         "name" : "TestRegister",
         "children" : [ {
           "name" : "测试数据：用户名：mik_73,密码：123456",
-          "uid" : "9163e9e7e998f9f2",
+          "uid" : "a1d067dd99654408",
           "parentUid" : "051c6cc5ae015fb08b940b9121a3d7d3",
           "status" : "failed",
           "time" : {
-            "start" : 1624972743771,
-            "stop" : 1624972759834,
-            "duration" : 16063
+            "start" : 1624973483707,
+            "stop" : 1624973498856,
+            "duration" : 15149
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "123456", "'mik_73'" ]
         }, {
           "name" : "测试数据：用户名：mik_74,密码：123456",
-          "uid" : "4a8a2a74baf1b66f",
+          "uid" : "38fcc49a5f1c5e35",
           "parentUid" : "051c6cc5ae015fb08b940b9121a3d7d3",
           "status" : "failed",
           "time" : {
-            "start" : 1624972759898,
-            "stop" : 1624972763397,
-            "duration" : 3499
+            "start" : 1624973498921,
+            "stop" : 1624973501552,
+            "duration" : 2631
           },
           "flaky" : false,
           "newFailed" : false,
@@ -43,26 +43,26 @@
         "name" : "TestLogin",
         "children" : [ {
           "name" : "测试数据：用户名：mik_73,密码：123456",
-          "uid" : "84a6588cd845be81",
+          "uid" : "754af41229c58fea",
           "parentUid" : "55d8d6c5343da77a2ee0ab48e4ef8d81",
           "status" : "passed",
           "time" : {
-            "start" : 1624972763406,
-            "stop" : 1624972768854,
-            "duration" : 5448
+            "start" : 1624973501561,
+            "stop" : 1624973508502,
+            "duration" : 6941
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "123456", "'mik_73'" ]
         }, {
           "name" : "测试数据：用户名：mik_74,密码：123456",
-          "uid" : "84d02d3b2bf9756",
+          "uid" : "2c375352900faf46",
           "parentUid" : "55d8d6c5343da77a2ee0ab48e4ef8d81",
           "status" : "passed",
           "time" : {
-            "start" : 1624972768859,
-            "stop" : 1624972775076,
-            "duration" : 6217
+            "start" : 1624973508507,
+            "stop" : 1624973514249,
+            "duration" : 5742
           },
           "flaky" : false,
           "newFailed" : false,
@@ -77,13 +77,13 @@
         "name" : "TestShop",
         "children" : [ {
           "name" : "test_case01",
-          "uid" : "6192f57ff9cb8ac1",
+          "uid" : "f17d0380329d5f2d",
           "parentUid" : "2a5dbfb7d19b7b6d962d1d648df5030e",
           "status" : "passed",
           "time" : {
-            "start" : 1624972775081,
-            "stop" : 1624972789693,
-            "duration" : 14612
+            "start" : 1624973514255,
+            "stop" : 1624973529632,
+            "duration" : 15377
           },
           "flaky" : false,
           "newFailed" : false,
