@@ -24,4 +24,4 @@ class GoodsDetails(BasePage):
         self.my_click(self.loc_32G, '32G')
         sleep(0.5)
         self.my_click(self.loc_立即购买, '立即购买')
-        return MakeSure(self.driver,'订单确认')
+        return MakeSure(self.driver, '订单确认')
