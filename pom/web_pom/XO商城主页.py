@@ -10,9 +10,9 @@ from pom.web_pom.XO商城注册 import Register
 
 class HomePage(BasePage):
     # 元素定位
-    __loc_注册 = (By.XPATH, '/html/body/div[6]/div/div[1]/div[2]/a[2]')
-    __loc_登录 = (By.XPATH, '/html/body/div[6]/div/div[1]/div[2]/a[1]')
-    url = 'http://123.56.183.84/'
+    __loc_注册 = (By.XPATH, '//a[text()="注册"]')
+    __loc_登录 = (By.XPATH, '//a[text()="登录"]')
+    url = 'http://39.98.138.157/shopxo/'
 
     def open_home(self):
         self.my_get_url(self.url)

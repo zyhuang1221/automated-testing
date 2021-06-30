@@ -10,7 +10,7 @@ from libs.utils.log_module import logger
 from libs.utils import rw_properties
 import pytest
 
-url = 'http://123.56.183.84/'
+url = 'http://39.98.138.157/shopxo/'
 
 
 # scope='session', autouse=True

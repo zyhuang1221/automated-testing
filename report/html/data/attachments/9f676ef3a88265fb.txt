@@ -1,0 +1,21 @@
+INFO     root:conftest.py:47 *************** 开始执行用例：testcase_01 ***************
+INFO     root:base.py:49 定位商城主页页面元素：('xpath', '//a[text()="登录"]'), 元素描述：登录
+INFO     root:base.py:58 元素定位成功：耗时0.023秒!
+INFO     root:base.py:111 点击元素：登录
+INFO     root:base.py:49 定位登录页面元素：('xpath', '//input[@placeholder="用户名/手机/邮箱"]'), 元素描述：用户名输入框
+INFO     root:base.py:58 元素定位成功：耗时0.017秒!
+INFO     root:base.py:94 输入内容：mik_74
+INFO     root:base.py:49 定位登录页面元素：('xpath', '//input[@placeholder="登录密码"]'), 元素描述：密码输入框
+INFO     root:base.py:58 元素定位成功：耗时0.014秒!
+INFO     root:base.py:94 输入内容：123456
+INFO     root:base.py:49 定位登录页面元素：('xpath', '//input[@placeholder="登录密码"]'), 元素描述：提交
+INFO     root:base.py:58 元素定位成功：耗时0.014秒!
+INFO     root:base.py:127 点击提交
+INFO     root:base.py:49 定位登录页面元素：('xpath', '//*[@id="common-prompt"]/p'), 元素描述：弹出框
+INFO     root:base.py:58 元素定位成功：耗时0.599秒!
+INFO     root:base.py:185 弹出框元素文本：登录成功
+INFO     root:base.py:49 定位登录主页页面元素：('xpath', '/html/body/div[6]/div/div[1]/div[1]/a[2]'), 元素描述：退出登录
+INFO     root:base.py:58 元素定位成功：耗时5.643秒!
+INFO     root:base.py:111 点击元素：退出登录
+INFO     root:conftest.py:49 *************** 结束执行用例：testcase_01 ***************
+INFO     root:test_02_login.py:23 TestLogin模块测试完成

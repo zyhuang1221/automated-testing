@@ -12,7 +12,7 @@ class GoodsDetails(BasePage):
     loc_套餐1 = (By.XPATH, '//li[@data-value="套餐一"]')
     loc_金色 = (By.XPATH, '//li[@data-value="金色"]')
     loc_32G = (By.XPATH, '//li[@data-value="32G"]')
-    loc_立即购买 = (By.XPATH, '/html/body/div[4]/div[2]/div[2]/div/div[3]/div[2]/button[1]')
+    loc_立即购买 = (By.XPATH, '//button[text()="立即购买"]')
     loc_加入购物车 = (By.XPATH, '//button[@title="加入购物车"]')
     loc_加入购物车弹出框 = (By.XPATH, '//p[@class="prompt-msg"]')
 

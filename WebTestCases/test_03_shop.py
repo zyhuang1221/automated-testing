@@ -37,7 +37,9 @@ class TestShop:
             page_确认订单 = page_商品详情.select_goods()
         with allure.step('确认订单'):
             page_确认订单.my_click(page_确认订单.loc_使用新地址, '使用新地址')
+            sleep(1)
             page_确认订单.my_switch_iframe(page_确认订单.loc_iframe)
             page_新增地址 = 新增地址页面.NewAddress(browser, '新增地址')
             page_新增地址.add_addres(uinfo)
+            sleep(5)
 

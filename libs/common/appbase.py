@@ -6,20 +6,14 @@ from appium import webdriver
 from time import sleep
 
 caps = {
-    'deviceName': '160fdb4c',
-    'automationName': 'UiAutomator2',
+    'deviceName': '127.0.0.1:62001',
     'platformName': 'android',
-    'platformVersion': '7.0',
-    'appPackage': 'com.android.calculator2',
-    'appActivity': '.Calculator'
+    'platformVersion': '5.1.1',
+    'appPackage': 'com.wuba',
+    'appActivity': '.activity.city.CityHotActivity t3'
 }
 
-driver = webdriver.Remote('http://localhost:4723/wd/hub', caps)
+driver = webdriver.Remote('http://192.168.1.5:4723/wd/hub', caps)
 
-driver.find_element_by_id('com.android.calculator2:id/digit_1').click()
-driver.find_element_by_id('com.android.calculator2:id/digit_1').click()
-driver.find_element_by_id('com.android.calculator2:id/op_add').click()
-driver.find_element_by_id('com.android.calculator2:id/digit_2').click()
-driver.find_element_by_id('com.android.calculator2:id/eq').click()
+
 sleep(5)
-driver.quit()

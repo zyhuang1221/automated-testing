@@ -9,10 +9,10 @@ from libs.common.base import BasePage
 
 
 class Login(BasePage):
-    loc_用户名 = (By.XPATH, '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[1]/input')
-    loc_密码 = (By.XPATH, '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input')
-    loc_提交 = (By.XPATH, '/html/body/div[4]/div/div[2]/div[2]/div/div/div[1]/form/div[2]/div/input')
-    loc_登录弹出信息 = (By.CLASS_NAME, 'prompt-msg')
+    loc_用户名 = (By.XPATH, '//input[@placeholder="用户名/手机/邮箱"]')
+    loc_密码 = (By.XPATH, '//input[@placeholder="登录密码"]')
+    loc_提交 = (By.XPATH, '//input[@placeholder="登录密码"]')
+    loc_登录弹出信息 = (By.XPATH, '//*[@id="common-prompt"]/p')
 
     def login(self, user, pw):
         self.my_sendkeys(self.loc_用户名, user, msg='用户名输入框')

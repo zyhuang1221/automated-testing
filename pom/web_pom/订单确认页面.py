@@ -8,4 +8,5 @@ from libs.common.base import BasePage
 
 class MakeSure(BasePage):
     loc_使用新地址 = (By.XPATH, '//button[text()="使用新地址"]')
-    loc_iframe = (By.XPATH, '//iframe[@src="http://123.56.183.84/index.php?s=/index/useraddress/saveinfo.html"]')
+    loc_iframe = (By.XPATH, '//div[@id="popup-modal-address"]/div/iframe')
+

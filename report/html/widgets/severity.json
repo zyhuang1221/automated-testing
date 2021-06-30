@@ -1,50 +1,50 @@
 [ {
-  "uid" : "754af41229c58fea",
+  "uid" : "688a4dabd3cd8627",
   "name" : "测试数据：用户名：mik_73,密码：123456",
   "time" : {
-    "start" : 1624973501561,
-    "stop" : 1624973508502,
-    "duration" : 6941
+    "start" : 1625053802961,
+    "stop" : 1625053807027,
+    "duration" : 4066
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a1d067dd99654408",
+  "uid" : "eaf4597492ce86b6",
   "name" : "测试数据：用户名：mik_73,密码：123456",
   "time" : {
-    "start" : 1624973483707,
-    "stop" : 1624973498856,
-    "duration" : 15149
+    "start" : 1625053792505,
+    "stop" : 1625053800802,
+    "duration" : 8297
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "2c375352900faf46",
+  "uid" : "284e6b00b4aa95b5",
   "name" : "测试数据：用户名：mik_74,密码：123456",
   "time" : {
-    "start" : 1624973508507,
-    "stop" : 1624973514249,
-    "duration" : 5742
+    "start" : 1625053807033,
+    "stop" : 1625053815996,
+    "duration" : 8963
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "38fcc49a5f1c5e35",
+  "uid" : "820c596e6651bde8",
   "name" : "测试数据：用户名：mik_74,密码：123456",
   "time" : {
-    "start" : 1624973498921,
-    "stop" : 1624973501552,
-    "duration" : 2631
+    "start" : 1625053800866,
+    "stop" : 1625053802952,
+    "duration" : 2086
   },
   "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "f17d0380329d5f2d",
+  "uid" : "3f731506d754a520",
   "name" : "test_case01",
   "time" : {
-    "start" : 1624973514255,
-    "stop" : 1624973529632,
-    "duration" : 15377
+    "start" : 1625053816002,
+    "stop" : 1625053831766,
+    "duration" : 15764
   },
   "status" : "passed",
   "severity" : "blocker"
