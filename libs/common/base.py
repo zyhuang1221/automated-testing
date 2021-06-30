@@ -13,15 +13,15 @@ import time
 
 
 class BasePage:
-    """基于原生selenium第二次封装，主要添加显示等待和log以及失败截图"""
+    """基于原生selenium第二次封装，主要添加EC模块，显示等待和log以及失败截图"""
 
-    def __init__(self, driver, page=''):
+    def __init__(self, driver, pagename=''):
         """
         :param driver: 浏览器对象
-        :param page: 页面功能名，用于记录log和失败截图
+        :param pagename: 页面名，用于记录log和失败截图
         """
         self.driver = driver
-        self.page = page
+        self.page = pagename
 
     def my_get_url(self, url):
         """
@@ -35,7 +35,7 @@ class BasePage:
         except:
             raise
 
-    def wait_element_visible(self, loc, msg=''):
+    def my_find_element(self, loc, msg=''):
         """自动显示等待10s,定位元素，并返回元素。没有定位到抛出异常
         :param loc:元素定位表达式，元组类型。
         :param msg:元素描述，用于记录到日志
@@ -71,7 +71,7 @@ class BasePage:
             try:
                 logger.info('定位{}页面元素：{}, 元素描述：{}'.format(self.page, loc, msg))
                 start_time = time.time()
-                eles = WebDriverWait(self.driver, 10).until(lambda x: x.find_elements(*loc))
+                eles = WebDriverWait(self.driver, 10).until(EC.visibility_of_all_elements_located(loc))
                 end_time = time.time()
             except Exception as e:
                 logger.error('元素定位失败!')
@@ -89,7 +89,7 @@ class BasePage:
         :param msg:元素描述
         :return:
         """
-        ele = self.wait_element_visible(loc, msg=msg)
+        ele = self.my_find_element(loc, msg=msg)
         try:
             logger.info('输入内容：{}'.format(text))
             ele.clear()
@@ -106,12 +106,12 @@ class BasePage:
         :param msg:元素描述
         :return: None
         """
-        ele = self.wait_element_visible(loc, msg=msg)
+
         try:
             logger.info('点击元素：{}'.format(msg))
-            ele.click()
+            WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc)).click()
         except Exception as e:
-            logger.error('点击失败！')
+            logger.error('点击失败,元素不可点击或者元素点位失败')
             self.my_save_webImgs()
             raise e
 
@@ -122,16 +122,16 @@ class BasePage:
         :param loc:元素定位表达式
         :return:
         """
-        ele = self.wait_element_visible(loc, msg='提交')
+        ele = self.my_find_element(loc, msg='提交')
         try:
-            logger.info('点击提交')
+            logger.info('提交form表单')
             ele.submit()
         except Exception as e:
-            logger.error('点击失败'.format())
+            logger.error('提交失败'.format())
             self.my_save_webImgs()
             raise e
 
-    def my_get_current_handles(self):
+    def my_get_handles(self):
         """
         获取当前所有句柄
         :return:所有句柄
@@ -179,7 +179,7 @@ class BasePage:
         :param msg: 元素描述
         :return: 文本内容
         """
-        ele = self.wait_element_visible(loc, msg=msg)
+        ele = self.my_find_element(loc, msg=msg)
         try:
             text = ele.text
             logger.info('{}元素文本：{}'.format(msg, text))
@@ -217,7 +217,6 @@ class BasePage:
         失败截图，并加入allure
         :return: None
         """
-        # filepath=制定的图片保存目录/(页面功能名称)_当前时间到秒.png
         name = time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())
         filepath = root_dir + r'\imgs\{}.png'.format(name)
         try:
@@ -238,7 +237,6 @@ class BasePage:
         try:
             WebDriverWait(self.driver, timeout=10).until(
                 EC.frame_to_be_available_and_switch_to_it(loc))
-            time.sleep(0.5)
             logger.info("切换成功")
         except:
             logger.error("iframe切换失败！")
@@ -259,10 +257,10 @@ class BasePage:
         :param loc: 元素定位
         :return:
         """
-        ele = self.wait_element_visible(loc, msg=msg)
+        ele = self.my_find_element(loc, msg=msg)
         try:
             AC(self.driver).double_click(ele).perform()
-            logger.info("{0}元素：鼠标双击成功".format(loc))
+            logger.info("双击元素：{}".format(loc))
         except:
             logger.error("鼠标双击操作失败。")
             self.my_save_webImgs()
