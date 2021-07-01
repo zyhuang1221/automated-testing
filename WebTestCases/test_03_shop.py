@@ -29,7 +29,7 @@ class TestShop:
             page_登录成功.my_sendkeys(page_登录成功.loc_搜索框, '手机', '搜索框')
             page_登录成功.my_click(page_登录成功.loc_搜索按钮, '搜索按钮')
             page_商品显示 = 搜索商品显示页面.AfterSearch(browser, '显示商品页面')
-            all_hd = page_商品显示.my_get_current_handles()
+            all_hd = page_商品显示.my_get_handles()
             page_商品显示.my_click(page_商品显示.loc_商品, '第一个商品')
         with allure.step('选择手机类型'):
             page_商品显示.my_switch_window(old_handles=all_hd)

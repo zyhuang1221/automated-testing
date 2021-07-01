@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "820c596e6651bde8",
+      "uid" : "b73220ab905d97ba",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
       "time" : {
-        "start" : 1625053800866,
-        "stop" : 1625053802952,
-        "duration" : 2086
+        "start" : 1625104058665,
+        "stop" : 1625104065420,
+        "duration" : 6755
       }
     } ]
   },
@@ -29,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3f731506d754a520",
+      "uid" : "dd2937655b386cf1",
       "status" : "passed",
       "time" : {
-        "start" : 1625053816002,
-        "stop" : 1625053831766,
-        "duration" : 15764
+        "start" : 1625104075457,
+        "stop" : 1625104092235,
+        "duration" : 16778
       }
     } ]
   },
@@ -48,32 +48,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "eaf4597492ce86b6",
+      "uid" : "7dd325c0d85b4a32",
       "status" : "failed",
       "statusDetails" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
       "time" : {
-        "start" : 1625053792505,
-        "stop" : 1625053800802,
-        "duration" : 8297
-      }
-    } ]
-  },
-  "a151f1250ec263c844fd4d20cf9d0649" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "284e6b00b4aa95b5",
-      "status" : "passed",
-      "time" : {
-        "start" : 1625053807033,
-        "stop" : 1625053815996,
-        "duration" : 8963
+        "start" : 1625104049993,
+        "stop" : 1625104058598,
+        "duration" : 8605
       }
     } ]
   },
@@ -87,12 +68,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "688a4dabd3cd8627",
+      "uid" : "558b8a4d39d834dd",
       "status" : "passed",
       "time" : {
-        "start" : 1625053802961,
-        "stop" : 1625053807027,
-        "duration" : 4066
+        "start" : 1625104065432,
+        "stop" : 1625104071228,
+        "duration" : 5796
+      }
+    } ]
+  },
+  "a151f1250ec263c844fd4d20cf9d0649" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1bf2c0888830e05c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1625104071232,
+        "stop" : 1625104075451,
+        "duration" : 4219
       }
     } ]
   }

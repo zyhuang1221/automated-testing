@@ -30,7 +30,7 @@ class BasePage:
         :return: None
         """
         try:
-            self.driver.implicitly_wait(5)
+            logger.info(f'打开{url}')
             self.driver.get(url)
         except:
             raise
@@ -190,7 +190,7 @@ class BasePage:
         else:
             return text
 
-    def my_switch_alert(self):
+    def my_switch_alert(self, send=None):
         """
         正常获取到弹出窗的text内容就返回alert这个对象（注意这里不是返回Ture），没有获取到就返回False
         :return: alert内容
@@ -198,15 +198,21 @@ class BasePage:
         try:
             WebDriverWait(self.driver, timeout=10).until(EC.alert_is_present())
             result = self.driver.switch_to.alert
-            if result:
+            if result and send is None:
                 text = result.text
                 logger.info("alert出现,内容：{}".format(text))
                 result.accept()
                 logger.info("alert已经关闭")
                 return text
+            elif result and send is not None:
+                text = result.text
+                logger.info("alert出现,内容：{}".format(text))
+                result.send_key(send)
+                result.accept()
+                logger.info("alert已经关闭")
+                return text
             else:
                 logger.info("未弹出alert")
-
         except:
             logger.error("alert切换失败！")
             self.my_save_webImgs()

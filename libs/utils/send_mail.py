@@ -7,7 +7,7 @@ import zmail
 from libs.utils.rd_yaml import read_yaml
 
 
-class SendEmail():
+class SendEmail:
     def __init__(self, subject, content_text, *attachments):
         """构造方法，初始化邮件内容
         :param subject:主题内容
@@ -36,6 +36,6 @@ class SendEmail():
 
 
 if __name__ == '__main__':
-    s = SendEmail('主题：offer', '内容：恭喜你收到华测的offer',
+    s = SendEmail('主题：offer', '内容：恭喜你收到的offer',
                   )
     s.send_email()
