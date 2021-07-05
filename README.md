@@ -1,7 +1,7 @@
 # UI自动化测试框架
 
 #### 介绍
-基于selenium,appium,python的Web自动化测试框架
+基于selenium,appium,python的UI自动化测试框架
 
 #### 软件架构
 - 语言：python
