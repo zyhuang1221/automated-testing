@@ -1,8 +1,0 @@
-[run_web.py]: [INFO] [2021-07-01 09:33:47] line:48->>==>>>开始执行web自动化测试
-[rd_yaml.py]: [INFO] [2021-07-01 09:33:50] line:23->>加载 E:\My_code\UIAutoTest\testdata\web_data.yaml 文件......
-[rd_yaml.py]: [INFO] [2021-07-01 09:33:54] line:23->>加载 E:\My_code\UIAutoTest\testdata\web_data.yaml 文件......
-[conftest.py]: [INFO] [2021-07-01 09:33:55] line:24->>打开浏览器
-[browser.py]: [INFO] [2021-07-01 09:34:02] line:46->>在localhost使用chrome执行
-[test_01_register.py]: [INFO] [2021-07-01 09:34:02] line:20->>开始执行TestRegister模块测试
-[conftest.py]: [INFO] [2021-07-01 09:34:02] line:47->>*************** 开始执行用例：testcase_01 ***************
-[base.py]: [INFO] [2021-07-01 09:34:02] line:33->>打开http://39.98.138.157/shopxo/

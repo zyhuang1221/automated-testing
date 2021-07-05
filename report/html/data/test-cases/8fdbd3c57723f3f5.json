@@ -1,0 +1,259 @@
+{
+  "uid" : "8fdbd3c57723f3f5",
+  "name" : "test_case01",
+  "fullName" : "WebTestCases.test_03_shop.TestShop#test_case01",
+  "historyId" : "7eb26a7dbb086120eb16f156c298affc",
+  "time" : {
+    "start" : 1625306295950,
+    "stop" : 1625306418655,
+    "duration" : 122705
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert '请选择区/县' == '新增成功'\n  - 新增成功\n  + 请选择区/县",
+  "statusTrace" : "self = <WebTestCases.test_03_shop.TestShop object at 0x04155A70>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"2ea5d8407e67223f1621a7ae688d8a3a\")>\n\n    @allure.story('用户购物')\n    def test_case01(self, browser):\n        with allure.step('打开主页，点击登录'):\n            page_主页 = XO商城主页.HomePage(browser, '商城主页')\n            page_主页.open_home()\n            page_登录 = page_主页.goto_login()\n        with allure.step('输入用户名登录'):\n            page_登录.login('mik_2', '123456')\n        with allure.step('搜索手机'):\n            page_登录成功 = XO商城登录成功.LoginSucceed(browser, '登录成功主页')\n            page_登录成功.my_sendkeys(page_登录成功.loc_搜索框, '手机', '搜索框')\n            page_登录成功.my_click(page_登录成功.loc_搜索按钮, '搜索按钮')\n            page_商品显示 = 商品显示页面.AfterSearch(browser, '显示商品页面')\n            all_hd = page_商品显示.my_get_handles()\n            page_商品显示.my_click(page_商品显示.loc_商品, '第一个商品')\n        with allure.step('选择手机类型'):\n            page_商品显示.my_switch_window(old_handles=all_hd)\n            page_商品详情 = 商品详情页面.GoodsDetails(browser, '商城主页')\n            page_确认订单 = page_商品详情.select_goods()\n        with allure.step('确认订单'):\n            page_确认订单.my_click(page_确认订单.loc_使用新地址, '使用新地址')\n            sleep(1)\n            page_确认订单.my_switch_iframe(page_确认订单.loc_iframe)\n            page_新增地址 = 新增地址页面.NewAddress(browser, '新增地址')\n            page_新增地址.add_addres(uinfo)\n    \n            text = page_新增地址.my_get_text(page_新增地址.loc_新增地址弹窗结果, '新增地址弹窗结果')\n            try:\n>               assert text == '新增成功'\nE               AssertionError: assert '请选择区/县' == '新增成功'\nE                 - 新增成功\nE                 + 请选择区/县\n\nWebTestCases\\test_03_shop.py:47: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1625306294047,
+      "stop" : 1625306294047,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1625306294047,
+      "stop" : 1625306295948,
+      "duration" : 1901
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "function_log",
+    "time" : {
+      "start" : 1625306295948,
+      "stop" : 1625306295948,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1625306293970,
+      "stop" : 1625306294047,
+      "duration" : 77
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert '请选择区/县' == '新增成功'\n  - 新增成功\n  + 请选择区/县",
+    "statusTrace" : "self = <WebTestCases.test_03_shop.TestShop object at 0x04155A70>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"2ea5d8407e67223f1621a7ae688d8a3a\")>\n\n    @allure.story('用户购物')\n    def test_case01(self, browser):\n        with allure.step('打开主页，点击登录'):\n            page_主页 = XO商城主页.HomePage(browser, '商城主页')\n            page_主页.open_home()\n            page_登录 = page_主页.goto_login()\n        with allure.step('输入用户名登录'):\n            page_登录.login('mik_2', '123456')\n        with allure.step('搜索手机'):\n            page_登录成功 = XO商城登录成功.LoginSucceed(browser, '登录成功主页')\n            page_登录成功.my_sendkeys(page_登录成功.loc_搜索框, '手机', '搜索框')\n            page_登录成功.my_click(page_登录成功.loc_搜索按钮, '搜索按钮')\n            page_商品显示 = 商品显示页面.AfterSearch(browser, '显示商品页面')\n            all_hd = page_商品显示.my_get_handles()\n            page_商品显示.my_click(page_商品显示.loc_商品, '第一个商品')\n        with allure.step('选择手机类型'):\n            page_商品显示.my_switch_window(old_handles=all_hd)\n            page_商品详情 = 商品详情页面.GoodsDetails(browser, '商城主页')\n            page_确认订单 = page_商品详情.select_goods()\n        with allure.step('确认订单'):\n            page_确认订单.my_click(page_确认订单.loc_使用新地址, '使用新地址')\n            sleep(1)\n            page_确认订单.my_switch_iframe(page_确认订单.loc_iframe)\n            page_新增地址 = 新增地址页面.NewAddress(browser, '新增地址')\n            page_新增地址.add_addres(uinfo)\n    \n            text = page_新增地址.my_get_text(page_新增地址.loc_新增地址弹窗结果, '新增地址弹窗结果')\n            try:\n>               assert text == '新增成功'\nE               AssertionError: assert '请选择区/县' == '新增成功'\nE                 - 新增成功\nE                 + 请选择区/县\n\nWebTestCases\\test_03_shop.py:47: AssertionError",
+    "steps" : [ {
+      "name" : "打开主页，点击登录",
+      "time" : {
+        "start" : 1625306295950,
+        "stop" : 1625306406615,
+        "duration" : 110665
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "输入用户名登录",
+      "time" : {
+        "start" : 1625306406615,
+        "stop" : 1625306406894,
+        "duration" : 279
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "搜索手机",
+      "time" : {
+        "start" : 1625306406894,
+        "stop" : 1625306408479,
+        "duration" : 1585
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "选择手机类型",
+      "time" : {
+        "start" : 1625306408479,
+        "stop" : 1625306413379,
+        "duration" : 4900
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "确认订单",
+      "time" : {
+        "start" : 1625306413380,
+        "stop" : 1625306418655,
+        "duration" : 5275
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert '请选择区/县' == '新增成功'\n  - 新增成功\n  + 请选择区/县\n",
+      "statusTrace" : "  File \"E:\\My_code\\UIAutoTest\\WebTestCases\\test_03_shop.py\", line 47, in test_case01\n    assert text == '新增成功'\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "ad4be7b825e7dee",
+      "name" : "log",
+      "source" : "ad4be7b825e7dee.txt",
+      "type" : "text/plain",
+      "size" : 3603
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1625306418700,
+      "stop" : 1625306421471,
+      "duration" : 2771
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "function_log::0",
+    "time" : {
+      "start" : 1625306418699,
+      "stop" : 1625306418699,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "WebUI测试"
+  }, {
+    "name" : "story",
+    "value" : "用户购物"
+  }, {
+    "name" : "feature",
+    "value" : "购物模块"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "parentSuite",
+    "value" : "WebTestCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_shop"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestShop"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-2TMV0U4"
+  }, {
+    "name" : "thread",
+    "value" : "1004-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "WebTestCases.test_03_shop"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "8fdbd3c57723f3f5.json",
+  "parameterValues" : [ ]
+}

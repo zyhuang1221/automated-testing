@@ -1,45 +1,6 @@
 {
-  "1630ce09811afbd5d14d4f2ed0703495" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "b73220ab905d97ba",
-      "status" : "failed",
-      "statusDetails" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
-      "time" : {
-        "start" : 1625104058665,
-        "stop" : 1625104065420,
-        "duration" : 6755
-      }
-    } ]
-  },
   "7eb26a7dbb086120eb16f156c298affc" : {
     "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "dd2937655b386cf1",
-      "status" : "passed",
-      "time" : {
-        "start" : 1625104075457,
-        "stop" : 1625104092235,
-        "duration" : 16778
-      }
-    } ]
-  },
-  "8c23dcc18942ae2fa4b027a014ba05d7" : {
-    "statistic" : {
       "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
@@ -48,51 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7dd325c0d85b4a32",
+      "uid" : "8fdbd3c57723f3f5",
       "status" : "failed",
-      "statusDetails" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
+      "statusDetails" : "AssertionError: assert '请选择区/县' == '新增成功'\n  - 新增成功\n  + 请选择区/县",
       "time" : {
-        "start" : 1625104049993,
-        "stop" : 1625104058598,
-        "duration" : 8605
-      }
-    } ]
-  },
-  "fc49dde57a7396be3c03e4d6aab21d2d" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "558b8a4d39d834dd",
-      "status" : "passed",
-      "time" : {
-        "start" : 1625104065432,
-        "stop" : 1625104071228,
-        "duration" : 5796
-      }
-    } ]
-  },
-  "a151f1250ec263c844fd4d20cf9d0649" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "1bf2c0888830e05c",
-      "status" : "passed",
-      "time" : {
-        "start" : 1625104071232,
-        "stop" : 1625104075451,
-        "duration" : 4219
+        "start" : 1625306295950,
+        "stop" : 1625306418655,
+        "duration" : 122705
       }
     } ]
   }

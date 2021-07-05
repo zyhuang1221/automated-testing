@@ -1,0 +1,6 @@
+[appbase.py]: [INFO] [2021-07-05 14:42:38] line:25->>定位页面元素：('id', 'com.youdao.note:id/add_note'), 元素描述：
+[appbase.py]: [INFO] [2021-07-05 14:42:38] line:31->>元素定位成功
+[appbase.py]: [INFO] [2021-07-05 14:42:38] line:25->>定位页面元素：('id', 'com.youdao.note:id/add_note_floater_add_note'), 元素描述：
+[appbase.py]: [INFO] [2021-07-05 14:42:39] line:31->>元素定位成功
+[appbase.py]: [INFO] [2021-07-05 14:42:40] line:25->>定位页面元素：('id', 'com.youdao.note:id/note_title'), 元素描述：
+[appbase.py]: [INFO] [2021-07-05 14:42:41] line:31->>元素定位成功

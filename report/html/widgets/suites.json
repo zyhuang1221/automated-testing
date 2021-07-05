@@ -4,12 +4,12 @@
     "uid" : "d96f32c8ab67f3dbe86f6c3eec3c3271",
     "name" : "WebTestCases",
     "statistic" : {
-      "failed" : 2,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 5
+      "total" : 1
     }
   } ]
 }

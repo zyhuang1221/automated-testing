@@ -1,0 +1,128 @@
+[run_web.py]: [INFO] [2021-07-03 17:48:06] line:48->>==>>>开始执行web自动化测试
+[rd_yaml.py]: [INFO] [2021-07-03 17:48:07] line:23->>加载 E:\My_code\UIAutoTest\testdata\web_data.yaml 文件......
+[rd_yaml.py]: [INFO] [2021-07-03 17:48:07] line:23->>加载 E:\My_code\UIAutoTest\testdata\web_data.yaml 文件......
+[conftest.py]: [INFO] [2021-07-03 17:48:07] line:24->>打开浏览器
+[browser.py]: [INFO] [2021-07-03 17:48:15] line:46->>在localhost使用chrome执行
+[test_01_register.py]: [INFO] [2021-07-03 17:48:15] line:20->>开始执行TestRegister模块测试
+[conftest.py]: [INFO] [2021-07-03 17:48:15] line:47->>*************** 开始执行用例：testcase_01 ***************
+[base.py]: [INFO] [2021-07-03 17:48:15] line:33->>打开http://39.98.138.157/shopxo/
+[base.py]: [INFO] [2021-07-03 17:48:22] line:111->>点击元素：注册
+[base.py]: [INFO] [2021-07-03 17:48:23] line:49->>定位注册页面元素：('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input'), 元素描述：用户名输入框
+[base.py]: [INFO] [2021-07-03 17:48:23] line:58->>元素定位成功：耗时0.033秒!
+[base.py]: [INFO] [2021-07-03 17:48:23] line:94->>输入内容：mik_73
+[base.py]: [INFO] [2021-07-03 17:48:23] line:49->>定位注册页面元素：('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input'), 元素描述：密码输入框
+[base.py]: [INFO] [2021-07-03 17:48:23] line:58->>元素定位成功：耗时0.019秒!
+[base.py]: [INFO] [2021-07-03 17:48:23] line:94->>输入内容：123456
+[base.py]: [INFO] [2021-07-03 17:48:23] line:111->>点击元素：阅读并同意
+[base.py]: [INFO] [2021-07-03 17:48:23] line:49->>定位注册页面元素：('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input'), 元素描述：提交
+[base.py]: [INFO] [2021-07-03 17:48:23] line:58->>元素定位成功：耗时0.017秒!
+[base.py]: [INFO] [2021-07-03 17:48:23] line:127->>提交form表单
+[base.py]: [INFO] [2021-07-03 17:48:23] line:49->>定位注册页面元素：('xpath', '//*[@id="common-prompt"]/p'), 元素描述：弹出框
+[base.py]: [INFO] [2021-07-03 17:48:23] line:58->>元素定位成功：耗时0.53秒!
+[base.py]: [INFO] [2021-07-03 17:48:24] line:185->>弹出框元素文本：账号已存在
+[conftest.py]: [INFO] [2021-07-03 17:48:24] line:49->>*************** 结束执行用例：testcase_01 ***************
+[conftest.py]: [INFO] [2021-07-03 17:48:24] line:47->>*************** 开始执行用例：testcase_01 ***************
+[base.py]: [INFO] [2021-07-03 17:48:24] line:33->>打开http://39.98.138.157/shopxo/
+[base.py]: [INFO] [2021-07-03 17:48:25] line:111->>点击元素：注册
+[base.py]: [INFO] [2021-07-03 17:48:25] line:49->>定位注册页面元素：('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[1]/input'), 元素描述：用户名输入框
+[base.py]: [INFO] [2021-07-03 17:48:25] line:58->>元素定位成功：耗时0.016秒!
+[base.py]: [INFO] [2021-07-03 17:48:25] line:94->>输入内容：mik_74
+[base.py]: [INFO] [2021-07-03 17:48:25] line:49->>定位注册页面元素：('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input'), 元素描述：密码输入框
+[base.py]: [INFO] [2021-07-03 17:48:25] line:58->>元素定位成功：耗时0.017秒!
+[base.py]: [INFO] [2021-07-03 17:48:25] line:94->>输入内容：123456
+[base.py]: [INFO] [2021-07-03 17:48:25] line:111->>点击元素：阅读并同意
+[base.py]: [INFO] [2021-07-03 17:48:25] line:49->>定位注册页面元素：('xpath', '/html/body/div[4]/div/div/div/div[2]/div/div/div[1]/form/div[2]/div/input'), 元素描述：提交
+[base.py]: [INFO] [2021-07-03 17:48:26] line:58->>元素定位成功：耗时0.014秒!
+[base.py]: [INFO] [2021-07-03 17:48:26] line:127->>提交form表单
+[base.py]: [INFO] [2021-07-03 17:48:26] line:49->>定位注册页面元素：('xpath', '//*[@id="common-prompt"]/p'), 元素描述：弹出框
+[base.py]: [INFO] [2021-07-03 17:48:26] line:58->>元素定位成功：耗时0.528秒!
+[base.py]: [INFO] [2021-07-03 17:48:26] line:185->>弹出框元素文本：账号已存在
+[conftest.py]: [INFO] [2021-07-03 17:48:26] line:49->>*************** 结束执行用例：testcase_01 ***************
+[test_01_register.py]: [INFO] [2021-07-03 17:48:26] line:23->>TestRegister模块测试完成
+[test_02_login.py]: [INFO] [2021-07-03 17:48:26] line:20->>开始执行TestLogin模块测试
+[conftest.py]: [INFO] [2021-07-03 17:48:26] line:47->>*************** 开始执行用例：testcase_01 ***************
+[base.py]: [INFO] [2021-07-03 17:48:26] line:33->>打开http://39.98.138.157/shopxo/
+[base.py]: [INFO] [2021-07-03 17:48:27] line:111->>点击元素：登录
+[base.py]: [INFO] [2021-07-03 17:48:27] line:49->>定位登录页面元素：('xpath', '//input[@placeholder="用户名/手机/邮箱"]'), 元素描述：用户名输入框
+[base.py]: [INFO] [2021-07-03 17:48:27] line:58->>元素定位成功：耗时0.021秒!
+[base.py]: [INFO] [2021-07-03 17:48:27] line:94->>输入内容：mik_73
+[base.py]: [INFO] [2021-07-03 17:48:27] line:49->>定位登录页面元素：('xpath', '//input[@placeholder="登录密码"]'), 元素描述：密码输入框
+[base.py]: [INFO] [2021-07-03 17:48:27] line:58->>元素定位成功：耗时0.027秒!
+[base.py]: [INFO] [2021-07-03 17:48:27] line:94->>输入内容：123456
+[base.py]: [INFO] [2021-07-03 17:48:27] line:49->>定位登录页面元素：('xpath', '//input[@placeholder="登录密码"]'), 元素描述：提交
+[base.py]: [INFO] [2021-07-03 17:48:27] line:58->>元素定位成功：耗时0.015秒!
+[base.py]: [INFO] [2021-07-03 17:48:27] line:127->>提交form表单
+[base.py]: [INFO] [2021-07-03 17:48:27] line:49->>定位登录页面元素：('xpath', '//*[@id="common-prompt"]/p'), 元素描述：弹出框
+[base.py]: [INFO] [2021-07-03 17:48:28] line:58->>元素定位成功：耗时0.535秒!
+[base.py]: [INFO] [2021-07-03 17:48:28] line:185->>弹出框元素文本：登录成功
+[base.py]: [INFO] [2021-07-03 17:48:28] line:111->>点击元素：退出登录
+[conftest.py]: [INFO] [2021-07-03 17:48:36] line:49->>*************** 结束执行用例：testcase_01 ***************
+[conftest.py]: [INFO] [2021-07-03 17:48:36] line:47->>*************** 开始执行用例：testcase_01 ***************
+[base.py]: [INFO] [2021-07-03 17:48:36] line:33->>打开http://39.98.138.157/shopxo/
+[base.py]: [INFO] [2021-07-03 17:48:38] line:111->>点击元素：登录
+[base.py]: [INFO] [2021-07-03 17:48:39] line:49->>定位登录页面元素：('xpath', '//input[@placeholder="用户名/手机/邮箱"]'), 元素描述：用户名输入框
+[base.py]: [INFO] [2021-07-03 17:48:39] line:58->>元素定位成功：耗时0.025秒!
+[base.py]: [INFO] [2021-07-03 17:48:39] line:94->>输入内容：mik_74
+[base.py]: [INFO] [2021-07-03 17:48:39] line:49->>定位登录页面元素：('xpath', '//input[@placeholder="登录密码"]'), 元素描述：密码输入框
+[base.py]: [INFO] [2021-07-03 17:48:39] line:58->>元素定位成功：耗时0.017秒!
+[base.py]: [INFO] [2021-07-03 17:48:39] line:94->>输入内容：123456
+[base.py]: [INFO] [2021-07-03 17:48:39] line:49->>定位登录页面元素：('xpath', '//input[@placeholder="登录密码"]'), 元素描述：提交
+[base.py]: [INFO] [2021-07-03 17:48:39] line:58->>元素定位成功：耗时0.014秒!
+[base.py]: [INFO] [2021-07-03 17:48:39] line:127->>提交form表单
+[base.py]: [INFO] [2021-07-03 17:48:39] line:49->>定位登录页面元素：('xpath', '//*[@id="common-prompt"]/p'), 元素描述：弹出框
+[base.py]: [INFO] [2021-07-03 17:48:39] line:58->>元素定位成功：耗时0.533秒!
+[base.py]: [INFO] [2021-07-03 17:48:39] line:185->>弹出框元素文本：登录成功
+[base.py]: [INFO] [2021-07-03 17:48:39] line:111->>点击元素：退出登录
+[conftest.py]: [INFO] [2021-07-03 17:48:47] line:49->>*************** 结束执行用例：testcase_01 ***************
+[test_02_login.py]: [INFO] [2021-07-03 17:48:47] line:23->>TestLogin模块测试完成
+[conftest.py]: [INFO] [2021-07-03 17:48:47] line:47->>*************** 开始执行用例：test_case01 ***************
+[base.py]: [INFO] [2021-07-03 17:48:47] line:33->>打开http://39.98.138.157/shopxo/
+[base.py]: [INFO] [2021-07-03 17:48:48] line:111->>点击元素：登录
+[base.py]: [INFO] [2021-07-03 17:48:50] line:49->>定位登录页面元素：('xpath', '//input[@placeholder="用户名/手机/邮箱"]'), 元素描述：用户名输入框
+[base.py]: [INFO] [2021-07-03 17:48:50] line:58->>元素定位成功：耗时0.032秒!
+[base.py]: [INFO] [2021-07-03 17:48:50] line:94->>输入内容：mik_2
+[base.py]: [INFO] [2021-07-03 17:48:50] line:49->>定位登录页面元素：('xpath', '//input[@placeholder="登录密码"]'), 元素描述：密码输入框
+[base.py]: [INFO] [2021-07-03 17:48:50] line:58->>元素定位成功：耗时0.024秒!
+[base.py]: [INFO] [2021-07-03 17:48:50] line:94->>输入内容：123456
+[base.py]: [INFO] [2021-07-03 17:48:50] line:49->>定位登录页面元素：('xpath', '//input[@placeholder="登录密码"]'), 元素描述：提交
+[base.py]: [INFO] [2021-07-03 17:48:50] line:58->>元素定位成功：耗时0.014秒!
+[base.py]: [INFO] [2021-07-03 17:48:50] line:127->>提交form表单
+[base.py]: [INFO] [2021-07-03 17:48:50] line:49->>定位登录成功主页页面元素：('id', 'search-input'), 元素描述：搜索框
+[base.py]: [INFO] [2021-07-03 17:48:50] line:58->>元素定位成功：耗时0.028秒!
+[base.py]: [INFO] [2021-07-03 17:48:50] line:94->>输入内容：手机
+[base.py]: [INFO] [2021-07-03 17:48:51] line:111->>点击元素：搜索按钮
+[base.py]: [INFO] [2021-07-03 17:48:52] line:139->>获取所有句柄
+[base.py]: [INFO] [2021-07-03 17:48:52] line:111->>点击元素：第一个商品
+[base.py]: [INFO] [2021-07-03 17:48:53] line:158->>切换到最新打开的窗口
+[base.py]: [INFO] [2021-07-03 17:48:53] line:111->>点击元素：套餐1
+[base.py]: [INFO] [2021-07-03 17:48:55] line:111->>点击元素：金色
+[base.py]: [INFO] [2021-07-03 17:48:56] line:111->>点击元素：32G
+[base.py]: [INFO] [2021-07-03 17:48:56] line:111->>点击元素：立即购买
+[base.py]: [INFO] [2021-07-03 17:49:01] line:111->>点击元素：使用新地址
+[base.py]: [INFO] [2021-07-03 17:49:02] line:242->>iframe切换：('xpath', '//div[@id="popup-modal-address"]/div/iframe')
+[base.py]: [INFO] [2021-07-03 17:49:02] line:246->>切换成功
+[base.py]: [INFO] [2021-07-03 17:49:02] line:49->>定位新增地址页面元素：('xpath', '//input[@placeholder="别名"]'), 元素描述：别名
+[base.py]: [INFO] [2021-07-03 17:49:02] line:58->>元素定位成功：耗时0.016秒!
+[base.py]: [INFO] [2021-07-03 17:49:02] line:94->>输入内容：ak67
+[base.py]: [INFO] [2021-07-03 17:49:03] line:49->>定位新增地址页面元素：('xpath', '//input[@placeholder="姓名"]'), 元素描述：姓名
+[base.py]: [INFO] [2021-07-03 17:49:03] line:58->>元素定位成功：耗时0.021秒!
+[base.py]: [INFO] [2021-07-03 17:49:03] line:94->>输入内容：mik123
+[base.py]: [INFO] [2021-07-03 17:49:03] line:49->>定位新增地址页面元素：('xpath', '//input[@placeholder="电话"]'), 元素描述：电话
+[base.py]: [INFO] [2021-07-03 17:49:03] line:58->>元素定位成功：耗时0.021秒!
+[base.py]: [INFO] [2021-07-03 17:49:03] line:94->>输入内容：18923234567
+[base.py]: [INFO] [2021-07-03 17:49:03] line:111->>点击元素：省下拉框
+[base.py]: [INFO] [2021-07-03 17:49:03] line:111->>点击元素：湖北省
+[base.py]: [INFO] [2021-07-03 17:49:03] line:111->>点击元素：市下拉框
+[base.py]: [INFO] [2021-07-03 17:49:03] line:111->>点击元素：武汉市
+[base.py]: [INFO] [2021-07-03 17:49:03] line:111->>点击元素：区下拉框
+[base.py]: [INFO] [2021-07-03 17:49:03] line:111->>点击元素：江夏区
+[base.py]: [INFO] [2021-07-03 17:49:03] line:49->>定位新增地址页面元素：('xpath', '//input[@placeholder="详细地址"]'), 元素描述：详细地址
+[base.py]: [INFO] [2021-07-03 17:49:04] line:58->>元素定位成功：耗时0.017秒!
+[base.py]: [INFO] [2021-07-03 17:49:04] line:94->>输入内容：湖北省
+[base.py]: [INFO] [2021-07-03 17:49:04] line:111->>点击元素：保存按钮
+[base.py]: [INFO] [2021-07-03 17:49:04] line:49->>定位新增地址页面元素：('xpath', '//*[@id="common-prompt"]/p'), 元素描述：新增地址弹窗结果
+[base.py]: [INFO] [2021-07-03 17:49:04] line:58->>元素定位成功：耗时0.018秒!
+[base.py]: [INFO] [2021-07-03 17:49:04] line:185->>新增地址弹窗结果元素文本：请选择区/县
+[conftest.py]: [INFO] [2021-07-03 17:49:04] line:49->>*************** 结束执行用例：test_case01 ***************
+[conftest.py]: [INFO] [2021-07-03 17:49:04] line:35->>关闭浏览器
+[run_web.py]: [INFO] [2021-07-03 17:49:07] line:50->>==>>>web自动化测试结束

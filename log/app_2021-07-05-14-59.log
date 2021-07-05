@@ -1,0 +1,7 @@
+[read_ini.py]: [INFO] [2021-07-05 14:59:57] line:23->>加载 E:\My_code\UIAutoTest\config\appcfg.ini 文件......
+[appbase.py]: [INFO] [2021-07-05 15:00:00] line:25->>定位页面元素：('id', 'com.youdao.note:id/add_note'), 元素描述：
+[appbase.py]: [INFO] [2021-07-05 15:00:01] line:31->>元素定位成功
+[appbase.py]: [INFO] [2021-07-05 15:00:01] line:25->>定位页面元素：('id', 'com.youdao.note:id/add_note_floater_add_note'), 元素描述：
+[appbase.py]: [INFO] [2021-07-05 15:00:01] line:31->>元素定位成功
+[appbase.py]: [INFO] [2021-07-05 15:00:02] line:25->>定位页面元素：('id', 'com.youdao.note:id/note_title'), 元素描述：
+[appbase.py]: [INFO] [2021-07-05 15:00:03] line:31->>元素定位成功

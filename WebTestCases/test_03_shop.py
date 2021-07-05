@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/6/24 
 # @Author  : Mik
-from pom.web_pom import XO商城登录成功, XO商城主页, 搜索商品显示页面, 商品详情页面, 新增地址页面
+from pom.web_pom import XO商城登录成功, XO商城主页, 商品显示页面, 商品详情页面, 新增地址页面
 from libs.utils.log_module import logger
 from libs.utils.rd_yaml import load
 import pytest
@@ -28,7 +28,7 @@ class TestShop:
             page_登录成功 = XO商城登录成功.LoginSucceed(browser, '登录成功主页')
             page_登录成功.my_sendkeys(page_登录成功.loc_搜索框, '手机', '搜索框')
             page_登录成功.my_click(page_登录成功.loc_搜索按钮, '搜索按钮')
-            page_商品显示 = 搜索商品显示页面.AfterSearch(browser, '显示商品页面')
+            page_商品显示 = 商品显示页面.AfterSearch(browser, '显示商品页面')
             all_hd = page_商品显示.my_get_handles()
             page_商品显示.my_click(page_商品显示.loc_商品, '第一个商品')
         with allure.step('选择手机类型'):
@@ -41,5 +41,9 @@ class TestShop:
             page_确认订单.my_switch_iframe(page_确认订单.loc_iframe)
             page_新增地址 = 新增地址页面.NewAddress(browser, '新增地址')
             page_新增地址.add_addres(uinfo)
-            sleep(5)
 
+            text = page_新增地址.my_get_text(page_新增地址.loc_新增地址弹窗结果, '新增地址弹窗结果')
+            try:
+                assert text == '新增成功'
+            except:
+                raise

@@ -1,0 +1,7 @@
+[read_ini.py]: [INFO] [2021-07-05 20:23:34] line:28->>加载 E:\My_code\UIAutoTest\config\appcfg.ini 文件......
+[appbase.py]: [INFO] [2021-07-05 20:23:41] line:27->>定位页面元素：('accessibility id', '搜索'), 元素描述：
+[appbase.py]: [INFO] [2021-07-05 20:23:42] line:33->>元素定位成功
+[appbase.py]: [INFO] [2021-07-05 20:23:42] line:27->>定位页面元素：('id', 'com.netease.cloudmusic:id/search_src_text'), 元素描述：
+[appbase.py]: [INFO] [2021-07-05 20:23:43] line:33->>元素定位成功
+[appbase.py]: [INFO] [2021-07-05 20:23:48] line:27->>定位页面元素：('id', 'com.netease.cloudmusic:id/zp'), 元素描述：
+[appbase.py]: [INFO] [2021-07-05 20:23:50] line:33->>元素定位成功

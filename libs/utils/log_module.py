@@ -119,8 +119,8 @@ def logFile(fileName, output='all'):
 
 
 # gl.get_val("name")
-logger = logFile(gl.get_val("name"), output='file')
-
+# logger = logFile(gl.get_val("name"), output='file')
+logger = logFile('app', output='file')
 # logger.critical('critical严重错误')
 # logger.error('error错误')
 # logger.warning('warning警告')

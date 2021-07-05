@@ -5,6 +5,7 @@
 
 from selenium.webdriver.common.by import By
 from libs.common.base import BasePage
+from time import sleep
 
 
 class NewAddress(BasePage):
@@ -16,6 +17,7 @@ class NewAddress(BasePage):
     loc_区下拉框 = (By.XPATH, '/html/body/div[1]/form/div[3]/div[3]/a/span')
     loc_详细地址 = (By.XPATH, '//input[@placeholder="详细地址"]')
     loc_保存按钮 = (By.XPATH, '//button[text()="保存"]')
+    loc_新增地址弹窗结果 = (By.XPATH, '//*[@id="common-prompt"]/p')
 
     def add_addres(self, userinfo):
         self.my_sendkeys(self.loc_别名, userinfo[0], '别名')
@@ -31,4 +33,5 @@ class NewAddress(BasePage):
         loc_选择区 = (By.XPATH, f'//li[text()="{userinfo[5]}"]')
         self.my_click(loc_选择区, f'{userinfo[5]}')
         self.my_sendkeys(self.loc_详细地址, userinfo[6], '详细地址')
+        sleep(3)
         self.my_click(self.loc_保存按钮, '保存按钮')

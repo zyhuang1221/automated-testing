@@ -4,35 +4,22 @@
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "AssertionError: assert '账号已存在' == '注册成功'\n  - 注册成功\n  + 账号已存在",
+      "name" : "AssertionError: assert '请选择区/县' == '新增成功'\n  - 新增成功\n  + 请选择区/县",
       "children" : [ {
-        "name" : "测试数据：用户名：mik_73,密码：123456",
-        "uid" : "7dd325c0d85b4a32",
-        "parentUid" : "337925cdcbea7f67fa62d4116b39db7d",
+        "name" : "test_case01",
+        "uid" : "8fdbd3c57723f3f5",
+        "parentUid" : "4a274b4b585b6b681c836499c56e228f",
         "status" : "failed",
         "time" : {
-          "start" : 1625104049993,
-          "stop" : 1625104058598,
-          "duration" : 8605
+          "start" : 1625306295950,
+          "stop" : 1625306418655,
+          "duration" : 122705
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "123456", "'mik_73'" ]
-      }, {
-        "name" : "测试数据：用户名：mik_74,密码：123456",
-        "uid" : "b73220ab905d97ba",
-        "parentUid" : "337925cdcbea7f67fa62d4116b39db7d",
-        "status" : "failed",
-        "time" : {
-          "start" : 1625104058665,
-          "stop" : 1625104065420,
-          "duration" : 6755
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "123456", "'mik_74'" ]
+        "parameters" : [ ]
       } ],
-      "uid" : "337925cdcbea7f67fa62d4116b39db7d"
+      "uid" : "4a274b4b585b6b681c836499c56e228f"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
