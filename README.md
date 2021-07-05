@@ -5,7 +5,7 @@
 
 #### 软件架构
 - 语言：python
-- 自动化框架：selenium
+- 自动化框架：selenium,appium
 - 设计模式:POM/关键字/数据驱动
 - 自动化用例组织框架：pytest
 - 自动化报告：allure
