@@ -9,6 +9,7 @@ import yaml
 import os
 import time
 
+
 # def open_yaml():
 #     file_dir = os.path.dirname(__file__)
 #     path_file = file_dir.replace('libs/utils', 'config/cfg.yaml')
@@ -164,8 +165,36 @@ import time
 # print(cur_sysinfo.system,cur_sysinfo.machine)
 
 
-try:
-    print(123+'asd')
+# try:
+#     print(123+'asd')
+#
+# except:
+#     raise
 
-except:
-    raise
+
+class A:
+    loc = {}
+
+    def __init__(self):
+        pass
+
+    def __getattr__(self, loc):
+        if loc not in self.loc.keys():
+            raise Exception
+
+        by, val = self.loc[loc]
+        return by, val
+
+
+class B(A):
+    loc = {
+        'username': ('id', 'account')
+    }
+
+    def text(self):
+        a = self.username
+        print(a)
+
+
+cl = B()
+cl.text()
