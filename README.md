@@ -1,11 +1,11 @@
 # UI自动化测试框架
 
 #### 介绍
-基于selenium,python的Web自动化测试框架
+基于selenium,appium,python的UI自动化测试框架
 
 #### 软件架构
 - 语言：python
-- 自动化框架：selenium
+- 自动化框架：selenium,appium
 - 设计模式:POM/关键字/数据驱动
 - 自动化用例组织框架：pytest
 - 自动化报告：allure
