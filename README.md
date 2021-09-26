@@ -1,11 +1,11 @@
 # UI自动化测试框架
 
 #### 介绍
-基于selenium,appium,python的UI自动化测试框架
+基于selenium,python的WebUI自动化测试框架,移动端移到android_app仓库
 
 #### 软件架构
 - 语言：python
-- 自动化框架：selenium,appium
+- 自动化框架：selenium
 - 设计模式:POM/关键字驱动/数据分离/配置分离
 - 自动化用例组织框架：pytest
 - 自动化报告：allure
@@ -31,18 +31,16 @@
     ├─config
     │  └─config.yaml	# 配置文件
     ├─data
-    │  └─test_data.xlsx	# 测试数据
+    │  └─test_data.yaml	# 测试数据
     ├─log
     │  └─...x.log	# 日志文件
-    ├─imgs
+    ├─img
     │  └─...x.png	# 测试失败截图文件
     ├─report
     │  ├─xml                # 报告数据
     │  └─html		# allure报告
-    ├─AppTestCases          # 待开发
     ├─POM                # 页面对象管理
     │  ├─web_pom
-    │  └─app_pom	
     ├─TestCases        # web测试用例
     │  ├─conftest.py	# pytest依赖对象初始化
     │  └─*_test.py	        # 测试文件
@@ -79,10 +77,11 @@
 8.  定制美观的allure报告
 9.  用例失败重跑
 10. 采用通用配置文件，增强框架可维护性
+11. 采用yaml文件管理测试数据
+12. 采用类管理元素定位，方便后期维护
 
 
 #### 待开发
 1.  多线程执行
-2.  app自动化
-3.  兼容linux
-3.  持续开发中
+2.  兼容linux
+
