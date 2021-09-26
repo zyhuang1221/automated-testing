@@ -1,9 +1,0 @@
-[read_ini.py]: [INFO] [2021-07-05 16:59:04] line:28->>加载 E:\My_code\UIAutoTest\config\appcfg.ini 文件......
-[appbase.py]: [INFO] [2021-07-05 16:59:09] line:27->>定位页面元素：('id', 'com.youdao.note:id/add_note'), 元素描述：
-[appbase.py]: [INFO] [2021-07-05 16:59:09] line:33->>元素定位成功
-[appbase.py]: [INFO] [2021-07-05 16:59:09] line:27->>定位页面元素：('id', 'com.youdao.note:id/add_note_floater_add_note'), 元素描述：
-[appbase.py]: [INFO] [2021-07-05 16:59:10] line:33->>元素定位成功
-[appbase.py]: [INFO] [2021-07-05 16:59:11] line:27->>定位页面元素：('accessibility id', 'Android BulbEditor'), 元素描述：
-[appbase.py]: [INFO] [2021-07-05 16:59:13] line:33->>元素定位成功
-[appbase.py]: [INFO] [2021-07-05 16:59:18] line:27->>定位页面元素：('id', 'com.youdao.note:id/note_title'), 元素描述：
-[appbase.py]: [INFO] [2021-07-05 16:59:18] line:33->>元素定位成功

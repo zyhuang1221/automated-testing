@@ -13,7 +13,7 @@ import time
 
 
 class BasePage:
-    """基于原生selenium第二次封装，主要添加EC模块，显示等待和log以及失败截图"""
+    """基于原生selenium第二次封装"""
 
     def __init__(self, driver, pagename=''):
         """
@@ -23,7 +23,7 @@ class BasePage:
         self.driver = driver
         self.page = pagename
 
-    def my_get_url(self, url):
+    def get_url(self, url):
         """
         发送url请求
         :param url: 传入url
@@ -32,10 +32,10 @@ class BasePage:
         try:
             logger.info(f'打开{url}')
             self.driver.get(url)
-        except:
+        except Exception:
             raise
 
-    def my_find_element(self, loc, msg=''):
+    def find_element(self, loc, msg=''):
         """自动显示等待10s,定位元素，并返回元素。没有定位到抛出异常
         :param loc:元素定位表达式，元组类型。
         :param msg:元素描述，用于记录到日志
@@ -50,15 +50,15 @@ class BasePage:
                 start_time = time.time()
                 ele = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(loc))
                 end_time = time.time()
-            except Exception as e:
+            except Exception:
                 logger.error('元素定位失败!')
-                self.my_save_webImgs()
-                raise e
+                self.save_webImgs()
+                raise
             else:
                 logger.info('元素定位成功：耗时{}秒!'.format(round(end_time - start_time, 3)))
                 return ele
 
-    def my_find_elements(self, loc, msg=''):
+    def find_elements(self, loc, msg=''):
         """
         定位元素组
         :param loc:元素定位表达式，元组类型。
@@ -73,15 +73,15 @@ class BasePage:
                 start_time = time.time()
                 eles = WebDriverWait(self.driver, 10).until(EC.visibility_of_all_elements_located(loc))
                 end_time = time.time()
-            except Exception as e:
+            except Exception:
                 logger.error('元素定位失败!')
-                self.my_save_webImgs()
-                raise e
+                self.save_webImgs()
+                raise
             else:
                 logger.info('元素定位成功：耗时{}秒!'.format(round(end_time - start_time, 3)))
                 return eles
 
-    def my_sendkeys(self, loc, text='', msg=''):
+    def send_keys(self, loc, text='', msg=''):
         """
         输入操作
         :param loc:元素定位表达式
@@ -89,17 +89,17 @@ class BasePage:
         :param msg:元素描述
         :return:
         """
-        ele = self.my_find_element(loc, msg=msg)
+        ele = self.find_element(loc, msg=msg)
         try:
             logger.info('输入内容：{}'.format(text))
             ele.clear()
             ele.send_keys(text)
-        except Exception as e:
+        except Exception:
             logger.error('输入失败')
-            self.my_save_webImgs()
-            raise e
+            self.save_webImgs()
+            raise
 
-    def my_click(self, loc, msg=''):
+    def click(self, loc, msg=''):
         """
         点击操作
         :param loc:元素定位表达式
@@ -110,28 +110,46 @@ class BasePage:
         try:
             logger.info('点击元素：{}'.format(msg))
             WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc)).click()
-        except Exception as e:
+        except Exception:
             logger.error('点击失败,元素不可点击或者元素点位失败')
-            self.my_save_webImgs()
-            raise e
+            self.save_webImgs()
+            raise
 
-    def my_submit(self, loc):
+    def click_by_js(self, loc, msg=''):
+        """
+        点击操作
+        :param loc:元素定位表达式
+        :param msg:元素描述
+        :return: None
+        """
+
+        try:
+            logger.info('点击元素：{}'.format(msg))
+            ele = WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(loc))
+            self.driver.execute_script("arguments[0].click();", ele)
+        except Exception:
+            logger.error('点击失败,元素不可点击或者元素点位失败')
+            self.save_webImgs()
+            raise
+
+    def submit(self, loc):
         """
         提交form表单操作，元素定位在form表单中任意元素即可
         记住只能在form表单中使用，一般在submit难定位时使用
         :param loc:元素定位表达式
         :return:
         """
-        ele = self.my_find_element(loc, msg='提交')
+        ele = self.find_element(loc, msg='提交')
         try:
             logger.info('提交form表单')
             ele.submit()
-        except Exception as e:
-            logger.error('提交失败'.format())
-            self.my_save_webImgs()
-            raise e
 
-    def my_get_handles(self):
+        except Exception:
+            logger.error('提交失败'.format())
+            self.save_webImgs()
+            raise
+
+    def get_handles(self):
         """
         获取当前所有句柄
         :return:所有句柄
@@ -139,14 +157,14 @@ class BasePage:
         logger.info('获取所有句柄')
         try:
             all_handles = self.driver.window_handles
-        except Exception as e:
+        except Exception:
             logger.error('获取句柄失败')
-            self.my_save_webImgs()
-            raise e
+            self.save_webImgs()
+            raise
         else:
             return all_handles
 
-    def my_switch_window(self, handle='new', old_handles=None):
+    def switch_window(self, handle='new', old_handles=None):
         """
         窗口切换==如果是切换到新窗口，new，如果是回到默认窗口，default。切换前，在新窗口打开前获取handles
         :param handle: (new, default,handle name )
@@ -167,32 +185,33 @@ class BasePage:
             else:
                 logger.info("切换到指定handles")
                 self.driver.switch_to.window(handle)
-        except Exception as e:
+        except Exception:
             logger.error("切换失败")
-            self.my_save_webImgs()
-            raise e
+            self.save_webImgs()
+            raise
 
-    def my_get_text(self, loc, msg):
+    def get_text(self, loc, msg):
         """
         获取文本内容
         :param loc: 元素定位
         :param msg: 元素描述
         :return: 文本内容
         """
-        ele = self.my_find_element(loc, msg=msg)
+        ele = self.find_element(loc, msg=msg)
         try:
             text = ele.text
             logger.info('{}元素文本：{}'.format(msg, text))
-        except Exception as e:
+        except Exception:
             logger.error("获取文本失败")
-            self.my_save_webImgs()
-            raise e
+            self.save_webImgs()
+            raise
         else:
             return text
 
-    def my_switch_alert(self, send=None):
+    def switch_alert(self, send=None):
         """
         正常获取到弹出窗的text内容就返回alert这个对象（注意这里不是返回Ture），没有获取到就返回False
+        :send: 是否点击bool
         :return: alert内容
         """
         try:
@@ -213,12 +232,12 @@ class BasePage:
                 return text
             else:
                 logger.info("未弹出alert")
-        except:
+        except Exception:
             logger.error("alert切换失败！")
-            self.my_save_webImgs()
+            self.save_webImgs()
             raise
 
-    def my_save_webImgs(self):
+    def save_webImgs(self):
         """
         失败截图，并加入allure
         :return: None
@@ -233,7 +252,7 @@ class BasePage:
         except:
             logger.error("截屏失败")
 
-    def my_switch_iframe(self, loc):
+    def switch_iframe(self, loc):
         """
         切换iframe
         :param loc: 元素定位
@@ -244,12 +263,12 @@ class BasePage:
             WebDriverWait(self.driver, timeout=10).until(
                 EC.frame_to_be_available_and_switch_to_it(loc))
             logger.info("切换成功")
-        except:
+        except Exception:
             logger.error("iframe切换失败！")
-            self.my_save_webImgs()
+            self.save_webImgs()
             raise
 
-    def my_window_cloce(self):
+    def window_close(self):
         """
         关闭当前窗口
         :return:
@@ -257,17 +276,49 @@ class BasePage:
         self.driver.close()
         logger.info('关闭窗口')
 
-    def my_double_click(self, loc, msg):
+    def double_click(self, loc, msg=''):
         """
         鼠标双击
         :param loc: 元素定位
         :return:
         """
-        ele = self.my_find_element(loc, msg=msg)
+        ele = self.find_element(loc, msg=msg)
         try:
             AC(self.driver).double_click(ele).perform()
             logger.info("双击元素：{}".format(loc))
-        except:
+        except Exception:
             logger.error("鼠标双击操作失败。")
-            self.my_save_webImgs()
+            self.save_webImgs()
+            raise
+
+    def scroll_into_view(self, loc, msg=''):
+        """
+        滚动到元素可见位置
+        :param loc:
+        :param msg:
+        :return:
+        """
+        ele = self.find_element(loc, msg=msg)
+        try:
+            self.driver.execute_script("arguments[0].scrollIntoView(false);", ele)
+            logger.info("滚动到元素：{}".format(loc))
+        except Exception:
+            logger.error("滚动操作失败。")
+            self.save_webImgs()
+            raise
+
+    def mouse_hover(self, loc, msg=''):
+        """
+        鼠标悬停到一个元素位置
+        :param loc:
+        :param msg:
+        :return:
+        """
+        ele = self.find_element(loc, msg=msg)
+        try:
+            AC(self.driver).move_to_element(ele).perform()
+            logger.info("鼠标悬停：{}".format(loc))
+        except Exception:
+            logger.error("鼠标操作失败。")
+            self.save_webImgs()
             raise
