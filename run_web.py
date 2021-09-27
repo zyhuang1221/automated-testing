@@ -44,7 +44,7 @@ def mainTearDown():
 
 if __name__ == '__main__':
     mainSetup()
-    from libs.utils.log_module import logger
+    from libs.utils.log import logger
     logger.info('==>>>开始执行web自动化测试')
     pytest.main()
     logger.info('==>>>web自动化测试结束')

@@ -6,7 +6,7 @@
 
 from libs.common.browser import browser_init
 from libs.utils.base_path import root_dir
-from libs.utils.log_module import logger
+from libs.utils.log import logger
 from libs.utils import rw_properties
 import pytest
 

@@ -3,7 +3,7 @@
 # @Time    : 2021/6/24 
 # @Author  : Mik
 from pom.web_pom import XO商城登录成功, XO商城主页, 商品显示页面, 商品详情页面, 新增地址页面
-from libs.utils.log_module import logger
+from libs.utils.log import logger
 from libs.utils.rd_yaml import load
 import pytest
 import allure

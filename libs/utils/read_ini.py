@@ -4,7 +4,7 @@
 # @Author  : Mik
 import os
 from configparser import ConfigParser
-from libs.utils.log_module import logger
+from libs.utils.log import logger
 from libs.utils.base_path import root_dir
 
 

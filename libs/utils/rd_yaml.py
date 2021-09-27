@@ -6,7 +6,7 @@
 import yaml
 import os
 from libs.utils.base_path import root_dir
-from libs.utils.log_module import logger
+from libs.utils.log import logger
 
 
 def read_yaml():

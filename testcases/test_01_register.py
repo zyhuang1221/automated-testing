@@ -3,7 +3,7 @@
 # @Time    : 2021/5/29 
 # @Author  : Mik
 from pom.web_pom import XO商城登录成功, XO商城主页
-from libs.utils.log_module import logger
+from libs.utils.log import logger
 from libs.utils.rd_yaml import load
 import pytest
 import allure

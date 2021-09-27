@@ -4,7 +4,7 @@
 # @Author  : Mik
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from libs.utils.log_module import logger
+from libs.utils.log import logger
 from appium.webdriver.common.touch_action import TouchAction
 from appium.webdriver.common.multi_action import MultiAction
 

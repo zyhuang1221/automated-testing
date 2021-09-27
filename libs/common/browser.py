@@ -5,7 +5,7 @@
 from selenium.webdriver import Remote
 from selenium import webdriver
 from libs.utils import rd_yaml
-from libs.utils.log_module import logger
+from libs.utils.log import logger
 
 
 def browser_init():
